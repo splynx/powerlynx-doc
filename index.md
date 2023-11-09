@@ -5,21 +5,21 @@ layout: home
 hero:
   name: "Powerlynx"
   text: "Documentation"
-  tagline: My great project tagline
+  tagline: Maximize your revenue by monetizing your Wi-Fi with Powerlynx.
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Guidance and manuals
+      link: /manuals
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: About us
+      link: /about
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Payment gateways
+    details: Explore various payment gateway options to seamlessly accept payments.
+  - title: Captive portal
+    details: A captive portal is a webpage that the user of a public network is required to view and interact with before they can access the network.
+  - title: SMS failover
+    details: Ensures SMS delivery to end-users even when the primary SMS gateway is unavailable.
 ---
 
