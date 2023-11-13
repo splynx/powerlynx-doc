@@ -35,5 +35,3 @@ features:
   - title: Customer statistics
     details: Analyze usage statistics for your customers to understand their data consumption and preferred payment options.
 ---
-
-![login](images/login.jpeg)
