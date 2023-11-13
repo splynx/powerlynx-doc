@@ -34,13 +34,6 @@ features:
     details: Gain insights into your top-performing products, revenue trends, peak traffic days, and more.
   - title: Customer statistics
     details: Analyze usage statistics for your customers to understand their data consumption and preferred payment options.
-
-
-hero1:
-  text: "A sample user journey"
-  tagline: How the user journey looks in Powerlynx
-features:
-  - title: Connect to Wifi
-    details: ![login](images/login.jpeg)
 ---
 
+![login](images/login.jpeg)
