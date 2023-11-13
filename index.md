@@ -36,7 +36,7 @@ features:
     details: Analyze usage statistics for your customers to understand their data consumption and preferred payment options.
 
 
-hero:
+hero1:
   text: "A sample user journey"
   tagline: How the user journey looks in Powerlynx
 features:
