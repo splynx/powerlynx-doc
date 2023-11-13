@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: About us
       link: /about
+    - theme: alt
+      text: Get started
+      link: /getstarted
 
 features:
   - title: Payment gateways
@@ -24,6 +27,20 @@ features:
   - title: Flexible configuration of tariff plans
     details: Configure tariff plans as desired, specifying traffic limits, time online limits, and the days of the week and hours during which this plan is available for selection.
   - title: Printed vouchers
-    details: Generate vouchers in Powerlynx, print them and sell them offline. 
+    details: Generate vouchers in Powerlynx, print them and sell them offline.
+  - title: A fully cloud-based solution
+    details: You need not worry about managing your own server; we will take care of it for you.
+  - title: An assortment of graphs and reports.
+    details: Gain insights into your top-performing products, revenue trends, peak traffic days, and more.
+  - title: Customer statistics
+    details: Analyze usage statistics for your customers to understand their data consumption and preferred payment options.
+
+
+hero:
+  text: "A sample user journey"
+  tagline: How the user journey looks in Powerlynx
+features:
+  - title: Connect to Wifi
+    details: ![login](images/login.jpeg)
 ---
 
