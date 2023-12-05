@@ -18,7 +18,7 @@ hero:
       link: /getstarted
 
 features:
-  - title: Payment gateways :tada: :moneybag:
+  - title: Payment gateways 💰
     details: Explore various payment gateway options to seamlessly accept payments.
   - title: Captive portal :tada: :frowning_man:
     details: A captive portal is a webpage that the user of a public network is required to view and interact with before they can access the network.
