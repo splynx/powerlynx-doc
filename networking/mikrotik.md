@@ -77,7 +77,7 @@ after that modify the hotspot profile that is use by the hotspot server:
 
 4. Hotspot files
 
-Next step is to replace the `login.html` file that can be found under the Files section with a special login.html file (click to see the source code). There are only 2 points to change:
+Next step is to replace the `login.html` file that can be found under the Files section with a special login.html file ([click to download](https://drive.google.com/file/d/1nkNdKN7Jfu8RKyqoMxcrmnknMY3DGIqo/view)). There are only 2 points to change:
 
 ![loginhtml-file](images/loginhtml.png)
 
