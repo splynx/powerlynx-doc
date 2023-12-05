@@ -18,20 +18,20 @@ hero:
       link: /getstarted
 
 features:
-  - title: Payment gateways
+  - title: Payment gateways :tada: :moneybag:
     details: Explore various payment gateway options to seamlessly accept payments.
-  - title: Captive portal
+  - title: Captive portal :tada: :frowning_man:
     details: A captive portal is a webpage that the user of a public network is required to view and interact with before they can access the network.
-  - title: SMS failover
+  - title: SMS failover :tada: :green_circle:
     details: Ensures SMS delivery to end-users even when the primary SMS gateway is unavailable.
-  - title: Flexible configuration of tariff plans
+  - title: Flexible configuration of tariff plans :tada: :point_left:
     details: Configure tariff plans as desired, specifying traffic limits, time online limits, and the days of the week and hours during which this plan is available for selection.
-  - title: Printed vouchers
+  - title: Printed vouchers :tada: :page_with_curl:
     details: Generate vouchers in Powerlynx, print them and sell them offline.
-  - title: A fully cloud-based solution
+  - title: A fully cloud-based solution :tada: :sun_behind_large_cloud:
     details: You need not worry about managing your own server; we will take care of it for you.
-  - title: An assortment of graphs and reports.
+  - title: An assortment of graphs and reports. :tada: :information_source:
     details: Gain insights into your top-performing products, revenue trends, peak traffic days, and more.
-  - title: Customer statistics
+  - title: Customer statistics :tada: :1234:
     details: Analyze usage statistics for your customers to understand their data consumption and preferred payment options.
 ---
