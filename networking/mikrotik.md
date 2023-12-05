@@ -17,7 +17,7 @@ Navigate to the desired location, open the "Hotspots" tab, and click on the "Add
 
 * **Connection type** - This one is important. We recommend using the "Wireguard" option instead of the "Public IP";
 
-* **Rarius secret** - RADIUS secret of your RADIUS server on the router;
+* **Radius secret** - RADIUS secret of your RADIUS server on the router;
 
 * **Physical address** - address of your router (optional).
 
@@ -32,7 +32,8 @@ We recommend to store all these values somewhere.
 
 Click the 'Add' button to create a new hotspot in Powerlynx. Now, let's link this router with Powerlynx.
 
-**1.** Create a Wireguard interface - log in to your router using Winbox, navigate to Wireguard section, and create a new Wireguard with the following settings:
+**1. Wireguard** 
+Create a Wireguard interface - log in to your router using Winbox, navigate to Wireguard section, and create a new Wireguard with the following settings:
 
 ![new-wg](images/new-wg.png)
 
@@ -58,13 +59,14 @@ Save the configuration and proceed to the "Peers" tab in the "Wireguard" section
 
 ![new-peer](images/new-peer.png)
 
-**2.** On Mikrotik, under IP -> Addresses create a new entry for Wireguard IP of your router (in our example we were given the 172.16.0.69 address during the hotspot creation in Powerlynx):
+**2. IP/Addresses** 
+On Mikrotik, under IP -> Addresses create a new entry for Wireguard IP of your router (in our example we were given the 172.16.0.69 address during the hotspot creation in Powerlynx):
 
 ![ip-address](images/ip-address.png)
 
 Afterward, your Wireguard peer should display live values in the "Last Handshake" field. If it remains frozen or shows static data, there might be an issue, and there's likely no connection between Powerlynx and this router and you should double-check steps #1 and #2. 
 
-**3.** Hotspot server setup
+**3. Hotspot server setup**
 
 Next step is to create [a Hotspot server under IP/Hotspot](https://wiki.mikrotik.com/wiki/Manual:IP/Hotspot). The simplest way to setup HotSpot server on a router is by `/ip hotspot setup` command. Router will ask to enter parameters required to successfully set up HotSpot. When finished, default configuration will be added for HotSpot server. Also, you can create it manually. 
 
@@ -92,7 +94,7 @@ after that modify the hotspot profile that is use by the hotspot server:
 
 ![hs-profile-login](images/hs-profile-radius.png)
 
-**4.** Hotspot files
+**4. Hotspot files**
 
 Next step is to replace the `login.html` file that can be found under the Files section with a special login.html file ([click to download](https://drive.google.com/file/d/1nkNdKN7Jfu8RKyqoMxcrmnknMY3DGIqo/view)). There are only 2 points to change:
 
@@ -100,7 +102,7 @@ Next step is to replace the `login.html` file that can be found under the Files 
 
 Replace the highlighted values, as shown in the screenshot above, with your Powerlynx URL.
 
-**5.** RADIUS server 
+**5. RADIUS server** 
 
 Next step is to create a RADIUS server on the router:
 
@@ -116,7 +118,7 @@ Pay attention to:
 
 * **Src.Address** -  IP address of the router in Powerlynx. It must be the same IP address added in step #2 under IP/Addresses.
 
-**6.** Walled Garden
+**6. Walled Garden**
 
 Next important step is to configure Walled Garden hosts. It is crucial to add your Powerlynx URL as well as bunch of other hosts:
 
@@ -127,7 +129,7 @@ One more host to add is `*.digitaloceanspaces.com` (this host is required to dis
 You will also need to add additional Walled Garden hosts depending on what payment system you are going to use. The list of Walled Garden hosts to add to allow payment systems can be found in this [post on our forum](https://forum.powerlynx.app/t/mikrotik-walled-garden/19).
 
 
-**7.** Powerlynx SSIDs
+**7. Powerlynx SSIDs**
 
 Add the hotspot server name into the SSID field under your location and under your splash page:
 
@@ -136,5 +138,7 @@ Add the hotspot server name into the SSID field under your location and under yo
 ![location-ssid](images/location-ssid.png)
 
 ![splashpage-ssid](images/splashpage-ssid.png)
+
+<img src="images/splashpage-ssid.png" alt="splashpage-ssid">
 
 It is crucial to add the hotspot server name in both places mentioned. It's not enough to add the hotspot server name only under Location details or only under the splash page details.  
