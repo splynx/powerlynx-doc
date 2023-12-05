@@ -1,7 +1,2 @@
-# System
-
 # Networking
-
-# Finance
-
-# Configuration
+### [Create Mikrotik Hotstpot](networking/mikrotik.md)

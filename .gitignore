@@ -1,2 +1,3 @@
 # production files, dev server cache, build output, and optional theme customization code
 /.vitepress
+.DS_Store
