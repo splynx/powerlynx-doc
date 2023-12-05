@@ -2,42 +2,43 @@
 outline: deep
 ---
 
-# How to start 
+# Getting Started Guide for Powerlynx Hotspot Software
 
-Right after the registration, open your Powerlynx instance and do next:
+Upon completing the registration process, initiate your Powerlynx instance by following these steps:
 
-1. Ensure the security of your account by setting up Two-Factor Authentication (2FA). To enable 2FA, go to your account settings (located in the top right corner -> Profile) and configure it in the 'Two-factor authentication' section:
+1. Account Security Setup: Safeguard your account by implementing Two-Factor Authentication (2FA). To enable 2FA, navigate to your account settings, found in the top right corner under 'Profile.' Configure 2FA in the designated 'Two-Factor Authentication' section.
 
 ![user_profile](images/profile.png)
 
-2. Navigate to Config/System/Localization and verify that all parameters are correct:
+2. Navigate to Config/System/Localization and ensure that all parameters are correct.
 
 ![config-system-localization](images/config-system-localization.png)
 
-3. Go to Config/System/Splash pages and create a Splash page. This is a crucial step, as each location must be configured with its splash page:
+3. Go to Config/System/Splash Pages and set up a Splash Page. This is an important step, as each location needs its own configured splash page.
 
 ![config-system-splashpages](images/config-system-splashpages.png)
 
-4. Set up SMS sending under Config/System/SMS if you plan to verify your customers' phone numbers with OTP codes. Configure your SMS gateway:
+4. Configure SMS sending in Config/System/SMS if you intend to verify your customers' phone numbers with OTP codes. Set up your SMS gateway:
 
 ![config-system-sms](images/config-system-sms.png)
 
-5. Create some tariff plans under Data plans:
+5. Create tariff plans within the Data Plans section.
 
 ![data-plans](images/dataplans.png)
 
-6. Configure payment methods under Config/Finance/Payment gateways.
+6. Set up payment methods in Config/Finance/Payment Gateways.
 
 ![config-finance-paymentgateways](images/config-finance-paymentgateways.png)
 
-7. Configure your location under the Locations menu:
-    - Ensure the Details/SSIDs field is not empty and contains the identifier of your hotspot.
+7. Configure your location through the Locations menu:
+
+    - Ensure the Details/SSIDs field is populated and contains the identifier of your hotspot.
     ![location](images/location.png)
-    - Under the Splash pages section, select the previously created splash page.
+    - In the Splash Pages section, choose the previously generated splash page
     ![location-splashpage](images/splashpage-enabled.png)
-    - Under the Plans tab, select available tariff plans for this location.
+    - Navigate to the Plans tab and choose the applicable tariff plans for this location.
     ![location-plans](images/location-plans.png)
-    - Under the Payment gateways tab, select available payment methods.
+    - In the Payment Gateways tab, choose the available payment methods.
     ![location-pg](images/location-pg.png)
-    - Under the Hotspots tab, create a router.
+    - In the Hotspots tab, create a router.
     ![location-hotspot](images/location-hotspot.png)

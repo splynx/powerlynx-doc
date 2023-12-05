@@ -33,6 +33,7 @@ We recommend to store all these values somewhere.
 Click the 'Add' button to create a new hotspot in Powerlynx. Now, let's link this router with Powerlynx.
 
 **1. Wireguard** 
+
 Create a Wireguard interface - log in to your router using Winbox, navigate to Wireguard section, and create a new Wireguard with the following settings:
 
 ![new-wg](images/new-wg.png)
@@ -60,6 +61,7 @@ Save the configuration and proceed to the "Peers" tab in the "Wireguard" section
 ![new-peer](images/new-peer.png)
 
 **2. IP/Addresses** 
+
 On Mikrotik, under IP -> Addresses create a new entry for Wireguard IP of your router (in our example we were given the 172.16.0.69 address during the hotspot creation in Powerlynx):
 
 ![ip-address](images/ip-address.png)
