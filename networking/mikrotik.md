@@ -139,6 +139,4 @@ Add the hotspot server name into the SSID field under your location and under yo
 
 ![splashpage-ssid](images/splashpage-ssid.png)
 
-<img src="images/splashpage-ssid.png" alt="splashpage-ssid">
-
 It is crucial to add the hotspot server name in both places mentioned. It's not enough to add the hotspot server name only under Location details or only under the splash page details.  
