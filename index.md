@@ -14,9 +14,6 @@ hero:
       text: Guidance and manuals
       link: /manuals
     - theme: alt
-      text: About us
-      link: /about
-    - theme: alt
       text: Get started
       link: /getstarted
 
