@@ -27,7 +27,7 @@ We will create a hotspot with the "Wireguard" connection type, as it's the recom
 
 ::: warning
 Please copy and use these keys to configure the Wireguard connection immediately. The private key is shown only once.
-We recommend to store all these values somewhere.
+We recommend to store all these values somewhere in a safe place.
 :::
 
 Click the 'Add' button to create a new hotspot in Powerlynx. Now, let's link this router with Powerlynx.
