@@ -6,7 +6,7 @@ hero:
   name: "Powerlynx"
   text: "Documentation"
   image:
-    src: ![logo](images/powerlynx-logo.png)
+    src: /powerlynx-logo.png
     alt: Powerlynx logo
   tagline: Maximize your revenue by monetizing your Wi-Fi with Powerlynx.
   actions:
