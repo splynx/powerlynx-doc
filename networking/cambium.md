@@ -36,27 +36,47 @@ After adding Hotspot to Powerlynx, configure your Cambium device as follows:
 4. Go to the Radius Server tab, fill the form and save:
 
 **Authentication Server 1:**
+	
 	Host - radius.powerlynx.app
+	
 	Secret - Hotpost secret from the Hotspot in Powerlynx
+	
 	Port - 1812
+	
 	Timeout - 10
+	
 	Attempts - 1
 
 **Accounting Server 1:**
+	
 	Host - radius.powerlynx.app
+	
 	Secret - Hotpost secret from the Hotspot in Powerlynx
+	
 	Port - 1813
+	
 	Timeout - 10
+	
 	Attempts - 1
+	
 	Account Mode - Start-Interim-Stop
+	
 	Accounting Packet - On (Enable Accounting-On messages)
-    Server Pool Mode - Load Balance
+    
+	Server Pool Mode - Load Balance
+	
 	NAS Identifier - AP-HOSTNAME
+	
 	NAS IP - AP-IP
+	
 	Interim Update Interval - 300
+	
 	Dynamic Authorization - On
+	
 	Dynamic VLAN - On
+	
 	Proxy through cnMaestro - Off
+	
 	Called Station ID - AP-MAC:SSID
 
 ![cambium-radius-settings](images/cambium-radius-settings.png)
@@ -66,16 +86,27 @@ After adding Hotspot to Powerlynx, configure your Cambium device as follows:
 5. Go to the Guest Access tab, fill the form and save:
 
 Enable - On
+
 Portal Mode - External Hotspot
+
 Access Policy - Radius
+
 AP Server Protocol - HTTP
+
 External Page URL - `https://{YOUR_DOMAIN}/redirect-flow`
+
 External Portal Post Through cnMaestro - Off
+
 External Portal Type - Standart
+
 Success Action - Redirect user to External URL
+
 Prefix Query Strings in Redirect URL - On
+
 Redirect URL - `https://{YOUR_DOMAIN}/redirect-flow/success`
+
 Redirection URL Query String - Client IP, RSSI, AP Location
+
 Redirect HTTP-only - On
 
 ![wlan-settings-cambium](images/wlan-settings-cambium.png)
