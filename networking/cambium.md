@@ -9,7 +9,7 @@ In our example, we are using a Cambium router with wireless interfaces. Customer
 
 Navigate to the desired location, open the "Hotspots" tab, and click on the "Add" button:
 
-![hotspot-add-cambium](images/add_cambium.png)
+![hotspot-add-cambium](images/add_cambium.png){data-zoomable}
 
 * **Title** - title for your router;
 
@@ -31,12 +31,12 @@ After adding Hotspot to Powerlynx, configure your Cambium device as follows:
 2. Click on `Add WLAN`.
 3. Fill out the form based on your requirements and click the Save button.
 
-![add-wlan-cambium](images/add-wlan-cambium.png)
+![add-wlan-cambium](images/add-wlan-cambium.png){data-zoomable}
 
 4. Go to the Radius Server tab, fill the form and save:
 
 **Authentication Server 1:**
-	
+
 	Host - radius.powerlynx.app
 	
 	Secret - Hotpost secret from the Hotspot in Powerlynx
@@ -48,7 +48,7 @@ After adding Hotspot to Powerlynx, configure your Cambium device as follows:
 	Attempts - 1
 
 **Accounting Server 1:**
-	
+
 	Host - radius.powerlynx.app
 	
 	Secret - Hotpost secret from the Hotspot in Powerlynx
@@ -79,9 +79,9 @@ After adding Hotspot to Powerlynx, configure your Cambium device as follows:
 	
 	Called Station ID - AP-MAC:SSID
 
-![cambium-radius-settings](images/cambium-radius-settings.png)
+![cambium-radius-settings](images/cambium-radius-settings.png){data-zoomable}
 
-![cambium-radius-settings-2](images/cambium-radius-settings-2.png)
+![cambium-radius-settings-2](images/cambium-radius-settings-2.png){data-zoomable}
 
 5. Go to the Guest Access tab, fill the form and save:
 
@@ -109,7 +109,7 @@ Redirection URL Query String - Client IP, RSSI, AP Location
 
 Redirect HTTP-only - On
 
-![wlan-settings-cambium](images/wlan-settings-cambium.png)
+![wlan-settings-cambium](images/wlan-settings-cambium.png){data-zoomable}
 
 6. On bottom of the same page	select White List tab and add all these records:
 ```
@@ -122,14 +122,14 @@ fra1.digitaloceanspaces.com
 
 The white list records depends on what payment gateway you are going to use. Each payment gateway has its own hosts to allow in this list.
 
-![whitelist-settings](images/radius_settings.png)
+![whitelist-settings](images/radius_settings.png){data-zoomable}
 
 7. Powerlynx SSIDs
 
 Add the SSID name into the SSID field under your location and under your splash page:
 
-![location-ssid](images/location-ssid.png)
+![location-ssid](images/location-ssid.png){data-zoomable}
 
-![splashpage-ssid](images/splashpage-ssid.png)
+![splashpage-ssid](images/splashpage-ssid.png){data-zoomable}
 
 It is crucial to add the SSID in both places mentioned. It's not enough to add the SSID only under Location details or only under the splash page details.  
