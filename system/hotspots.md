@@ -1,0 +1,2 @@
+# Hotspots
+Explanation of hotspots
