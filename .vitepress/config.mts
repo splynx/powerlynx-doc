@@ -15,8 +15,7 @@ export default defineConfig({
     sidebar: [
       {
         items: [
-          { text: 'FAQ', link: '/faq' },
-          { text: 'Manuals', link: '/manuals' }
+          { text: 'Get started', link: '/getstarted' }
         ]
       }
     ],
