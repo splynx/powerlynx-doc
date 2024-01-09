@@ -15,7 +15,9 @@ export default defineConfig({
     sidebar: [
       {
         items: [
-          { text: 'Get started', link: '/getstarted' }
+          { text: 'Get started', link: '/getstarted' },
+          { text: 'Networking', link: '/networking/main.md' },
+          { text: 'System', link: '/system/main.md' }
         ]
       }
     ],
