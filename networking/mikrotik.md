@@ -137,8 +137,8 @@ Add the hotspot server name into the SSID field under your location and under yo
 
 ![hs-servername](images/hs-server-name.png){data-zoomable}
 
-![location-ssid](images/location-ssid.png){data-zoomable}
+![location-ssid](images/mikrotik_location_ssid.png){data-zoomable}
 
-![splashpage-ssid](images/splashpage-ssid.png){data-zoomable}
+![splashpage-ssid](images/mikrotik_splashpage_ssid.png){data-zoomable}
 
 It is crucial to add the hotspot server name in both places mentioned. It's not enough to add the hotspot server name only under Location details or only under the splash page details.  
