@@ -18,9 +18,6 @@ export default defineConfig({
           { text: 'Get started', link: '/getstarted' },
           { text: 'Networking', link: '/networking/main.md' },
           { text: 'System', link: '/system/main.md' },
-          { text: 'Config', items: [
-            { text: 'Splash pages', link: '/config/splash-pages.md' },
-          ], }
         ]
       }
     ],
