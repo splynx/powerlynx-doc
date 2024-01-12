@@ -59,7 +59,7 @@ Let's see how a Splash page can change the login page.
 #### All fields are enabled
 In this example, you can see how it looks when all fields are enabled.
 
-<img src="/config/images/all_fields.jpg" alt="The login page with all fields enabled" width="200">
+<img src="/config/images/all_fields.jpg" alt="The login page with all fields enabled" width="200" data-zoomable class="medium-zoom-image">
 <br>
 
 #### The custom logo
@@ -69,7 +69,7 @@ In the picture below, you can see how the custom logo looks.
 It's recommended to use pictures with an aspect ratio of 2:1. For example: if the image has a width of 600px, then the height should be 300px.
 :::
 
-<img src="/config/images/custom_logo.jpg" alt="Custom logo example" width="200">
+<img src="/config/images/custom_logo.jpg" alt="Custom logo example" width="200" data-zoomable class="medium-zoom-image">
 <br>
 
 
@@ -77,11 +77,11 @@ It's recommended to use pictures with an aspect ratio of 2:1. For example: if th
 I selected `Czech Republic +420`, `Germany +49`, and `Spain +34` in the Country codes select.
 You can see that the selected codes are placed at the top of the select options, but anyway, a customer is free to choose any country code they want.
 
-<img src="/config/images/country_codes_example.jpg" alt="Country codes example" width="200">
+<img src="/config/images/country_codes_example.jpg" alt="Country codes example" width="200" data-zoomable class="medium-zoom-image">
 <br>
 
 #### Terms and conditions
 Here, you can see how the Terms and Conditions modal window looks. This window opens when a customer clicks on the blue `Terms and Conditions` link.
 
-<img src="/config/images/accept_terms_and_conditions.jpg" alt="The Terms and conditions checkbox" width="200" style="float: left;margin-right: 15px;">
-<img src="/config/images/terms_and_conditions.jpg" alt="Terms and conditions modal window" width="200">
+<img src="/config/images/accept_terms_and_conditions.jpg" alt="The Terms and conditions checkbox" width="200" style="float: left;margin-right: 15px;" data-zoomable class="medium-zoom-image">
+<img src="/config/images/terms_and_conditions.jpg" alt="Terms and conditions modal window" width="200" data-zoomable class="medium-zoom-image">
