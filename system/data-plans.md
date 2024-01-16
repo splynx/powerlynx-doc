@@ -23,7 +23,6 @@ Speed limitations
 * **Download speed (kbps)** - the maximum download speed for customers in kbps.
 * **Upload speed (kbps)** - the maximum upload speed for customers in kbps.
 
-
 ## Enabled data plans available for location
 
 Customers can select data plans or buy using [payment gateways](/todo) on the [splash pages](/todo) while trying to connect to Wi-Fi. For this, you should enable plans for the location.

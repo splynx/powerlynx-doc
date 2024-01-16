@@ -17,7 +17,11 @@ export default defineConfig({
         items: [
           { text: 'Get started', link: '/getstarted' },
           { text: 'Networking', link: '/networking/main.md' },
-          { text: 'System', link: '/system/main.md' },
+          { text: 'System', link: '/system/main.md', items: [
+            { text: 'Hotspots', link: '/system/hotspots.md' },
+            { text: 'Splash pages', link: '/system/splash-pages.md' },
+            { text: 'Data plans', link: '/system/data-plans.md' },
+          ] },
         ]
       }
     ],
