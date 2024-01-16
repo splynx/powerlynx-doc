@@ -10,12 +10,13 @@ hero:
     alt: Powerlynx logo
   tagline: Maximize your revenue by monetizing your Wi-Fi with Powerlynx.
   actions:
-    - theme: brand
-      text: Guidance and manuals
-      link: /manuals
     - theme: alt
       text: Get started
       link: /getstarted
+    - theme: brand
+      text: Guidance and manuals
+      link: /manuals
+    
 
 features:
   - title: Payment gateways 💰

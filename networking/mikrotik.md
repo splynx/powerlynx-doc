@@ -9,7 +9,7 @@ In our example, we are using a MikroTik router with wireless interfaces. Custome
 
 Navigate to the desired location, open the "Hotspots" tab, and click on the "Add" button:
 
-![hotspot-add](images/hotspot-add.png)
+![hotspot-add](images/hotspot-add.png){data-zoomable}
 
 * **Title** - title for your router;
 
@@ -23,7 +23,7 @@ Navigate to the desired location, open the "Hotspots" tab, and click on the "Add
 
 We will create a hotspot with the "Wireguard" connection type, as it's the recommended and secure option. After selecting of the "Wireguard" connection type you will see the "Generate Wireguard keys" button - you should click on it. After that, you will see this window:
 
-![hotspot-add-wg](images/hotspot-add-wg.png)
+![hotspot-add-wg](images/hotspot-add-wg.png){data-zoomable}
 
 ::: warning
 Please copy and use these keys to configure the Wireguard connection immediately. The private key is shown only once.
@@ -32,11 +32,11 @@ We recommend to store all these values somewhere in a safe place.
 
 Click the 'Add' button to create a new hotspot in Powerlynx. Now, let's link this router with Powerlynx.
 
-**1. Wireguard** 
+**1. Wireguard**
 
 Create a Wireguard interface - log in to your router using Winbox, navigate to Wireguard section, and create a new Wireguard with the following settings:
 
-![new-wg](images/new-wg.png)
+![new-wg](images/new-wg.png){data-zoomable}
 
 * **Name** - the name of your interface;
 
@@ -58,23 +58,23 @@ Save the configuration and proceed to the "Peers" tab in the "Wireguard" section
 
 * **Persistent Keepalive** - 00:00:15
 
-![new-peer](images/new-peer.png)
+![new-peer](images/new-peer.png){data-zoomable}
 
-**2. IP/Addresses** 
+**2. IP/Addresses**
 
 On Mikrotik, under IP -> Addresses create a new entry for Wireguard IP of your router (in our example we were given the 172.16.0.69 address during the hotspot creation in Powerlynx):
 
-![ip-address](images/ip-address.png)
+![ip-address](images/ip-address.png){data-zoomable}
 
-Afterward, your Wireguard peer should display live values in the "Last Handshake" field. If it remains frozen or shows static data, there might be an issue, and there's likely no connection between Powerlynx and this router and you should double-check steps #1 and #2. 
+Afterward, your Wireguard peer should display live values in the "Last Handshake" field. If it remains frozen or shows static data, there might be an issue, and there's likely no connection between Powerlynx and this router and you should double-check steps #1 and #2.
 
 **3. Hotspot server setup**
 
-Next step is to create [a Hotspot server under IP/Hotspot](https://wiki.mikrotik.com/wiki/Manual:IP/Hotspot). The simplest way to setup HotSpot server on a router is by `/ip hotspot setup` command. Router will ask to enter parameters required to successfully set up HotSpot. When finished, default configuration will be added for HotSpot server. Also, you can create it manually. 
+Next step is to create [a Hotspot server under IP/Hotspot](https://wiki.mikrotik.com/wiki/Manual:IP/Hotspot). The simplest way to setup HotSpot server on a router is by `/ip hotspot setup` command. Router will ask to enter parameters required to successfully set up HotSpot. When finished, default configuration will be added for HotSpot server. Also, you can create it manually.
 
 Once created, let's change some settings:
 
-![hs-servername](images/hs-server-name.png)
+![hs-servername](images/hs-server-name.png){data-zoomable}
 
 * **Name** - set name for your hotspot server. You will use it later in Powerlynx setup;
 
@@ -92,23 +92,23 @@ Once created, let's change some settings:
 
 after that modify the hotspot profile that is use by the hotspot server:
 
-![hs-profile-login](images/hs-profile-login.png)
+![hs-profile-login](images/hs-profile-login.png){data-zoomable}
 
-![hs-profile-login](images/hs-profile-radius.png)
+![hs-profile-login](images/hs-profile-radius.png){data-zoomable}
 
 **4. Hotspot files**
 
 Next step is to replace the `login.html` file that can be found under the Files section with a special login.html file ([click to download](https://drive.google.com/file/d/1nkNdKN7Jfu8RKyqoMxcrmnknMY3DGIqo/view)). There are only 2 points to change:
 
-![loginhtml-file](images/loginhtml.png)
+![loginhtml-file](images/loginhtml.png){data-zoomable}
 
 Replace the highlighted values, as shown in the screenshot above, with your Powerlynx URL.
 
-**5. RADIUS server** 
+**5. RADIUS server**
 
 Next step is to create a RADIUS server on the router:
 
-![radius-server](images/radius-server.png)
+![radius-server](images/radius-server.png){data-zoomable}
 
 Pay attention to:
 
@@ -124,7 +124,7 @@ Pay attention to:
 
 Next important step is to configure Walled Garden hosts. It is crucial to add your Powerlynx URL as well as bunch of other hosts:
 
-![walled-garden](images/walled-garden.png)
+![walled-garden](images/walled-garden.png){data-zoomable}
 
 One more host to add is `*.digitaloceanspaces.com` (this host is required to display the logos on the captive portal page).
 
@@ -135,10 +135,10 @@ You will also need to add additional Walled Garden hosts depending on what payme
 
 Add the hotspot server name into the SSID field under your location and under your splash page:
 
-![hs-servername](images/hs-server-name.png)
+![hs-servername](images/hs-server-name.png){data-zoomable}
 
-![location-ssid](images/location-ssid.png)
+![location-ssid](images/mikrotik_location_ssid.png){data-zoomable}
 
-![splashpage-ssid](images/splashpage-ssid.png)
+![splashpage-ssid](images/mikrotik_splashpage_ssid.png){data-zoomable}
 
 It is crucial to add the hotspot server name in both places mentioned. It's not enough to add the hotspot server name only under Location details or only under the splash page details.  
