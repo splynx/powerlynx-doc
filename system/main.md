@@ -3,3 +3,4 @@
 ### [Locations](locations.md)
 ### [Hotspots](hotspots.md)
 ### [Splash pages](splash-pages.md)
+### [Vouchers](vouchers.md)
