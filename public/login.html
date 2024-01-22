@@ -1,0 +1,94 @@
+$(if http-header == "Access-Control-Allow-Origin")https://myisp.powerlynx.app$(endif)
+<html>
+
+<head>
+
+<title>...</title>
+
+<style type="text/css">
+
+body {color:#666666; font-size: 13px; font-family: verdana;}
+
+textarea,input,select {background-color: #FDFBFB;border: 1px solid #BBBBBB;padding: 2px;margin: 1px;font-size: 14px;color: #808080;}
+
+</style>
+
+</head>
+
+<body>
+
+<br /><br />
+
+$(if chap-id)
+
+<noscript>
+
+<center><b>JavaScript required. Enable JavaScript to continue.</b></center>
+
+</noscript>
+
+$(endif)
+
+<center>One moment while we lookup your account...<br /><br />If you are not redirected within 10 seconds, click 'continue' below.<br><br>
+<form name="redirect" action="https://myisp.powerlynx.app/redirect-flow/" method="post">
+
+<input type="hidden" name="mac" value="$(mac)">
+
+<input type="hidden" name="ip" value="$(ip)">
+
+<input type="hidden" name="username" value="$(username)">
+
+<input type="hidden" name="link-login" value="$(link-login)">
+
+<input type="hidden" name="link-orig" value="$(link-orig)">
+
+<input type="hidden" name="error" value="$(error)">
+
+<input type="hidden" name="chap-id" value="$(chap-id)">
+
+<input type="hidden" name="chap-challenge" value="$(chap-challenge)">
+
+<input type="hidden" name="link-login-only" value="$(link-login-only)">
+
+<input type="hidden" name="link-orig-esc" value="$(link-orig-esc)">
+
+<input type="hidden" name="mac-esc" value="$(mac-esc)">
+
+<input type="hidden" name="server-address" value="$(server-address)">
+
+<input type="hidden" name="link-logout" value="$(link-logout)">
+
+<input type="hidden" name="link-status" value="$(link-status)">
+
+<input type="hidden" name="logged-in" value="$(logged-in)">
+
+<input type="hidden" name="host-ip" value="$(host-ip)">
+
+<input type="hidden" name="vlan-id" value="$(vlan-id)">
+
+<input type="hidden" name="session-id" value="$(session-id)">
+
+<input type="hidden" name="ga_ssid" value="$(server-name)">
+
+
+<input type="hidden" name="trial" value="$(trial)">
+
+
+
+<input type="submit" value="continue">
+
+</form>
+
+<script language="JavaScript">
+
+
+
+   document.redirect.submit();
+
+
+
+</script></center>
+
+</body>
+
+</html>
