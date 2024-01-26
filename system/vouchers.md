@@ -42,6 +42,13 @@ All series are created automatically. However, in some cases, you may need to cr
 
 In this example, we generate a series of 5 vouchers from the "Free for Employees" plan, which are designated for use at the "Hotel" location. These vouchers remain valid until the end of their specified validity period. After generation, you will have 5 vouchers that can be utilized in the "Login with Voucher Code" option on a splash page.
 
+::: tip
+Pay attention to the **Expiration** section when generating a series. There are two options for setting the expiration method of a voucher:
+- **Expiration by 'Valid Until':** This means the generated vouchers are valid until the specified date. They will expire on that date, regardless of whether they have been activated.
+
+- **Expiration by 'Activation Time':** This means the generated vouchers are valid for X days following their activation. For example, if a voucher was generated two months ago but only activated today, the countdown for the "Available time from voucher activation" will begin from the date of activation.
+:::
+
 Each serie has 4 actions: 
 - Edit - Modify certain parameters of a series;
 - View - Display the list of vouchers in this series;
