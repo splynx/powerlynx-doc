@@ -33,7 +33,7 @@ Usage limitations:
 
 * **Online time limit** – the maximum time the customer can be online after buying the plan on the splash page.
 
-If one of these limits is reached, the customer will be disconnected, and voucher will be transferred to the status *Used*
+If one of these limits is reached, the customer will be disconnected, and the voucher will be transferred to the status *Used*
 
 Plan availability:
 
