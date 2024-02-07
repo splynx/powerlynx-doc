@@ -16,11 +16,16 @@ export default defineConfig({
       {
         items: [
           { text: 'Get started', link: '/getstarted' },
-          { text: 'Networking', link: '/networking/main.md' },
-          { text: 'System', link: '/system/main.md', items: [
+          { text: 'Networking', items:[
+            {text: 'Mikrotik Hotstpot', link: '/networking/mikrotik.md'},
+            {text: 'Cambium Hotstpot', link: '/networking/cambium.md'},
+          ] },
+          { text: 'System', items: [
+            { text: 'Locations', link: '/system/locations.md' },
             { text: 'Hotspots', link: '/system/hotspots.md' },
             { text: 'Splash pages', link: '/system/splash-pages.md' },
             { text: 'Data plans', link: '/system/data-plans.md' },
+            { text: 'Vouchers', link: '/system/vouchers.md' },
           ] },
         ]
       }
