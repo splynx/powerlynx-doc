@@ -73,6 +73,7 @@ Below is an example of how the custom logo appears.
 
 ::: tip
 It's recommended to use pictures with an aspect ratio of 2:1. For example, if the image is 600px wide, then the height should be 300px.
+Available formats: png, jpg, jpeg, gif
 :::
 
 <img src="/system/images/custom_logo.jpg" alt="Custom logo example" width="200" data-zoomable class="medium-zoom-image">

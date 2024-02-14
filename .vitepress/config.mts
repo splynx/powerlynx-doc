@@ -28,6 +28,9 @@ export default defineConfig({
             { text: 'Data plans', link: '/system/data-plans.md' },
             { text: 'Vouchers', link: '/system/vouchers.md' },
           ] },
+          { text: 'Finance', link: '/finance/main.md', items: [
+            { text: 'Stripe', link: '/finance/stripe.md' }
+          ] }
         ]
       }
     ],
