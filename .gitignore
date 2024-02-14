@@ -2,3 +2,4 @@
 .DS_Store/
 
 .vitepress/cache/
+networking/.DS_Store
