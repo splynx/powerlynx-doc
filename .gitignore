@@ -1,5 +1,4 @@
 # production files, dev server cache, build output, and optional theme customization code
-.DS_Store/
+.DS_Store
 
 .vitepress/cache/
-networking/.DS_Store
