@@ -5,3 +5,4 @@
 ### [Splash pages](splash-pages.md)
 ### [Data plans](data-plans.md)
 ### [Vouchers](vouchers.md)
+### [SMS](sms.md)
