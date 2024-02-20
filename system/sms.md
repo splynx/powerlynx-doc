@@ -35,3 +35,23 @@ To create a configure your SMS sending service navigate to `Config/System/SMS` a
 * **Custom Header Name** - The name of the custom header. To be used in cases when you need to send additional headers to the SMS gateway.
 
 * **Custom Header Value** - The value of the custom header.
+
+Example of configuration:
+
+![SMS custom example](images/custom_sms_example.png){data-zoomable}
+
+# Configuration of Twilio SMS gateway
+
+We've built integration with Twilio - https://www.twilio.com. They offer various services, including an SMS gateway.
+
+All you need to do is create a Twilio account, obtain the Account SID, API key, and From number values, and then use them in Powerlynx in the appropriate fields:
+
+![SMS twilio example](images/twilio_sms.png){data-zoomable}
+
+# Check balance
+
+# Test
+
+# Enable/disable, prioritise SMS gateways
+
+# Enable for the splash page
