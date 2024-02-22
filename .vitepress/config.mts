@@ -27,6 +27,7 @@ export default defineConfig({
             { text: 'Splash pages', link: '/system/splash-pages.md' },
             { text: 'Data plans', link: '/system/data-plans.md' },
             { text: 'Vouchers', link: '/system/vouchers.md' },
+            { text: 'SMS', link: '/system/sms.md' },
           ] },
           { text: 'Finance', link: '/finance/main.md', items: [
             { text: 'Stripe', link: '/finance/stripe.md' }

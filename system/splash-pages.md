@@ -25,7 +25,7 @@ Here is a description of each field:
 
 * <b>SSIDs</b> - Enter the SSIDs of the routers where you wish to use this splash page. One SSID per line. For example, if your Cambium router provides a Wi-Fi network called "Fast internet," then you need to enter "Fast internet" in this field. The system will then use this splash page for that Wi-Fi access point.
 
-* <b>OTP verification</b> - Enable or disable OTP verification by SMS code. If enabled, customers must confirm their phone numbers with an SMS code.
+* <b>OTP verification</b> - Enable or disable OTP verification by SMS code. If enabled, customers must confirm their phone numbers with an SMS code. This option requires at least 1 [configured SMS gateway](https://docs.powerlynx.app/system/sms.html).
 
 * <b>Name input</b> - Show or hide the Name field. When enabled, the customer should enter their name in the field. Otherwise, the system will use the customer's phone number as a name.
 
