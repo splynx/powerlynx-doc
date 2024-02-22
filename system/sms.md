@@ -66,6 +66,8 @@ To locate these values, you should log in to your Twilio console using this link
 
 Once it's done, click the "Add" button at the bottom. Next step is to test if it works.
 
+For more secure authentication, create an API key with the type set to 'standard', set up permissions, and use it in the "API key" field in Powerlynx. More information can be found here - https://www.twilio.com/docs/usage/api#authenticate-with-http
+
 # Test SMS sending
 
 Once you've created and configured your SMS sending service, you can run some tests to ensure you can send SMS from Powerlynx. At the bottom of the page, you will find the "Test section":
