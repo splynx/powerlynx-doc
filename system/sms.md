@@ -44,14 +44,54 @@ Example of configuration:
 
 We've built integration with Twilio - https://www.twilio.com. They offer various services, including an SMS gateway.
 
-All you need to do is create a Twilio account, obtain the Account SID, API key, and From number values, and then use them in Powerlynx in the appropriate fields:
+All you need to do is create a Twilio account, obtain the Account SID, Auth Token, and From number values, and then input them into Powerlynx in the designated fields:
 
-![SMS twilio example](images/twilio_sms.png){data-zoomable}
+![SMS twilio example](images/twilio_settings.png){data-zoomable}
+
+::: tip
+In Powerlynx, the fields should be populated with values from Twilio as follows:
+
+Account SID = Account SID from Twilio
+
+API key = Account SID from Twilio
+
+API secret = Auth Token from Twilio
+
+From = My Twilio phone number
+:::
+
+To locate these values, you should log in to your Twilio console using this link - https://console.twilio.com/, create your first SMS app, and follow the instructions. Afterward, you can find the required details under the "Account Info" settings:
+
+![Twilio account settings](images/twilio_account_settings.png){data-zoomable}
+
+Once it's done, click the "Add" button at the bottom. Next step is to test if it works.
+
+# Test SMS sending
+
+Once you've created and configured your SMS sending service, you can run some tests to ensure you can send SMS from Powerlynx. At the bottom of the page, you will find the "Test section":
+
+![Test SMS](images/sms_test.png){data-zoomable}
+
+Simply enter your phone number and click the "Run test" button, then check your phone to confirm that you've received the SMS.
 
 # Check balance
 
-# Test
+The "Check balance" section enables you to configure functionality to check the balance on your SMS gateway, provided it supports this feature. Simply activate it, set the period, enter your email, enable dashboard notifications, and specify the balance value that should trigger notifications. Powerlynx will then send you an email notification and display a warning on the dashboard about a low balance on your SMS gateway, helping prevent the SMS sending service from stopping due to insufficient funds.
 
-# Enable/disable, prioritise SMS gateways
+# Enable, disable, and prioritize SMS gateways.
 
-# Enable for the splash page
+In the list of SMS gateways, you can easily enable, disable, and change the order through drag and drop. You can also enable a specific SMS gateway for a specific location, among other actions. If you have multiple SMS gateways enabled, the system will use the first one as the primary gateway. Any other enabled gateway will serve as a fallback in case the primary SMS gateway fails to send the SMS. Thus, configuring multiple SMS gateways can enhance the reliability of your SMS sending, ensuring that your customers will receive an SMS from one gateway or another.
+
+![SMS gif](images/sms_enable_disable.gif){data-zoomable}
+
+# Enable the OTP verification for the splash page
+
+Now that you have configured some SMS gateways, you have the option to enable OTP verification for each [splash page](https://docs.powerlynx.app/system/splash-pages.html), although it is not mandatory. Open your splash page settings and choose to enable or disable OTP verification via SMS code. If enabled, customers will be required to confirm their phone numbers using an SMS code. It's important to note that keeping this option enabled for the splash page necessitates a functioning SMS sending service within Powerlynx.
+
+# SMS logs
+
+In Powerlynx, you can track all SMS messages sent from the platform under Logs/SMS logs:
+
+![SMS logs](images/sms_logs.png){data-zoomable}
+
+To see the details of each SMS, click on the "Actions" button under each SMS record.
