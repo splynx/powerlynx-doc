@@ -4,7 +4,7 @@ outline: deep
 
 # OTP verification in Powerlynx via SMS
 
-It is important to verify the phone number of the person who connects to your Wi-Fi. This is typically done by sending an SMS with an OTP code to ensure the number belongs to a real person. In Powerlynx, you can opt to skip this process, in which case the system will only verify the format of the phone number to ensure it is valid. However, if you decide to send OTP verification codes to your customers, you will need to set up SMS sending from Powerlynx. By default, Powerlynx does not support methods to send SMS directly from the product without integrating with third-party SMS gateways.
+It is important to verify the phone number of the person who connects to your Wi-Fi. This is typically done by sending an SMS with an OTP code to ensure the number belongs to a real person. In Powerlynx, you can choose to skip this process, in which case the system will only verify the format of the phone number to ensure it is valid. However, if you decide to send OTP verification codes to your customers, you will need to set up SMS sending from Powerlynx. By default, Powerlynx does not support methods to send SMS directly from the product without integrating with third-party SMS gateways.
 
 # Configuration of a custom SMS gateway
 
