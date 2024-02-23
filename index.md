@@ -4,11 +4,11 @@ layout: home
 
 hero:
   name: "Powerlynx"
-  text: "Documentation"
+  text: "Knowledge Base"
   image:
     src: /powerlynx-logo.png
     alt: Powerlynx logo
-  tagline: Maximize your revenue by monetizing your Wi-Fi with Powerlynx.
+  tagline: Explore our guides and examples to integrate Powerlynx.
   actions:
     - theme: alt
       text: Get started
