@@ -52,10 +52,12 @@ add dst-host=*.fontawesome.com*
 add dst-host=*arcot.com*
 add dst-host=*.digitaloceanspaces.com
 add dst-host=*stripe*
+add dst-host=*.akamaiedge.net
 add dst-host=*gstatic*
-add dst-host="*apple-pay-gateway*"
-add dst-host="*pay.google.com*"
-add dst-host="*pay.sandbox.google.com*"
+add dst-host=*apple-pay-gateway*
+add dst-host=hcaptcha.com
+add dst-host=*.google.com
+add dst-host=*betacdn.net
 add dst-host=*.powerlynx.app
 ```
 
