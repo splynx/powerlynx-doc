@@ -6,7 +6,7 @@ To set up the Payat integration in Powerlynx, ensure that under `Config/System/L
 
 ## Configuration
 
-First of all, you should contact the Pay@ team with a request indicating that you plan to use Pay@ in Powerlynx. They will create an account for you that can accept payments from your Powerlynx account. You should receive the following credentials: Client ID, Client Secret, Prefix, and Merchant Name. Once you have these values, you can navigate to `Config/Finance/Payment gateways/Pay@` and enter them into the corresponding fields:
+First of all, you should contact the Pay@ team (**carel@payat.co.za**) with a request indicating that you plan to use Pay@ in Powerlynx. They will create an account for you that can accept payments from your Powerlynx account. You should receive the following credentials: Client ID, Client Secret, Prefix, and Merchant Name. Once you have these values, you can navigate to `Config/Finance/Payment gateways/Pay@` and enter them into the corresponding fields:
 
 ![Payat configs](images/payat-configs.png){data-zoomable}
 
@@ -34,7 +34,15 @@ After clicking on the "Card" option, the customer will be redirected to the page
 
 ![Payat payment](images/payat_card.jpeg){data-zoomable}
 
-## Networking: Walled Garden
+## Networking: Walled Garden and firewall
+
+To integrate Pay@, you need to make a minor adjustment to your firewall. Simply duplicate the selected firewall rules twice and change the Dst.Port to 9443 and 7447:
+
+![Payat firewall default rules](images/payat_firewall_copy.png){data-zoomable}
+
+Below is a demonstration of this process in a GIF:
+
+![Payat firewall](images/payat_firewall.gif){data-zoomable}
 
 Another crucial step is to configure the allow list of hosts on your hotspot. For instance, if you've connected a Mikrotik hotspot using [this manual](https://docs.powerlynx.app/networking/mikrotik.html), you now need to add a list of allowed hosts related to Payat. This allows your customers to be redirected to Payat pages without accessing the rest of the internet. You can find more about Mikrotik Walled Garden [here](https://wiki.mikrotik.com/wiki/Manual:IP/Hotspot/Walled_Garden).
 
