@@ -30,9 +30,7 @@ export default defineConfig({
             { text: 'SMS', link: '/system/sms.md' },
           ] },
           { text: 'Finance', link: '/finance/main.md', items: [
-            { text: 'Stripe', link: '/finance/stripe.md' },
-            { text: 'Payat', link: '/finance/payat.md' },
-            
+            { text: 'Stripe', link: '/finance/stripe.md' }
           ] }
         ]
       }
