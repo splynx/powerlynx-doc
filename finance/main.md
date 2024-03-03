@@ -11,3 +11,4 @@ There is one payment option that is always available - "Login using voucher code
 To configure the desired payment gateway, click on the button under the "Actions" section. You need to "connect" Powerlynx with your payment gateway to accept payments in Powerlynx using your payment gateway's services. Generally, each payment gateway offers integration options with third-party software. For this purpose, they provide you with the credentials required for connecting with third-party software. You'll find the list of available payment gateway integrations in Powerlynx below, along with instructions on how to connect them.
 
 ## [Stripe](stripe.md)
+## [Paypal](paypal.md)
