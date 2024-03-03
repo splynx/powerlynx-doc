@@ -12,3 +12,4 @@ To configure the desired payment gateway, click on the button under the "Actions
 
 ## [Stripe](stripe.md)
 ## [Paypal](paypal.md)
+## [Payfast](payfast.md)
