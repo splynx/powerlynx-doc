@@ -58,6 +58,7 @@ add dst-host=*apple-pay-gateway*
 add dst-host=hcaptcha.com
 add dst-host=*.google.com
 add dst-host=*betacdn.net
+add dst-host=*pay*apple*
 add dst-host=*.powerlynx.app
 ```
 

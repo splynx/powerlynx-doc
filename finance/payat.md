@@ -2,7 +2,9 @@
 
 By default, you can accept payments in Powerlynx using the [Payat payment system](https://www.payat.co.za/). Payat is supported only in South Africa.
 
-To set up the Payat integration in Powerlynx, ensure that under `Config/System/Localization`, you've selected South Africa
+They offer a wide variety of payment methods, including credit card payments, 1Voucher and more.
+
+To set up the Payat integration in Powerlynx, ensure that under `Config/System/Localization`, South Africa is selected.
 
 ## Configuration
 
