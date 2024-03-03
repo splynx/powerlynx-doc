@@ -26,16 +26,6 @@ The next crucial step is to enable Payat for a specific location. Navigate to Lo
 
 If it's disabled, your clients will not have the option to pay with Payat.
 
-## Buying a voucher with Payat
-
-Now, your customers can buy a voucher on a splash page using Payat by selecting this payment method on a splash page:
-
-![Payat payment](images/pay_payat.jpeg){data-zoomable}
-
-After clicking on the "Card" option, the customer will be redirected to the page, where they should provide the credit card details to complete the purchase:
-
-![Payat payment](images/payat_card.jpeg){data-zoomable}
-
 ## Networking: Walled Garden and firewall
 
 To integrate Pay@, you need to make a minor adjustment to your firewall. Simply duplicate the selected firewall rules twice and change the Dst.Port to 9443 and 7447:
@@ -72,3 +62,13 @@ add dst-host=*.powerlynx.app
 ```
 
 It might be useful to visit our forum, especially [this topic](https://forum.powerlynx.app/t/mikrotik-walled-garden/19), to discuss all questions related to the walled garden.
+
+## Buying a voucher with Payat
+
+Now, your customers can buy a voucher on a splash page using Payat by selecting this payment method on a splash page:
+
+![Payat payment](images/pay_payat.jpeg){data-zoomable}
+
+After clicking on the "Card" option, the customer will be redirected to the page, where they should provide the credit card details to complete the purchase:
+
+![Payat payment](images/payat_card.jpeg){data-zoomable}
