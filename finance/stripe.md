@@ -30,14 +30,6 @@ The next crucial step is to enable Stripe for a specific location. Navigate to L
 
 If it's disabled, your clients will not have the option to pay with Stripe.
 
-## Buying a voucher with Stripe
-
-Now, your customers can buy a voucher on a splash page using Stripe:
-
-![Stripe payment](images/splash_page_stripe.jpeg){data-zoomable}
-
-After clicking on the "Stripe" option, the customer will be redirected to the Stripe page, where they can select their desired payment method, such as credit card, Apple Pay, or Google Pay, etc.
-
 ## Networking: Walled Garden
 
 Another crucial step is to configure the allow list of hosts on your hotspot. For instance, if you've connected a Mikrotik hotspot using [this manual](https://docs.powerlynx.app/networking/mikrotik.html), you now need to add a list of allowed hosts related to Stripe. This allows your customers to be redirected to Stripe pages without accessing the rest of the internet. You can find more about Mikrotik Walled Garden [here](https://wiki.mikrotik.com/wiki/Manual:IP/Hotspot/Walled_Garden).
@@ -63,3 +55,11 @@ add dst-host=*.powerlynx.app
 ```
 
 It might be useful to visit our forum, especially [this topic](https://forum.powerlynx.app/t/mikrotik-walled-garden/19), to discuss all questions related to the walled garden.
+
+## Buying a voucher with Stripe
+
+Now, your customers can buy a voucher on a splash page using Stripe:
+
+![Stripe payment](images/splash_page_stripe.jpeg){data-zoomable}
+
+After clicking on the "Stripe" option, the customer will be redirected to the Stripe page, where they can select their desired payment method, such as credit card, Apple Pay, or Google Pay, etc.
