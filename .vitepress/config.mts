@@ -32,7 +32,8 @@ export default defineConfig({
           { text: 'Finance', link: '/finance/main.md', items: [
             { text: 'Stripe', link: '/finance/stripe.md' },
             { text: 'Paypal', link: '/finance/paypal.md' },
-            { text: 'Payfast', link: '/finance/payfast.md' }
+            { text: 'Payfast', link: '/finance/payfast.md' },
+            { text: 'Payat', link: '/finance/payat.md' },
           ] }
         ]
       }
