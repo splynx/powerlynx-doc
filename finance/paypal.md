@@ -37,16 +37,6 @@ The next crucial step is to enable PayPal for a specific location. Navigate to L
 
 If disabled, customers will not have the option to pay with PayPal.
 
-## Buying a voucher with PayPal
-
-Now, your customers can buy a voucher on a splash page using PayPal. 
-
-![PayPal payment](images/paypal_payment.jpg){data-zoomable}
-
-After that your customers can log in to PayPal using own account or another option - create new one to make a payment.
-
-![PayPal redirect](images/paypal_redirect.jpg){data-zoomable}
-
 ## Networking: Walled Garden
 
 Another crucial step is to configure the allow list of hosts on your hotspot. For instance, if you've connected a Mikrotik hotspot using this [manual](https://docs.powerlynx.app/networking/mikrotik.html), you now need to add a list of allowed hosts related to PayPal. This allows your customers to be redirected to PayPal pages without accessing the rest of the internet. You can find more about Mikrotik Walled Garden [here](https://wiki.mikrotik.com/wiki/Manual:IP/Hotspot/Walled_Garden).
@@ -62,3 +52,13 @@ add dst-host=*.powerlynx.app
 add dst-host=*.akamaiedge.net
 ```
 It might be useful to visit our forum, especially [this topic](https://forum.powerlynx.app/t/mikrotik-walled-garden/19), to discuss all questions related to the walled garden.
+
+## Buying a voucher with PayPal
+
+Now, your customers can buy a voucher on a splash page using PayPal. 
+
+![PayPal payment](images/paypal_payment.jpg){data-zoomable}
+
+After that your customers can log in to PayPal using own account or another option - create new one to make a payment.
+
+![PayPal redirect](images/paypal_redirect.jpg){data-zoomable}
