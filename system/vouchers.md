@@ -80,3 +80,26 @@ There are several voucher settings that can be modified. You can find these unde
 * **Voucher code length** - Define the length of a voucher's code;
 
 * **Voucher code available characters** - Choose the set of characters to be used in generating a voucher's code. For example, to make your voucher codes purely numerical, remove all letters and leave only numbers, like `1234567890`.
+
+
+### Vouchers export
+
+In Powerlynx, you can generate a series, export it, and then print. To do this, go to `Vouchers/Series`, generate a series, and click on the "Export" button under the desired series:
+
+![Vouchers-Export](images/vouchers_export_format.png){data-zoomable}
+
+Here, you can select the format (PDF, CSV) and choose the template for the PDF format. After that, click on the "Export" button. This action will initiate a process to create a file. Once the file is ready, you will see a new button appear under the series.
+
+![Vouchers-Download](images/vouchers_download_button.png){data-zoomable}
+
+To download a file, please click on the button provided.
+
+There are two themes that you can choose from when saving a file in PDF format.
+
+**Dark theme**
+
+![Vouchers-dark-theme](images/vouchers_dark_theme.png){data-zoomable}
+
+**Light theme**
+
+![Vouchers-light-theme](images/vouchers_light_theme.png){data-zoomable}
