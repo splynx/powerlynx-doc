@@ -34,6 +34,7 @@ export default defineConfig({
             { text: 'Paypal', link: '/finance/paypal.md' },
             { text: 'Payfast', link: '/finance/payfast.md' },
             { text: 'Payat', link: '/finance/payat.md' },
+            { text: 'Login with voucher code', link: '/finance/login_with_voucher_code.md' },
           ] }
         ]
       }
