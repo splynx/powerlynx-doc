@@ -2,7 +2,15 @@
 outline: deep
 ---
 
-# Connect Mikrotik hotspot with Powerlynx
+# How to connect your Mikrotik with Powerlynx:
+
+<br>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/L3ggxtGOnbA?si=gyl6qpr6FgAF8pXP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br><br>
+
+# Connect Mikrotik hotspot with Powerlynx (text version)
 
 In this manual, we will guide you on how to add a Mikrotik router as a hotspot in Powerlynx.
 In our example, we are using a MikroTik router with wireless interfaces. Customers will connect to the Wi-Fi provided by the router.
