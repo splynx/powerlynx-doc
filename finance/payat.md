@@ -67,7 +67,7 @@ It might be useful to visit our forum, especially [this topic](https://forum.pow
 
 Now, your customers can buy a voucher on a splash page using Payat by selecting this payment method on a splash page:
 
-![Payat payment](images/pay_payat.jpeg){data-zoomable}
+![Payat payment](images/pay_payat.png){data-zoomable}
 
 After clicking on the "Card" option, the customer will be redirected to the page, where they should provide the credit card details to complete the purchase:
 
