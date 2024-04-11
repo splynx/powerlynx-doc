@@ -33,6 +33,6 @@ features:
     details: You need not worry about managing your own server; we will take care of it for you.
   - title: An assortment of graphs and reports. ℹ️
     details: Gain insights into your top-performing products, revenue trends, peak traffic days, and more.
-  - title: Customer statistics 🔢
-    details: Analyze usage statistics for your customers to understand their data consumption and preferred payment options.
+  - title: Adverts 🔢
+    details: Launch advertising campaigns targeted at specific locations.
 ---

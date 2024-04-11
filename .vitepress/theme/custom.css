@@ -6,3 +6,8 @@
 .medium-zoom-image {
     z-index: 101;
 }
+
+img[src*="#mediumsize"] {
+    max-height: 600px;
+    margin: 0 auto;
+ }
