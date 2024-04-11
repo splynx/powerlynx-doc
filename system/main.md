@@ -6,4 +6,4 @@
 ### [Data plans](data-plans.md)
 ### [Vouchers](vouchers.md)
 ### [SMS](sms.md)
-### [Adverts](adverts.md)
+### [Ad campaigns](adverts.md)
