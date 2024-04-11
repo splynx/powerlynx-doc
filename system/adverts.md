@@ -24,7 +24,7 @@ Once created, you will see the parameters that can be modified and the uploaded 
 
 Let's see what the user see after the connecting to a WiFi:
 
-![Video ad](images/video_a.gif){data-zoomable}
+![Video ad](images/video_a.gif#mediumsize){data-zoomable}
 
 As you can see, the video ad was displayed to the customer after selecting a plan, with no option to skip it. The customer must watch the video in its entirety to gain access to the internet.
 
@@ -34,7 +34,7 @@ If you want to add an image ad, you'll need to set up the ad duration in seconds
 
 In the same manner as with video ads, after connecting to Wi-Fi, the customer will need to wait for 6 seconds before gaining access to the internet:
 
-![Image ad example](images/image_a_example.jpeg){data-zoomable}
+![Image ad example](images/image_a_example.jpeg#mediumsize){data-zoomable}
 
 You can view your campaign statistics below this counter:
 
