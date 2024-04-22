@@ -4,7 +4,7 @@ outline: deep
 
 # Adverts
 
-This module is a vital component of our system, aimed at boosting user engagement by presenting video and image ads to end users immediately after they connect to the Wi-Fi network. The Adverts module provides advertisers with a distinctive opportunity to effectively reach their target audience and track the number of times an ad is displayed to customers. Within this documentation, you'll discover comprehensive guidance on setting up and managing ad campaigns, analyzing performance metrics, and optimizing ad delivery to maximize impact.
+This module is a vital component of our system, aimed at boosting user engagement by presenting video and image ads to end users once they connect to the Wi-Fi network. The Adverts module provides advertisers with a distinctive opportunity to effectively reach their target audience and track the number of times an ad is displayed to customers. Within this documentation, you'll discover comprehensive guidance on setting up and managing ad campaigns, analyzing performance metrics, and optimizing ad delivery to maximize impact.
 
 # Create an ad campaign
 
