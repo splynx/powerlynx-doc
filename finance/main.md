@@ -14,5 +14,4 @@ To configure the desired payment gateway, click on the button under the "Actions
 ## [Paypal](paypal.md)
 ## [Payfast](payfast.md)
 ## [Payat](payat.md)
-## [Reviopay](reviopay.md)
 ## [Login using voucher code](login_with_voucher_code.md)
