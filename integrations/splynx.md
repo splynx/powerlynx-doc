@@ -36,6 +36,13 @@ In Powerlynx, navigate to `Config/System/Integrations/Splynx` and click the "Edi
 
 * **ISP name** - The name of your ISP. This will be visible to customers on the splash page when they click on `I'm a customer of {ISP name}`.
 
+ℹ️ On your hotspot, add your Splynx URL to the Walled Garden list. You can add it to your MikroTik router using this command:
+
+```
+/ip hotspot walled-garden add dst-host=yoursplynx.com
+```
+If you use another vendor, add this host to the Walled Garden list using the method you know.
+
 Now, go to Locations, select the desired location, and then select the Payment gateways tab. You will see this integration listed:
 
 ![Powerlynx pg](images/location.png){data-zoomable}
