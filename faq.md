@@ -28,3 +28,18 @@ In this video, the customer demonstrates connecting to the WiFi and purchasing i
 ### Do I need to connect SMS gateways to Powerlynx in order to send SMS?
 
 Powerlynx does not come with an in-built SMS gateway. You'll need to connect third-party SMS gateways to Powerlynx. For more information on supported SMS gateways, please refer to the [forum](https://forum.powerlynx.app/t/sms-gateways-in-powerlynx/40) and [documentation](https://docs.powerlynx.app/system/sms.html).
+
+
+### Can I connect my access point to Powerlynx?
+
+Yes, you can connect your access point (AP) to Powerlynx. However, you need to have a hotspot controller, such as a Mikrotik router or Cambium router.
+
+The general requirement for a hotspot controller is support for RADIUS and hotspot functionalities.
+
+Mikrotik routers are relatively inexpensive and make excellent hotspot controllers. Here’s how you can set it up:
+
+1. Connect the Hotspot Controller to Powerlynx: Follow the detailed guide available at [How to connect your Mikrotik with Powerlynx](https://docs.powerlynx.app/networking/mikrotik.html).
+
+2. Connect APs to the Controller: After connecting your Mikrotik to Powerlynx, you can connect your APs (e.g., TP-Link, Ubiquiti) to the Mikrotik router using VLANs (for example).
+
+3. Set Up Hotspot Server on Each VLAN Interface: Configure a hotspot server on each VLAN interface to efficiently manage and monetize your WiFi network through Powerlynx.
