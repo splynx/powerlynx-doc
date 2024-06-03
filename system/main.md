@@ -8,3 +8,4 @@
 ### [SMS](sms.md)
 ### [Ad campaigns](adverts.md)
 ### [Reports](reports.md)
+### [Notifications](notifications.md)
