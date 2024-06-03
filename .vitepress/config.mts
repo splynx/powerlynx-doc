@@ -29,6 +29,7 @@ export default defineConfig({
             { text: 'Vouchers', link: '/system/vouchers.md' },
             { text: 'SMS', link: '/system/sms.md' },
             { text: 'Adverts', link: '/system/adverts.md' },
+            { text: 'Reports', link: '/system/reports.md' },
           ] },
           { text: 'Finance', link: '/finance/main.md', items: [
             { text: 'Stripe', link: '/finance/stripe.md' },

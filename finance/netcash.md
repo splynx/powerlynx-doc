@@ -142,3 +142,5 @@ Customers can now buy a voucher on a splash page using Netcash.
 ![Netcash select](images/netcash_pay.jpeg){data-zoomable}
 
 After selecting "Netcash," the customer will be redirected to the Netcash page to complete the payment.
+
+Control the payment methods available for your customers in your Netcash account under `Account Profile -> NetConnector -> Pay Now`. You can enable or disable various payment methods such as credit card, bank EFT, 1Voucher, etc.
