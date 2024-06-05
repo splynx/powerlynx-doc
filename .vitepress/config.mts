@@ -29,6 +29,8 @@ export default defineConfig({
             { text: 'Vouchers', link: '/system/vouchers.md' },
             { text: 'SMS', link: '/system/sms.md' },
             { text: 'Adverts', link: '/system/adverts.md' },
+            { text: 'Reports', link: '/system/reports.md' },
+            { text: 'Notifications', link: '/system/notifications.md' },
           ] },
           { text: 'Finance', link: '/finance/main.md', items: [
             { text: 'Stripe', link: '/finance/stripe.md' },
@@ -36,6 +38,7 @@ export default defineConfig({
             { text: 'Payfast', link: '/finance/payfast.md' },
             { text: 'Payat', link: '/finance/payat.md' },
             { text: 'Login with voucher code', link: '/finance/login_with_voucher_code.md' },
+            { text: 'Netcash', link: '/finance/netcash.md' },
           ] },
           { text: 'Integrations', link: '/integrations/main.md', items: [
             { text: 'Splynx', link: '/integrations/splynx.md' },
