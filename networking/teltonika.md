@@ -7,22 +7,9 @@ outline: deep
 In this manual, we will guide you on how to add a Teltonika router as a hotspot in Powerlynx.
 In our example, we are using a Teltonika router with wireless interfaces. Customers will connect to the Wi-Fi provided by the router.
 
-## Create new NAS type in Powerlynx
+Navigate to Locations, select the desired location, open the "Hotspots" tab and click on the "Add" button. Select NAS type = Teltonika and configure the rest of parameters according to your needs:
 
-Navigate to `Config/System/NAS types` and click the "Add" button to create a new NAS type:
-
-![Create NAS type](images/create_nas_type.png){data-zoomable}
-
-Name it as you want, keeping the accounting interval and accounting interval factor as default values.
-
-For Rate-Limit attributes, use the following values:
-
-```
-WISPr-Bandwidth-Max-Up = {{ mul .tx_rate_limit 1024 }}
-WISPr-Bandwidth-Max-Down = {{ mul .rx_rate_limit 1024 }}
-```
-
-and save it.
+![Teltonika add](images/add_teltonika.png){data-zoomable}
 
 ## Configure your device
 
