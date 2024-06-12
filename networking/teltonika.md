@@ -25,6 +25,16 @@ Also make sure the device is on the latest firmware.
 
 ![Teltonika latest firmware](images/teltonika_latest_os.png){data-zoomable}
 
+Go to `System/Maintenance/CLI` page and login to the CLI terminal. Use `root` as a login and your administrator password as a password. Use these commands to enable Radius incomming port:
+```
+uci set chilli.@chilli[0].coaport='3799'
+uci set chilli.@chilli[0].coanoipcheck='1'
+uci commit
+/etc/init.d/chilli restart
+```
+
+![Teltonika CLI commands](images/teltonika_cli_commands.png){data-zoomable}
+
 Then make sure wireless has no password and no encryption:
 
 ![Teltonika no encryption](images/teltonika_no_encryption.png){data-zoomable}
@@ -51,13 +61,15 @@ set the public and private keys as well as IP from the Powerlynx instance
 
 Add a Peer and configure it with the public key from Powerlynx (input here)
 
-![Teltonika wireguard peer](images/teltonika_wireguard_peer.png){data-zoomable}
+![Teltonika wireguard peer](images/teltonika_add_wireguard_4.png){data-zoomable}
+
+![Teltonika wireguard peer port](images/teltonika_add_wireguard_5.png){data-zoomable}
 
 Use this public key: `lPYDyIwk5X4tyUMNT9ny/nyPSyHwk31mzm2ahOH7iV0=`
 
 And all other values as per the screenshots above.
 
-Confirm the VPN is up by using the Diagnostics tool to ping `172.16.0.1`:
+Confirm the VPN is up by using the Diagnostics tool located on the `System/Maintenance/Troubleshoot` page to ping `172.16.0.1`:
 
 ![Teltonika wireguard ping](images/teltonika_ping.png){data-zoomable}
 
