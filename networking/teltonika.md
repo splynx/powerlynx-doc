@@ -7,17 +7,13 @@ outline: deep
 In this manual, we will guide you on how to add a Teltonika router as a hotspot in Powerlynx.
 In our example, we are using a Teltonika router with wireless interfaces. Customers will connect to the Wi-Fi provided by the router.
 
-Navigate to Locations, select the desired location, open the "Hotspots" tab and click on the "Add" button. Select NAS type = Teltonika and configure the rest of parameters according to your needs:
-
-![Teltonika add](images/add_teltonika.png){data-zoomable}
-
 ## Configure your device
 
-Then, open your Teltonika router configs and switch the mode to "Advanced":
+Open your Teltonika router configs and switch the mode to "Advanced":
 
 ![Teltonika advanced settings](images/teltonika_advanced_settings.png){data-zoomable}
 
-After that, install the hotspot package `System/Package manager/Packages` menu:
+After that, install the hotspot package on the `System/Package manager/Packages` page
 
 ![Teltonika install hotspot](images/teltonika_install_hotspot.png){data-zoomable}
 
@@ -25,7 +21,7 @@ Also make sure the device is on the latest firmware.
 
 ![Teltonika latest firmware](images/teltonika_latest_os.png){data-zoomable}
 
-Go to `System/Maintenance/CLI` page and login to the CLI terminal. Use `root` as a login and your administrator password as a password. Use these commands to enable Radius incomming port:
+Go to the `System/Maintenance/CLI` page and log in to the CLI terminal. Use `root` as the login and your administrator password as the password. Use these commands to enable the Radius incoming port:
 ```
 uci set chilli.@chilli[0].coaport='3799'
 uci set chilli.@chilli[0].coanoipcheck='1'
@@ -93,22 +89,27 @@ Under General:
 4. Set Landing page to External
 5. Enable Password encoding
 6. Set Landing page address to `https://powerlynx_domain/redirect-flow` where powerlynx_domain should be replaced by your Powerlynx domain
-7. Set Success page to custom
-8. Set Custom URL to `https://powerlynx_domain/redirect-flow/success` where powerlynx_domain should be replaced by your Powerlynx domain
+7. Set Success page to `Original URL`
 
 ![Teltonika hotspot general](images/teltonika_hotspot_general.png){data-zoomable}
 
-![Teltonika hotspot genera 2](images/teltonika_general_2.png){data-zoomable}
+![Teltonika hotspot general 2](images/teltonika_general_2.png){data-zoomable}
 
 After that, In the Radius tab:
 
-1. set Radius server #1 to `172.16.0.1`
-2. Set NAS identifier to `AP-HOSTNAME`
+1. Set Radius server #1 to `172.16.0.1`
+2. Put a unique value in the NAS identifier field that will be used to match the router with a location and a splash page in Powerlynx, for instance, `teltonika`. This value should be inserted into Powerlynx's location SSIDs and splash page SSIDs fields.
 3. Set Radius secret key to the key used in Powerlynx under Locations - Hotspot
 
 ![Teltonika radius hotspot](images/teltonika_radius_2.png){data-zoomable}
 
 ![Powerlynx hotspot](images/powerlynx_hotspot.png){data-zoomable}
+
+Add the NAS identifier into the SSIDs field under your location and under your splash page:
+
+![Powerlynx location](images/powerlynx_location_ssid.png){data-zoomable}
+
+![Powerlynx splash page](images/powerlynx_splash_page.png){data-zoomable}
 
 ## Walled garden
 
@@ -122,6 +123,4 @@ In the walled garden section set:
 Also set any other required walled garden entries that might be required by your payment gateway/provider (see the individual payment gateways [here](https://docs.powerlynx.app/finance/main.html)
 
 ![Teltonika walled garden](images/teltonika_walled_garden.png){data-zoomable}
-
-## Set the hotspot identifier into the location and splash page
 
