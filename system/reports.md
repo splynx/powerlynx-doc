@@ -33,3 +33,9 @@ Allows you to export customer sessions to see the usage. The exported data inclu
 Export vouchers with different statuses, locations, and data plans. This data can be useful to see how many vouchers were generated from a specific data plan, and more.
 
 The exported data includes: voucher ID, customer name, serie, full code, status, price, location, activation time, creation time, valid until, data limit, online time limit, data usage, online time usage and more.
+
+## Customers export
+
+Export customers filtered by different statuses and their join dates. Sometimes, you need to export your customer database with all the collected data, and this feature will help you do that.
+
+The exported data includes all customer information and also the last time the customer was online, when the last purchase was made, and more.

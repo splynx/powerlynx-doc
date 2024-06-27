@@ -36,5 +36,13 @@ To edit a hotspot, simply find it in the list of hotspots and click the "Edit" b
 ![Edit hotspot](images/edit-hotspot.png){data-zoomable}
 
 ::: warning
-Exercise caution when changing hotspot parameters, as incorrect modifications can disrupt the connection between the router and Powerlynx.
+Be careful when changing hotspot parameters, as incorrect modifications can disrupt the connection between the router and Powerlynx.
 :::
+
+Here, you can change some parameters and view the connection status indicator:
+
+![Ping ok](../networking/images/ping_ok.png){data-zoomable}
+
+![Ping error](../networking/images/ping_error.png){data-zoomable}
+
+When the ping status is "Unreachable," it means that this hotspot can't connect to Powerlynx, and all customers coming from this hotspot will fail to connect. In this case, please use [our troubleshooting guide](https://docs.powerlynx.app/networking/mikrotik_troubleshooting.html).

@@ -20,6 +20,7 @@ export default defineConfig({
             {text: 'Mikrotik Hotstpot', link: '/networking/mikrotik.md'},
             {text: 'Mikrotik Troubleshooting', link: '/networking/mikrotik_troubleshooting.md'},
             {text: 'Cambium Hotstpot', link: '/networking/cambium.md'},
+            {text: 'Teltonika Hotstpot', link: '/networking/teltonika.md'},
           ] },
           { text: 'System', items: [
             { text: 'Locations', link: '/system/locations.md' },
