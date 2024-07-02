@@ -39,6 +39,7 @@ export default defineConfig({
             { text: 'Payfast', link: '/finance/payfast.md' },
             { text: 'Login with voucher code', link: '/finance/login_with_voucher_code.md' },
             { text: 'Netcash', link: '/finance/netcash.md' },
+            { text: 'Safaricom MPESA', link: '/finance/safaricom-mpesa.md' },
           ] },
           { text: 'Integrations', link: '/integrations/main.md', items: [
             { text: 'Splynx', link: '/integrations/splynx.md' },
