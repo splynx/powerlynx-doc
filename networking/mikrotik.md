@@ -126,6 +126,8 @@ Pay attention to:
 
 * **Timeout** - recommended value 3000 or more;
 
+* **Require Message Auth** - "no"
+
 * **Src.Address** -  IP address of the router in Powerlynx. It must be the same IP address added in step #2 under IP/Addresses.
 
 **6. Walled Garden**

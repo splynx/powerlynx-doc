@@ -47,3 +47,7 @@ Do the same with the NAS IP on your hotspot; copy it and paste it into the Src.A
 ![radius-timeout](images/radius-timeout.png){data-zoomable}
 
 Sometimes, it is necessary to set the timeout value to 20000 if the network delay is high. Before changing this value, ensure that step #2 has been checked.
+
+**10.** RADIUS server "Require Message Auth" option - keep this option with the "no" value as it can brake RADIUS authentication process:
+
+![radius-server](images/radius-server.png){data-zoomable}
