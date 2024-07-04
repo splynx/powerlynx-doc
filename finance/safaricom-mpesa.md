@@ -14,7 +14,7 @@ You need to obtain the "Consumer key" and "Consumer secret" values from MPESA:
 
 You will also need your shortcode. A shortcode is the unique number allocated to a pay bill or buy goods organization through which they can receive customer payments. It could be a Pay Bill, Buy Goods, or Till Number.
 
-Additionally, you need to know your "Lipa Na Mpesa Online Passkey." You can find this value in the "APIs" section by selecting the "M-PESA Express" option and clicking the "Simulate" button. In the simulator, select your app, and at the bottom of the simulator window, you will find the "PassKey" value — save it somewhere.
+Additionally, you need to know your "Lipa Na Mpesa Online Passkey." 
 
 It is recommended to reach out to MPESA API support to clarify which credentials to use with the Powerlynx app. They will provide guidance if you are unsure.
 
