@@ -141,6 +141,12 @@ Customers can now buy a voucher on a splash page using Netcash.
 
 ![Netcash select](images/netcash_pay.jpeg){data-zoomable}
 
-After selecting "Netcash," the customer will be redirected to the Netcash page to complete the payment.
+After selecting "Netcash," the customer will be redirected to the Netcash page to complete the payment:
+
+![Netcash payment](images/netcash_payment.gif#mediumsize){data-zoomable}
 
 Control the payment methods available for your customers in your Netcash account under `Account Profile -> NetConnector -> Pay Now`. You can enable or disable various payment methods such as credit card, bank EFT, [1Voucher](https://www.netcash.co.za/pay-now/flash-1voucher/), etc.
+
+Payment captured by Powerlynx are stored under `Finance/Payments`:
+
+![Netcash payments list](images/netcash_payments_list.png){data-zoomable}
