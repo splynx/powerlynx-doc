@@ -21,24 +21,6 @@ Also make sure the device is on the latest firmware.
 
 ![Teltonika latest firmware](images/teltonika_latest_os.png){data-zoomable}
 
-Go to the `System/Maintenance/CLI` page and log in to the CLI terminal. Use `root` as the login and your administrator password as the password. Use these commands to enable the Radius incoming port:
-```
-uci set chilli.@chilli[0].coaport='3799'
-uci set chilli.@chilli[0].coanoipcheck='1'
-uci commit
-/etc/init.d/chilli restart
-```
-
-![Teltonika CLI commands](images/teltonika_cli_commands.png){data-zoomable}
-
-Then make sure wireless has no password and no encryption:
-
-![Teltonika no encryption](images/teltonika_no_encryption.png){data-zoomable}
-
-![Teltonika no encryption 2](images/teltonik_no_encryption_2.png){data-zoomable}
-
-![Teltonika no password](images/teltonika_no_password.png){data-zoomable}
-
 ## Connect your device with Powerlynx using Wireguard. 
 
 Create a new hotspot in Powerlynx with NAS type set to Teltonika and connection type set to WireGuard.
@@ -110,6 +92,24 @@ Add the NAS identifier into the SSIDs field under your location and under your s
 ![Powerlynx location](images/powerlynx_location_ssid.png){data-zoomable}
 
 ![Powerlynx splash page](images/powerlynx_splash_page.png){data-zoomable}
+
+Go to the `System/Maintenance/CLI` page and log in to the CLI terminal. Use `root` as the login and your administrator password as the password. Use these commands to enable the Radius incoming port:
+```
+uci set chilli.@chilli[0].coaport=3799
+uci set chilli.@chilli[0].coanoipcheck=1
+uci commit
+/etc/init.d/chilli restart
+```
+
+![Teltonika CLI commands](images/teltonika_cli_commands.png){data-zoomable}
+
+Then make sure wireless has no password and no encryption:
+
+![Teltonika no encryption](images/teltonika_no_encryption.png){data-zoomable}
+
+![Teltonika no encryption 2](images/teltonik_no_encryption_2.png){data-zoomable}
+
+![Teltonika no password](images/teltonika_no_password.png){data-zoomable}
 
 ## Walled garden
 
