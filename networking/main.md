@@ -4,3 +4,4 @@
 ### [Mikrotik troubleshooting](mikrotik_troubleshooting.md)
 ### [Create Cambium Hotstpot](cambium.md)
 ### [Create Teltonika Hotstpot](teltonika.md)
+### [Create Cudy Hotstpot](cudy.md)
