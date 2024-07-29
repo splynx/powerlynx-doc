@@ -11,7 +11,7 @@ Powerlynx is fully cloud-based software. We do not offer the option to install i
 Yes, we offer a 21-day trial so you can evaluate the Powerlynx software and determine if it suits your needs. During your license period, you can connect a maximum of 10 online customers.
 
 ### Pricing
-You pay $25 for every 100 online customers. For example, if you plan to host 800 online customers, your cost will be $200. Your system can accommodate up to 810 online customers. Any additional customers beyond that limit will not be able to connect.
+Our entry-level license is $50 for 200 online customers. This means you can keep a maximum of 210 online customers in Powerlynx with this license. You can upgrade your license if needed. For example, if you plan to host 800 online customers, the cost will be $200, and your system can accommodate up to 810 online customers. Any additional customers beyond that limit will not be able to connect.
 
 ### What payment gateways do you support?
 We are continually adding new integrations with payment gateways worldwide. Currently, we support PayPal, Stripe, Payfast(South Africa), Netcash(South Africa) and Safaricom MPESA (Kenya).
