@@ -17,11 +17,11 @@ export default defineConfig({
         items: [
           { text: 'Get started', link: '/getstarted' },
           { text: 'Networking', items:[
-            {text: 'Mikrotik Hotstpot', link: '/networking/mikrotik.md'},
+            {text: 'Mikrotik Hotspot', link: '/networking/mikrotik.md'},
             {text: 'Mikrotik Troubleshooting', link: '/networking/mikrotik_troubleshooting.md'},
-            {text: 'Cambium Hotstpot', link: '/networking/cambium.md'},
-            {text: 'Teltonika Hotstpot', link: '/networking/teltonika.md'},
-            {text: 'Cudy Hotstpot', link: '/networking/cudy.md'},
+            {text: 'Cambium Hotspot', link: '/networking/cambium.md'},
+            {text: 'Teltonika Hotspot', link: '/networking/teltonika.md'},
+            {text: 'Cudy Hotspot', link: '/networking/cudy.md'},
           ] },
           { text: 'System', items: [
             { text: 'Locations', link: '/system/locations.md' },
