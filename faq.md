@@ -16,7 +16,7 @@ Yes, we offer a 21-day trial so you can evaluate the Powerlynx software and dete
 Our entry-level license is $50 for 200 online customers. This means you can keep a maximum of 210 online customers in Powerlynx with this license. You can upgrade your license if needed. For example, if you plan to host 800 online customers, the cost will be $200, and your system can accommodate up to 810 online customers. Any additional customers beyond that limit will not be able to connect.
 
 ### What payment gateways do you support?
-We are continually adding new integrations with payment gateways worldwide. Currently, we support PayPal, Stripe, Payfast(South Africa), Netcash(South Africa) and Safaricom MPESA (Kenya).
+We are continually adding new integrations with payment gateways worldwide. Currently, we support PayPal, Stripe, Payfast(South Africa), Netcash(South Africa) and Safaricom MPESA (Kenya). More about supported payment gateways you can find [here](https://docs.powerlynx.app/finance/main.html).
 
 ### What network devices do you support?
 By default, we support Mikrotik, Teltonika and Cambium network devices that can connect to Powerlynx using the RADIUS protocol. While it is possible to connect other devices through the RADIUS protocol, it may require some configuration adjustments.
