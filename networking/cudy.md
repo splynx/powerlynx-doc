@@ -1,7 +1,9 @@
 ---
 outline: deep
 ---
-ℹ️ℹ️ℹ️ Due to limitations in the Cudy firmware, Powerlynx supports only Cudy WR1300 devices with version 2.2.3 or newer installed. Other Cudy devices can be connected to Powerlynx, but the following features won't work: CoA (change speed) and PoD (disconnect the customer). It is possible to use session timeouts to disconnect clients, but this is not the most effective method.
+ℹ️ℹ️ℹ️ 
+Powerlynx supports only Cudy WR1300 devices with [version 2.2.3](https://www.cudy.com/pages/download-center/wr1300-3-0) or newer installed.
+Please reach out to `support@powerlynx.app` for support on any other models.
 
 # Connect Cudy hotspot with Powerlynx
 In this manual, we will guide you on how to add a Cudy router as a hotspot in Powerlynx.
