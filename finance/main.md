@@ -17,3 +17,4 @@ To configure the desired payment gateway, click on the button under the "Actions
 ## [Netcash](netcash.md)
 ## [Safaricom MPESA](safaricom-mpesa.md)
 ## [Xendit](xendit.md)
+## [DPO Pay](dpo.md)
