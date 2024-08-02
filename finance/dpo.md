@@ -6,7 +6,7 @@ To set up DPO integration in Powerlynx, ensure you've selected one of the follow
 
 ## Configuration
 
-Open your DPO account, navigate to `Settings -> Developers -> API Keys` and obtain your company token, service type. Copy these values and in Powerlynx, under `Config/Payment gateways/DPO Pay` fill in the "Company token" and "Service type" fields with previously copied vaues from DPO Pay account and select your currency in the "Currency" field.
+Open your DPO account, and obtain your company token, service type. Copy these values and in Powerlynx, under `Config/Payment gateways/DPO Pay` fill in the "Company token" and "Service type" fields with previously copied vaues from DPO Pay account and select your currency in the "Currency" field.
 
 Your config of this integration should be as following:
 
