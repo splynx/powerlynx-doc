@@ -41,6 +41,7 @@ export default defineConfig({
             { text: 'Login with voucher code', link: '/finance/login_with_voucher_code.md' },
             { text: 'Netcash', link: '/finance/netcash.md' },
             { text: 'Safaricom MPESA', link: '/finance/safaricom-mpesa.md' },
+            { text: 'Xendit', link: '/finance/xendit.md' },
           ] },
           { text: 'Integrations', link: '/integrations/main.md', items: [
             { text: 'Splynx', link: '/integrations/splynx.md' },
