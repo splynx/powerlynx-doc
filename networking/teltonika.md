@@ -116,9 +116,10 @@ Then make sure wireless has no password and no encryption:
 In the walled garden section set: 
 
 ```
-*.digitaloceanspaces.com 
-*.powerlynx.app
+one.powerlynx.app
+fra1.digitaloceanspaces.com
 ```
+Where `one.powerlynx.app` is your Powerlynx domain. Replace it with your URL.
 
 Also set any other required walled garden entries that might be required by your payment gateway/provider (see the individual payment gateways [here](https://docs.powerlynx.app/finance/main.html)
 
