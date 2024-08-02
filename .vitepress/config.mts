@@ -42,6 +42,7 @@ export default defineConfig({
             { text: 'Netcash', link: '/finance/netcash.md' },
             { text: 'Safaricom MPESA', link: '/finance/safaricom-mpesa.md' },
             { text: 'Xendit', link: '/finance/xendit.md' },
+            { text: 'DPO Pay', link: '/finance/dpo.md' },
           ] },
           { text: 'Integrations', link: '/integrations/main.md', items: [
             { text: 'Splynx', link: '/integrations/splynx.md' },
