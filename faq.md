@@ -45,3 +45,8 @@ Mikrotik routers are relatively inexpensive and make excellent hotspot controlle
 2. Connect APs to the Controller: After connecting your Mikrotik to Powerlynx, you can connect your APs (e.g., TP-Link, Ubiquiti) to the Mikrotik router using VLANs (for example).
 
 3. Set Up Hotspot Server on Each VLAN Interface: Configure a hotspot server on each VLAN interface to efficiently manage and monetize your WiFi network through Powerlynx.
+
+
+### What happens when the customer reaches the data package limit
+
+When a customer connects to WiFi, selects a 1GB plan, and reaches that 1GB limit, they will need to reconnect to the WiFi in order to select a new plan. The customer will not be automatically redirected to the plan selection page. To address this, we have developed [a feature that notifies your customer via SMS when they reach their traffic limit](https://docs.powerlynx.app/system/notifications.html#voucher-limit-notifications). You can configure it so that when 90% of the data is used, Powerlynx will send a notification to the customer, informing them that they will be disconnected soon and need to reconnect to purchase a new data package.
