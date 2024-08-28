@@ -39,3 +39,18 @@ The exported data includes: voucher ID, customer name, serie, full code, status,
 Export customers filtered by different statuses and their join dates. Sometimes, you need to export your customer database with all the collected data, and this feature will help you do that.
 
 The exported data includes all customer information and also the last time the customer was online, when the last purchase was made, and more.
+
+## Payments export
+
+Export payments filtered by different payment gateways, date, etc.
+
+# Reports scheduler
+
+Automate the report generation process with this feature. You can select the desired report, define the period for the data to be included, set the time for generation, and specify the email address for delivery.
+
+Use Case: Session Export. I want to export all sessions from the previous day and receive the report in the morning. Here’s how to set it up:
+
+![Sessions export](images/sessions_export_scheduler.gif#mediumsize){data-zoomable}
+
+
+
