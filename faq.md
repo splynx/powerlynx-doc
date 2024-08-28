@@ -61,4 +61,4 @@ In certain situations, you may need to provide a customer with a special-offer v
 4. Select an individual voucher.
 5. Assign it to the customer.
 
-![Assign voucher](images/assign_voucher.gif#mediumsize){data-zoomable}
+![Assign voucher](system/images/assign_voucher.gif#mediumsize){data-zoomable}
