@@ -50,3 +50,15 @@ Mikrotik routers are relatively inexpensive and make excellent hotspot controlle
 ### What happens when the customer reaches the data package limit
 
 When a customer connects to WiFi, selects a 1GB plan, and reaches that 1GB limit, they will need to reconnect to the WiFi in order to select a new plan. The customer will not be automatically redirected to the plan selection page. To address this, we have developed [a feature that notifies your customer via SMS when they reach their traffic limit](https://docs.powerlynx.app/system/notifications.html#voucher-limit-notifications). You can configure it so that when 90% of the data is used, Powerlynx will send a notification to the customer, informing them that they will be disconnected soon and need to reconnect to purchase a new data package.
+
+### Can I Assign a Voucher to a Customer Manually?
+
+In certain situations, you may need to provide a customer with a special-offer voucher that isn’t displayed on the splash page to prevent unauthorized use. For instance, employees might receive special vouchers for unlimited internet access. To assign a voucher manually:
+
+1. Create a data plan.
+2. Generate a series of vouchers from that plan.
+3. Open the voucher series.
+4. Select an individual voucher.
+5. Assign it to the customer.
+
+![Assign voucher](images/assign_voucher.gif#mediumsize){data-zoomable}
