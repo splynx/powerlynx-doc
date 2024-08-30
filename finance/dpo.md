@@ -30,12 +30,14 @@ To do this, you should access your router (in my case, Mikrotik), open the Termi
 /ip hotspot walled-garden
 add dst-host=*.digitaloceanspaces.com
 add dst-host=*.powerlynx.app
-add dst-host=stats.pusher.com
+add dst-host=*pusher*
 add dst-host=*.pusherapp.com
 add dst-host=secure.3gdirectpay.com
 add dst-host=assets.directpay.online
 add dst-host=www.gstatic.com
 add dst-host=www.google.com
+add dst-host=*elb.amazonaws.com
+add dst-host=*ipify*
 ```
 It might be useful to visit our forum, especially [this topic](https://forum.powerlynx.app/t/mikrotik-walled-garden/19), to discuss all questions related to the walled garden.
 
