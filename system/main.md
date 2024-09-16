@@ -9,3 +9,4 @@
 ### [Ad campaigns](adverts.md)
 ### [Reports](reports.md)
 ### [Notifications](notifications.md)
+### [Public status page](status-page.md)

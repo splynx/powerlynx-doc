@@ -31,8 +31,8 @@ features:
     details: Generate vouchers in Powerlynx, print them and sell them offline.
   - title: <a href="https://docs.powerlynx.app/faq.html#cloud-or-on-premises">A fully cloud-based solution</a> 🌥️
     details: You need not worry about managing your own server; we will take care of it for you.
-  - title: An assortment of graphs and reports. ℹ️
-    details: Gain insights into your top-performing products, revenue trends, peak traffic days, and more.
+  - title: <a href="https://docs.powerlynx.app/system/status-page.html">Public status page.</a> ℹ️
+    details: Provide your customers with a link to check their vouchers, usage, and statistics.
   - title: <a href="https://docs.powerlynx.app/system/adverts.html">Adverts</a> 🔢
     details: Launch advertising campaigns targeted at specific locations.
 ---
