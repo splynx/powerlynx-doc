@@ -12,10 +12,10 @@ The Public Status Page is a feature designed to enhance customer experience by p
 ## Benefits
  - **Enhanced User Experience:** Customers can easily view their WiFi usage statistics, track their data consumption, and manage their vouchers in one convenient place.
 - **Real-Time Information:** Users can access up-to-date information on their data usage and voucher status, ensuring transparency and better management of their WiFi plans.
-- **Easy Access:** The link to the status page is sent via SMS ot they can be redirected to this page right after login, providing users with a direct and secure method to access their account details from any device.
+- **Easy Access:** The link to the status page is sent via SMS, or users can be redirected to this page right after logging in. This provides users with a direct and secure method to access their account details from any device.
 
 ## How It Works
-- WiFi Connection: The customer connects to the WiFi network and purchase a new voucher.
+- WiFi Connection: The customer connects to the WiFi network and purchases a new voucher.
 
 - SMS Notification: An SMS is sent to the customer’s registered mobile number containing a secure link to the public status page.
 
@@ -24,7 +24,7 @@ The Public Status Page is a feature designed to enhance customer experience by p
 - Access to Information: Once authorized, the customer can view:
     - Usage Statistics: Current data usage, remaining data, and usage history.
     - Active Vouchers: Details of any active vouchers, including validity period.
-    - Historical Vouchers: Information about past vouchers, their usage, and expiry details.
+    - Historical Vouchers: Information about past vouchers, usage, and expiry details.
 
 ## Configuration
 
@@ -40,7 +40,7 @@ Navigate to `Config/Notifications` and find the **Status page notifications** se
 
 Enable this feature, select the sending frequency: one-time or every time a new voucher is activated, and edit the text. You can also use this text field to send personalized messages to your customers on your behalf.
 
-You can monitor sent SMS from `Logs/SMS Logs`.
+You can monitor the SMS sent from `Logs/SMS Logs`.
 
 ## Mikrotik: Redirect to the status page after logging in
 
@@ -71,13 +71,13 @@ If you're using the [Mikrotik hotspot](https://docs.powerlynx.app/networking/mik
 </html>
 ```
 
-You can customize this page as you like, but make sure to use your URL for the redirect.
+You can customize this page as you like, but use your URL for the redirect.
 
 ![Status HTML Mikrotik](images/mikrotik_status_html.png){data-zoomable}
 
 ## Teltonika: Redirect to the status page after logging in
 
-If you're using the [Teltonika hotspot](https://docs.powerlynx.app/networking/teltonika.html) in your Powerlynx, you can redirect your customers to the status page without sending them an SMS. All you need to do is to open your Teltonika router, navigate to `Services/Hotspot/General`, edit your hotspot instance and change these settings:
+If you're using the [Teltonika hotspot](https://docs.powerlynx.app/networking/teltonika.html) in your Powerlynx, you can redirect your customers to the status page without sending them an SMS. All you need to do is open your Teltonika router, navigate to `Services/Hotspot/General`, edit your hotspot instance, and change these settings:
 
 ![Status HTML Teltonika](images/teltonika_status_page.png){data-zoomable}
 
@@ -87,7 +87,7 @@ If you're using the [Cambium hotspot](https://docs.powerlynx.app/networking/camb
 
 ![Status HTML Cambium](images/status_page_cambium.png){data-zoomable}
 
-In the `Redirect URL` field use your status page link (or any other link you want).
+Use your status page link in the `Redirect URL` field (or any other link).
 
 ## Frequently Asked Questions (FAQs)
 
@@ -96,11 +96,11 @@ Yes, the status page can be accessed from any device with internet access, such 
 
 ### What authorization credentials can the customer use to access the status page
 
-For now, the customer only needs to provide their phone number in the exact format it is stored in Powerlynx. We do not send OTP codes when someone accesses the status page, as it doesn't contain any sensitive data like payment credentials, personal information, etc.
+For now, the customer only needs to provide their phone number in the exact format stored in Powerlynx. We do not send OTP codes when someone accesses the status page, as it doesn't contain sensitive data like payment credentials, personal information, etc.
 
-### What data can I find on that page
+### Which data can I find on the page?
 
-On the status page, you can find all vouchers registered to the customer, including their usage, limits, time frames, and more.
+You can find all vouchers registered to the customer on the status page, including their usage, limits, time frames, and more.
 
 ![Status voucher](images/st_page_voucher.png#mediumsize){data-zoomable}
 
