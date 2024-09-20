@@ -2,7 +2,7 @@
 
 [DPO Pay](https://dpogroup.com/) is a payment gateway available in the following countries: Botswana, Malawi, Rwanda, Uganda, Mauritius, Côte d'Ivoire, South Africa, Zambia, Ghana, Namibia, Tanzania, Zanzibar, Kenya, Nigeria, UAE, and Zimbabwe.
 
-To set up DPO integration in Powerlynx, ensure you've selected one of the following countries under `Config/System/Localization`: Botswana, Malawi, Rwanda, Uganda, Mauritius, Côte d'Ivoire, South Africa, Zambia, Ghana, Namibia, Tanzania, Zanzibar, Kenya, Nigeria, UAE, or Zimbabwe.
+To set up DPO integration in Powerlynx, ensure you've selected one of the following countries under `Config/System/Localization`: Botswana, Malawi, Rwanda, Uganda, Mauritius, Côte d'Ivoire, South Africa, Zambia, Ghana, Namibia, Tanzania, Zanzibar, Kenya, Nigeria, DRC, UAE, or Zimbabwe.
 
 ## Configuration
 
