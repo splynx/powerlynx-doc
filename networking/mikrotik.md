@@ -115,7 +115,7 @@ Save the configuration and proceed to the "Peers" tab in the "Wireguard" section
 
 **2. IP/Addresses**
 
-On Mikrotik, under IP -> Addresses create a new entry for Wireguard IP of your router (in our example we were given the 172.16.0.69 address during the hotspot creation in Powerlynx):
+On Mikrotik, under IP -> Addresses create a new entry for Wireguard IP of your router (in our example we were given the 172.16.5.148 address during the hotspot creation in Powerlynx):
 
 ![ip-address](images/ip-address.png){data-zoomable}
 
