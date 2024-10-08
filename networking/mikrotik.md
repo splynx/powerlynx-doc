@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# How to connect your Mikrotik with Powerlynx:
+# How to connect your Mikrotik with Powerlynx (Advanced setup):
 
 <br>
 
@@ -15,19 +15,64 @@ outline: deep
 In this manual, we will guide you on how to add a Mikrotik router as a hotspot in Powerlynx.
 In our example, we are using a MikroTik router with wireless interfaces. Customers will connect to the Wi-Fi provided by the router.
 
+There are two types of setups: Simple and Advanced. We will go through both.
+
+## Simple setup
+
 Navigate to the desired location, open the "Hotspots" tab, and click on the "Add" button:
 
-![hotspot-add](images/hotspot-add.png){data-zoomable}
+![hotspot-add-1](images/add_hotspot_step_1.png){data-zoomable}
 
 * **Title** - title for your router;
 
 * **NAS type** - select Mikrotik as a NAS type;
 
-* **Connection type** - This one is important. We recommend using the "Wireguard" option instead of the "Public IP";
-
-* **Radius secret** - RADIUS secret of your RADIUS server on the router;
-
 * **Physical address** - address of your router (optional).
+
+![hotspot-add-2](images/add_hotspot_step_2.png){data-zoomable}
+
+Here, you can choose the setup type:
+
+* **Setup Type:** Simple or Advanced.
+    1. **Simple** - Use this option if you're not confident with Mikrotik. It will generate a script that you simply copy and paste into your Mikrotik device.
+    1. **Advanced** - Choose this if you're comfortable with Mikrotik and prefer more control over the setup process.
+
+* **Setup Options:** Full Setup or VPN Setup.
+    1. **Full Setup** - Generates a script to configure a hotspot server, RADIUS server, WireGuard connection, and other components on your router.
+    1. **VPN Setup** - Generates a script to set up only a WireGuard connection between your router and Powerlynx.
+
+![hotspot-add-3](images/add_mikrotik_hotspot_step_3.png){data-zoomable}
+
+::: info
+Before executing the script on your router, ensure there are no previously created WireGuard interfaces for Powerlynx, IP addresses for the WireGuard connection, hotspot servers, hotspot HTML files, or RADIUS servers. Please remove them before running the script. We expect your router to be in its default setup.
+:::
+
+This is the result of the Simple setup with the Full Setup option. As you can see, the script has been generated. You just need to click the "Copy Script" button and open your Mikrotik router, open a "New terminal" and insert this script:
+
+![Insert Mikrotik script](images/mikrotik_script.gif#mediumsize){data-zoomable}
+
+Go back to Powerlynx and click the "Check Status" button to ensure the connection has been established:
+
+![mikrotik-check-status](images/mikrotik_check_status.png){data-zoomable}
+
+::: warning
+**IMPORTANT! During the simplified setup, the script will create a bridge interface and run the hotspot server on that interface, as we cannot identify the correct interface on your router.**
+
+![mikrotik-check-status](images/mikrotik_created_bridge.png){data-zoomable}
+
+Add your interface to this bridge, or change the interface on which the hotspot server will run. If you're unsure what to do, contact support at **support@powerlynx.app**.
+
+:::
+
+If you select the VPN Setup option, it will generate a script to create only the VPN connection. However, you'll need to manually set up the hotspot server, RADIUS, and hotspot files (steps 3-7 from the Advanced Setup guide below).
+
+## Advanced setup
+
+During the advanced setup, you will need to configure everything manually. Simply follow this part of the guide:
+
+Create a hotspot, complete step 1, and proceed to step 2 by selecting the "Advanced" setup type:
+
+![mikrotik-add-advanced](images/mikrotik_add_advanced.png){data-zoomable}
 
 We will create a hotspot with the "Wireguard" connection type, as it's the recommended and secure option. After selecting of the "Wireguard" connection type you will see the "Generate Wireguard keys" button - you should click on it. After that, you will see this window:
 
@@ -38,7 +83,7 @@ Please copy and use these keys to configure the Wireguard connection immediately
 We recommend to store all these values somewhere in a safe place.
 :::
 
-Click the 'Add' button to create a new hotspot in Powerlynx. Now, let's link this router with Powerlynx.
+Click the 'Next' button to create a new hotspot in Powerlynx. Now, let's link this router with Powerlynx.
 
 **1. Wireguard**
 
@@ -64,7 +109,7 @@ Save the configuration and proceed to the "Peers" tab in the "Wireguard" section
 
 * **Allowed Address** - 172.16.0.0/12
 
-* **Persistent Keepalive** - 00:00:15
+* **Persistent Keepalive** - 00:00:05
 
 ![new-peer](images/new-peer.png){data-zoomable}
 
@@ -100,7 +145,17 @@ Once created, let's change some settings:
 
 after that modify the hotspot profile that is use by the hotspot server:
 
+* **"Login By"** - MAC, HTTP CHAP
+
+* **MAC Auth. Mode** - MAC as username and password
+
 ![hs-profile-login](images/hs-profile-login.png){data-zoomable}
+
+* **Use RADIUS** - enabled
+
+* **Accounting** - enabled
+
+* **NAS Port Type** - depends on what type of port do you use to run a hotspot server
 
 ![hs-profile-login](images/hs-profile-radius.png){data-zoomable}
 
