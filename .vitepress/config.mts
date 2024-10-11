@@ -22,6 +22,7 @@ export default defineConfig({
             {text: 'Cambium Hotspot', link: '/networking/cambium.md'},
             {text: 'Teltonika Hotspot', link: '/networking/teltonika.md'},
             {text: 'Cudy Hotspot', link: '/networking/cudy.md'},
+            {text: 'Ruckus Hotspot', link: '/networking/ruckus.md'},
           ] },
           { text: 'System', items: [
             { text: 'Locations', link: '/system/locations.md' },
