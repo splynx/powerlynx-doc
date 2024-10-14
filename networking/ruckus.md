@@ -2,56 +2,55 @@
 outline: deep
 ---
 
-# Connect Ruckus hotspot with Powerlynx
+# Connecting the Ruckus Hotspot to Powerlynx
 
-In this manual, we will guide you on how to add a Ruckus router as a hotspot in Powerlynx.
-In our example, we are using a Ruckus R550 access point. Customers will connect to the Wi-Fi provided by the router.
+In this manual, we will guide you through the process of adding a Ruckus router as a hotspot in Powerlynx. In our example, we use a Ruckus R550 access point. Customers will connect to the Wi-Fi provided by the router.
 
-## Update firmware
-Make sure that your device is using the latest available firmware. Go to the `Admin & Services / Administration / Upgrade` page and click on the `Check for Updates` button.
+## Updating firmware
+Make sure your device is running the latest available firmware. Navigate to the `Admin & Services / Administration / Upgrade` page and click on the `Check for Updates` button.
 
 ![Upgrade Ruckus firmware](images/ruckus_upgrade_firmware.png){data-zoomable}
 
-## Configure your device
+## Configuring your device
 
-### Add Radius server
+### Adding a RADIUS server
 
-Go to the `Admin & Services / Services / AAA Servers - Authentication Servers` page and click on the `Create` button.
+Navigate to the `Admin & Services / Services / AAA Servers - Authentication Servers` page and click on the `Create` button.
 
-Fill the form:
+Fill out the form as follows:
 * **Name** - set to `Powerlynx Radius`
 * **Type** - choose `RADIUS`
 * **Auth Method** - choose `PAP`
 * **Server Address** - set to `radius.powerlynx.app`
 * **Port** - set to `1812`
-* **Shared Secret** - must be the same in Powerlynx Hotspot and here
-* **Confirm Secret** - input the same value as in **Shared Secret**
+* **Shared Secret** - must match the value in both Powerlynx Hotspot and here
+* **Confirm Secret** - enter the same value as in **Shared Secret**
 * **Request Timeout** - set to `5`
 * **Max Number of Retries** - set to `2`
 
-Then click on the `OK` button.
+Then, click the `OK` button.
 
 ![Add Radius form](images/ruckus_add_radius_form1.png){data-zoomable}
 
-On the same page click again on the `Create` button.
+On the same page, click the `Create` button again.
 
-Fill the form:
+Fill out the form as follows:
 * **Name** - set to `Powerlynx Radius Acc`
 * **Type** - choose `RADIUS Accounting`
 * **Server Address** - set to `radius.powerlynx.app`
 * **Port** - set to `1813`
-* **Shared Secret** - must be the same in Powerlynx Hotspot and here
-* **Confirm Secret** - input the same value as in **Shared Secret**
+* **Shared Secret** - must match the value in both Powerlynx Hotspot and here
+* **Confirm Secret** - enter the same value as in **Shared Secret**
 * **Request Timeout** - set to `5`
 * **Max Number of Retries** - set to `2`
 
-Then click on the `OK` button.
+Then, click the `OK` button.
 
 ![Add Radius form 2](images/ruckus_add_radius_form2.png){data-zoomable}
 
-### Create a hotspot
+### Creating a hotspot
 
-Go to the `Admin & Services / Services / Hotspot Services` page and click on the `Create` button. On the `General` tab fill the form:
+Navigate to the `Admin & Services / Services / Hotspot Services` page and click the `Create` button. On the `General` tab fill out the form as follows:
 
 * **Name** - set to `Powerlynx`
 * **WISPr Smart Client** - choose `None`
@@ -60,57 +59,57 @@ Go to the `Admin & Services / Services / Hotspot Services` page and click on the
 
 ![Add Hotspot form 1](images/ruckus_add_hotspot_form1.png){data-zoomable}
 
-On the `Authentication` tab fill the form:
-* **Authentication Server** - choose previously created Radius server called `Powerlynx Radius`
-* **Accounting Server** - choose previously created Radius accounting server called `Powerlynx Radius Acc`
+On the `Authentication` tab, fill out the form as follows:
+* **Authentication Server** - choose the previously created RADIUS server called `Powerlynx Radius`
+* **Accounting Server** - choose the previously created RADIUS accounting server called `Powerlynx Radius Acc`
 
 ![Add Hotspot form 2](images/ruckus_add_hotspot_form2.png){data-zoomable}
 
-On the `Walled Garden` tab add the following hosts:
+On the `Walled Garden` tab, add the following hosts:
 ```
 {your_subdomain}.powerlynx.app
 *.digitaloceanspaces.com
 ```
-The white list records depends on what payment gateway you are going to use. Each payment gateway has its own hosts to allow in this list.
+The whitelist records depend on the payment gateway you plan to use, as each gateway has its own hosts that need to be allowed in this list. You can find more information [here](https://docs.powerlynx.app/finance/main.html).
 
 ![Add Hotspot form 3](images/ruckus_add_hotspot_form3.png){data-zoomable}
 
-Click on the `OK` button to save the hotspot.
+Click the `OK` button to save the hotspot.
 
-### Create a Wi-Fi network
+### Creating a Wi-Fi network
 
-Go to the `Wi-Fi Networks` page and click on the `Create` button. Fill the form:
+Navigate to the `Wi-Fi Networks` page and click the `Create` button. Fill out the form as follows:
 * **Name** - type your desired Wi-Fi network name
 * **Usage Type** -- choose the `Hotspot Service` option
-* **Hotspot Services** - choose previously created hotspot called `Powerlynx`
+* **Hotspot Services** - select the previously created hotspot called `Powerlynx`
 
-Click on the `OK` button to save the WLAN.
+Click the `OK` button to save the WLAN.
 
 ![Add WLAN](images/ruckus_add_wlan1.png){data-zoomable}
 
 ![Add WLAN](images/ruckus_add_wlan2.png){data-zoomable}
 
-## Configure Powerlynx
+## Configuring Powerlynx
 
-### Add a Hotspot in Powerlynx
+### Adding a Hotspot in Powerlynx
 
-On Powerlynx portal navigate to the desired location, open the "Hotspots" tab, and click on the "Add" button and fill the form.
+On the Powerlynx portal, navigate to the desired location, open the "Hotspots" tab, and click the "Add" button to fill out the form.
 
-* **Title** - a title for your router
-* **NAS type** - select `Ruckus` as a NAS type
-* **Connection type** - the only available connection type for Ruckus devices is the `Public IP`
-* **IP address** - IP Address of the router. From this IP, the router should send requests to our system, so we can identify that router
-* **NAS IP** - the real IP source address for radius packets. It is recommended that in the Radius settings of the Mikrotik router Src. address = NAS IP in Splynx.
-* **Radius secret** - RADIUS secret of your RADIUS server on the router
-* **Physical address** - address of your router (optional)
+* **Title** - enter a title for your router
+* **NAS type** - select `Ruckus` as the NAS type
+* **Connection type** - the only available connection type for Ruckus devices is `Public IP`
+* **IP address** - enter the IP Address of the router. This is the IP from which the router should send requests to our system, allowing us to identify it.
+* **NAS IP** - specify the real IP source address for RADIUS packets. It is recommended that the RADIUS settings of the Mikrotik router have **Src. address** = **NAS IP** in Splynx.
+* **Radius secret** - enter the RADIUS secret of your RADIUS server on the router
+* **Physical address** - enter the address of your router (optional)
 
 ![Add Hotspot in Powerlynx](images/ruckus_add_hotspot_in_powerlynx1.png){data-zoomable}
 
 ![Add Hotspot in Powerlynx](images/ruckus_add_hotspot_in_powerlynx2.png){data-zoomable}
 
-### Set correct SSID
+### Setting the correct SSID
 
-Add the WLAN name from the Ruckus device into the SSID field under your location and under your splash page in Powerlynx portal.
+Add the WLAN name from the Ruckus device into the SSID field under your location and in the splash page section of the Powerlynx portal.
 
 ![Set correct SSID](images/ruckus_ssid1.png){data-zoomable}
 ![Set correct SSID](images/ruckus_ssid2.png){data-zoomable}
