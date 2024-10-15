@@ -49,7 +49,7 @@ Before executing the script on your router, ensure there are no previously creat
 
 This is the result of the Simple setup with the Full Setup option. As you can see, the script has been generated. You just need to click the "Copy Script" button and open your Mikrotik router, open a "New terminal" and insert this script:
 
-![Insert Mikrotik script](images/mikrotik_script.gif#mediumsize){data-zoomable}
+![Insert Mikrotik script](images/mikrotik_script.gif#mediumsize){data-zoomable}{id=terminal_insert_script}
 
 Go back to Powerlynx and click the "Check Status" button to ensure the connection has been established:
 
