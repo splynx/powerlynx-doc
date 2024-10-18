@@ -75,9 +75,7 @@ add dst-host=*.absa.*
 add dst-host=*.nedbank.*
 add dst-host=authentication.cardinalcommerce.com/ThreeDSecure/
 add dst-host=3ds.capitecbank.co.za/acs/
-add dst-host=acsabsa.bankserv.co.za
-add dst-host=acsnedcor.bankserv.co.za
-add dst-host=acssb.bankserv.co.za
+add dst-host=*bankserv*
 /ip hotspot walled-garden ip
 add action=accept disabled=no dst-address=151.101.2.137 !dst-address-list \
     !dst-port !protocol !src-address !src-address-list
