@@ -20,9 +20,11 @@ After the installation, navigate to `Config/Integrations/Modules list`, locate t
 
 ![Splynx module](images/splynx_module.png){data-zoomable}
 
-Copy this value and save it. We will use it in Powerlynx configurations:
+Copy the "Powerlynx authentication token" value and save it. We will use it in Powerlynx configurations:
 
 ![Splynx token](images/auth_token.png){data-zoomable}
+
+Additionally, select the relevant country calling codes in cases where your customers in Splynx use phone numbers that are not in international format. This will allow the system to convert local phone numbers to the international format, as Powerlynx operates with international number standards. If multiple country codes are selected, the customer will be able to choose from them.
 
 **Now, let's configure the integration in Powerlynx.**
 
