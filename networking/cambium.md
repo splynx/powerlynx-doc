@@ -113,11 +113,9 @@ Redirect HTTP-only - On
 
 6. On bottom of the same page	select White List tab and add all these records:
 ```
-powerlynx.fra1.digitaloceanspaces.com
-{YOUR_POWERLYNX_SYSTEM_DOMAIN}
+*.digitaloceanspaces.com
 *.fontawesome.com
 *.powerlynx.app
-fra1.digitaloceanspaces.com
 ```
 
 The white list records depends on what payment gateway you are going to use. Each payment gateway has its own hosts to allow in this list.
@@ -126,10 +124,17 @@ The white list records depends on what payment gateway you are going to use. Eac
 
 7. Powerlynx SSIDs
 
-Add the SSID name into the SSID field under your location and under your splash page:
+Add the NAS Identifier name into the SSID field under your location and under your splash page:
 
-![location-ssid](images/location-ssid.png){data-zoomable}
+Make sure that on the router, you set NAS Identifier to custom and created some unique identifier name:
 
-![splashpage-ssid](images/splashpage-ssid.png){data-zoomable}
+![Cambium NAS identifier 1](images/cambium_nas_identifier_2.png){data-zoomable}
 
-It is crucial to add the SSID in both places mentioned. It's not enough to add the SSID only under Location details or only under the splash page details.  
+
+![Cambium NAS identifier 2](images/cambium_nas_identifier.png){data-zoomable}
+
+It is crucial to add the NAS Identifier in both places mentioned. It's not enough to add the NAS Identifier only under Location details or only under the splash page details:
+
+![Cambium NAS identifier 3](images/cambium_nas_id_location.png){data-zoomable}
+
+![Cambium NAS identifier 4](images/cambium_nas_id_spage.png){data-zoomable}
