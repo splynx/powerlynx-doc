@@ -13,7 +13,7 @@ Open your Teltonika router configs and switch the mode to "Advanced":
 
 ![Teltonika advanced settings](images/teltonika_advanced_settings.png){data-zoomable}
 
-After that, install the hotspot package on the `System/Package manager/Packages` page
+After that, install the hotspot package on the `System/Package manager/Packages` page if not installed
 
 ![Teltonika install hotspot](images/teltonika_install_hotspot.png){data-zoomable}
 
@@ -21,39 +21,48 @@ Also make sure the device is on the latest firmware.
 
 ![Teltonika latest firmware](images/teltonika_latest_os.png){data-zoomable}
 
-## Connect your device with Powerlynx using Wireguard. 
+## Create hotspot in Powerlynx 
 
-Create a new hotspot in Powerlynx with NAS type set to Teltonika and connection type set to WireGuard.
+Create a new hotspot in Powerlynx with NAS type set to Teltonika:
 
 ![Powerlynx add hotspot](images/add_hotspot_teltonika.png){data-zoomable}
 
-and click on the "Generate Wireguard keys" and use them to create Wireguard interface on your device.
+The next step is to select a connection type: Wireguard (recommended) or Public IP (if your Teltonika has one). In this example, we’ll use Wireguard as the connection type. Additionally, we need to specify a RADIUS secret, which must match on both the router and in Powerlynx.
 
-![Teltonika wireguard](images/teltonika_add_wireguard.png){data-zoomable}
+Click on the "Generate Wireguard keys" and use them to create Wireguard interface on your device.
 
-set the public and private keys as well as IP from the Powerlynx instance
+![Powerlynx add hotspot](images/add_hotspot_teltonika_2.png){data-zoomable}
 
-![Teltonika wireguard 2](images/teltonika_add_wireguard_2.png){data-zoomable}
+::: warning
+Please copy and use these keys to configure the Wireguard connection immediately. The private key is shown only once.
+We recommend to store all these values somewhere in a safe place.
+:::
 
-![Teltonika wireguard 3](images/teltonika_add_wireguard_3.png){data-zoomable}
+Now, let's create a Wireguard interface on your device. Navigate to `Services/VPN/Wireguard` and add a new instance:
 
-Add a Peer and configure it with the public key from Powerlynx (input here)
+![Teltonika wireguard](images/add_hotspot_teltonika_3.png){data-zoomable}
 
-![Teltonika wireguard peer](images/teltonika_add_wireguard_4.png){data-zoomable}
+Set the public and private keys, as well as the IP from the Powerlynx instance, in the format with the /32 network mask.
 
-![Teltonika wireguard peer port](images/teltonika_add_wireguard_5.png){data-zoomable}
+![Teltonika wireguard 2](images/add_hotspot_teltonika_4.png){data-zoomable}
 
-Use this public key: `lPYDyIwk5X4tyUMNT9ny/nyPSyHwk31mzm2ahOH7iV0=`
+Inside the Wireguard interface window, at the bottom, add a new peer. Set your public key and endpoint host, specify the allowed IPs, and enable the "Route allowed IPs" option, as shown in the screenshot above. Then, switch to the Advanced Settings tab.
 
-And all other values as per the screenshots above.
+![Teltonika wireguard 3](images/add_hotspot_teltonika_5.png){data-zoomable}
 
-Confirm the VPN is up by using the Diagnostics tool located on the `System/Maintenance/Troubleshoot` page to ping `172.16.0.1`:
+Here, set the Endpoint port to 443 and the Persistent Keepalive to a value between 5 and 15.
+
+Save the settings and return to Powerlynx. In the final step, you'll see a "Ping" button, which will ping your Wireguard interface on the Teltonika device to check if the connection is active. If everything is set up correctly, the ping status should display as "OK."
+
+![Teltonika wireguard 4](images/add_hotspot_teltonika_6.png){data-zoomable}
+
+You can also ping Powerlynx from your Teltonika to ensure the connection is up and running by using the Diagnostics tool located on the `System/Maintenance/Troubleshoot` page to ping `172.16.0.1`:
 
 ![Teltonika wireguard ping](images/teltonika_ping.png){data-zoomable}
 
 ## Setup hotspot server
 
-Next navigate to hotspot package (1):
+Next navigate to `Services/Hotspot/General` (1):
 
 ![Teltonika setup hotspot server](images/teltonika_setup_hotspot.png){data-zoomable}
 
@@ -71,7 +80,7 @@ Under General:
 4. Set Landing page to External
 5. Enable Password encoding
 6. Set Landing page address to `https://powerlynx_domain/redirect-flow` where powerlynx_domain should be replaced by your Powerlynx domain
-7. Set Success page to `Original URL`
+7. Set Success page to `Original URL` OR, you can modify it as described [here](https://docs.powerlynx.app/system/status-page.html#teltonika-redirect-to-the-status-page-after-logging-in) to redirect your customers to an external page if needed.
 
 ![Teltonika hotspot general](images/teltonika_hotspot_general.png){data-zoomable}
 
@@ -80,12 +89,10 @@ Under General:
 After that, In the Radius tab:
 
 1. Set Radius server #1 to `172.16.0.1`
-2. Put a unique value in the NAS identifier field that will be used to match the router with a location and a splash page in Powerlynx, for instance, `teltonika`. This value should be inserted into Powerlynx's location SSIDs and splash page SSIDs fields.
-3. Set Radius secret key to the key used in Powerlynx under Locations - Hotspot
+2. Put a unique value in the NAS identifier field that will be used to match the router with a location and a splash page in Powerlynx, for instance, `Powerlynx_RUT241`. This value should be inserted into Powerlynx's location SSIDs and splash page SSIDs fields.
+3. Set Radius secret key to the key used in Powerlynx under Locations - Hotspot. This value must be exactly the same as the "RADIUS secret" value in newly created hotspot in Powerlynx. 
 
 ![Teltonika radius hotspot](images/teltonika_radius_2.png){data-zoomable}
-
-![Powerlynx hotspot](images/powerlynx_hotspot.png){data-zoomable}
 
 Add the NAS identifier into the SSIDs field under your location and under your splash page:
 
@@ -125,3 +132,4 @@ Also set any other required walled garden entries that might be required by your
 
 ![Teltonika walled garden](images/teltonika_walled_garden.png){data-zoomable}
 
+ℹ️ Teltonika does not support wildcards in the walled garden addresses to cover multiple subdomains. See the [forum topic](https://community.teltonika.lt/t/hotspot-walled-garden-wildcards/5919) for more details.
