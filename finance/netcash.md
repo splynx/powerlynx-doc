@@ -71,11 +71,13 @@ add dst-host=*.dpopayments.io
 add dst-host=*.fnb*
 add dst-host=*.standardbank.*
 add dst-host=*.capitec.*
-add dst-host=*.absa.*
+add dst-host=*absa*
 add dst-host=*.nedbank.*
 add dst-host=authentication.cardinalcommerce.com/ThreeDSecure/
 add dst-host=3ds.capitecbank.co.za/acs/
 add dst-host=*bankserv*
+add dst-host=acsabsa.dnslb.bankserv.co.za
+add dst-host=api.raygun.io
 /ip hotspot walled-garden ip
 add action=accept disabled=no dst-address=151.101.2.137 !dst-address-list \
     !dst-port !protocol !src-address !src-address-list
