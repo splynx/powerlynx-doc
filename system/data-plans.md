@@ -26,7 +26,7 @@ Speed limitations
 
 Expirations limitations:
 
-* **Validity (days)** – the number of days the plan will be valid after buying on the splash page.
+* **Expired in** – the number of days/hours/minutes the plan will be valid after buying on the splash page.
 
 Usage limitations:
 
