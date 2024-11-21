@@ -46,7 +46,18 @@ Traceroute to Powerlynx - ensure that the traffic reaches the `one.powerlynx.app
 Walled Garden list - it is crucial to keep the list of Walled Garden hosts updated according to the payment system you use. In cases where one host is missing, payments may fail. There is a separate topic on our forum where we discuss Walled Garden hosts. - https://forum.powerlynx.app/t/mikrotik-walled-garden/19/4
 
 ### Step 7
-Fasttrack - ensure that the Fasttrack feature is disabled on your router - https://wiki.mikrotik.com/wiki/Manual:IP/Fasttrack. If it's enabled, you need to disable it. There is a forum topic where the community discusses this process - https://forum.mikrotik.com/viewtopic.php?t=119262.
+Fasttrack - ensure that the Fasttrack feature is disabled on your router - https://wiki.mikrotik.com/wiki/Manual:IP/Fasttrack. If it's enabled, you need to disable it. 
+Use this script on Mikrotik to disable Fasttrack:
+
+```
+/ip firewall filter
+:foreach rule in=[find action=fasttrack-connection] do={
+    disable $rule
+}
+/system reboot
+```
+
+There is a forum topic where the community discusses this process - https://forum.mikrotik.com/viewtopic.php?t=119262.
 
 ### Step 8 
 IP/Firewall/NAT - if your customers are saying that they are connected to Wi-Fi but have no internet access, it might be related to a missing masquerade rule. It depends on your network setup, but in most cases, it is necessary to "masquerade" the hotspot network. To do so, navigate to IP/Firewall/NAT and add a new rule with Chain = srcnat, Src.Address = your hotspot network (e.g., 10.5.50.0/24), Action = masquerade.
