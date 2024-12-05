@@ -41,5 +41,5 @@ You can view your campaign statistics below this counter:
 ![Stats](images/stats.png){data-zoomable}
 
 ::: info
-If you set up multiple ads for the same location, they will be displayed randomly to the customer.
+When multiple advertisements are configured for the same location, they will be displayed to customers in a randomized manner.
 :::
