@@ -39,3 +39,7 @@ In the same manner as with video ads, after connecting to Wi-Fi, the customer wi
 You can view your campaign statistics below this counter:
 
 ![Stats](images/stats.png){data-zoomable}
+
+::: info
+If you set up multiple ads for the same location, they will be displayed randomly to the customer.
+:::
