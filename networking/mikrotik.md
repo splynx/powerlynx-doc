@@ -44,7 +44,20 @@ Here, you can choose the setup type:
 ![hotspot-add-3](images/add_mikrotik_hotspot_step_3.png){data-zoomable}
 
 ::: info
-Before executing the script on your router, ensure there are no previously created WireGuard interfaces for Powerlynx, IP addresses for the WireGuard connection, hotspot servers, hotspot HTML files, or RADIUS servers. Please remove them before running the script. We expect your router to be in its default setup.
+Pre-Script Configuration:
+    1.    Clean Router Configuration: The router must have no default or existing configuration. It should be a clean router. To achieve this, reset the router to its default state, ensuring no prior settings are applied.
+    2.    Remove any previously created:
+    •    WireGuard interfaces for PowerLynx.
+    •    IP addresses for the WireGuard connection.
+    •    Hotspot servers.
+    •    Hotspot HTML files.
+    •    RADIUS servers.
+
+Post-Script Configuration:
+    1.    Add the distribution interfaces (interfaces customers will connect through) to the bridge.
+    2.    If the distribution interface is wireless, configure the wireless interface to operate in access mode without authentication.
+
+By following these steps, you will ensure the router is properly prepared and configured for the script to execute successfully.
 :::
 
 This is the result of the Simple setup with the Full Setup option. As you can see, the script has been generated. You just need to click the "Copy Script" button and open your Mikrotik router, open a "New terminal" and insert this script:
