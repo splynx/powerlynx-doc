@@ -44,18 +44,18 @@ Here, you can choose the setup type:
 ![hotspot-add-3](images/add_mikrotik_hotspot_step_3.png){data-zoomable}
 
 ::: info
-Pre-Script Configuration:
-    1.    Clean Router Configuration: The router must have no default or existing configuration. It should be a clean router. To achieve this, reset the router to its default state, ensuring no prior settings are applied.
-    2.    Remove any previously created:
-    •    WireGuard interfaces for PowerLynx.
-    •    IP addresses for the WireGuard connection.
-    •    Hotspot servers.
-    •    Hotspot HTML files.
-    •    RADIUS servers.
+**Pre-Script Configuration:**
+1. Clean Router Configuration: The router must have no default or existing configuration. It should be a clean router. To achieve this, reset the router to its default state, ensuring no prior settings are applied.
+2. Remove any previously created:
+    1. WireGuard interfaces for PowerLynx.
+    2. IP addresses for the WireGuard connection.
+    3. Hotspot servers.
+    4. Hotspot HTML files.
+    5. RADIUS servers.
 
-Post-Script Configuration:
-    1.    Add the distribution interfaces (interfaces customers will connect through) to the bridge.
-    2.    If the distribution interface is wireless, configure the wireless interface to operate in access mode without authentication.
+**Post-Script Configuration:**
+1. Add the distribution interfaces (interfaces customers will connect through) to the bridge.
+2. If the distribution interface is wireless, configure the wireless interface to operate in access mode without authentication.
 
 By following these steps, you will ensure the router is properly prepared and configured for the script to execute successfully.
 :::
