@@ -40,9 +40,16 @@ Export customers filtered by different statuses and their join dates. Sometimes,
 
 The exported data includes all customer information and also the last time the customer was online, when the last purchase was made, and more.
 
+## Customers by Location
+
+A new report lets you see which customers were activated at a specific location during a chosen timeframe.
+
+**Example:** You might export all customers (and their details) who purchased a voucher at Location #1, the Restaurant. This information can then be used to create personalized email campaigns targeting those customers.
+
+
 ## Payments export
 
-Export payments filtered by different payment gateways, date, etc.
+This report provides an export of payments for a specified period. You can generate it by filtering based on location, payment gateway, and date range. The resulting file includes: customer, payment and voucher details; the location where each voucher was purchased; first session information (MAC address, IP address, port, and NAS identifier) for each voucher.
 
 # Reports scheduler
 

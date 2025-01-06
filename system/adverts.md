@@ -16,7 +16,7 @@ This action will open a form where you can configure your campaign:
 
 ![Create](images/create_video_a.png){data-zoomable}
 
-In this example, we created the 'Powerlynx' ad campaign, which is active from 2024-04-11 to 2024-04-30, across two locations that share the same splash page. The ad type is video, and you can upload a video with a maximum size of 100 MB, with no restrictions on its extension. We will be using the .MP4 video format.
+In this example, we created the “Powerlynx” ad campaign, active from 2025-01-06 to 2025-01-31, at the location called “Prague office” and the splash page called “Office,” limited to the plan named “Free.” The ad type is video, and you can upload a file up to 100 MB in size, with no restrictions on file extension. Here, we’re using an .MP4 video.
 
 Once created, you will see the parameters that can be modified and the uploaded video. You may also notice a new field called 'Ad view counter,' which displays the number of views for this specific ad:
 
