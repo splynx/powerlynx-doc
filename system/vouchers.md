@@ -81,6 +81,18 @@ There are several voucher settings that can be modified. You can find these unde
 
 * **Voucher code available characters** - Choose the set of characters to be used in generating a voucher's code. For example, to make your voucher codes purely numerical, remove all letters and leave only numbers, like `1234567890`.
 
+* **Use full code** - This option allows your customers to log in using a short voucher code (if disabled) instead of a full one. It is enabled by default.
+
+::: tip
+Sometimes, our clients need to provide their customers with the ability to log in using a short voucher code instead of the full one.
+
+For example, if a printed voucher has the full code formatted as “202502-SUP-6937”, users would like to use just "6937" to log in quickly.
+
+To achieve this, you need to disable this option, set the "Voucher code length" to 4 and use only digits in the "Voucher code available characters" field:
+
+![Vouchers-short-code](images/voucher-short-code.png){data-zoomable}
+:::
+
 
 ### Vouchers export
 
