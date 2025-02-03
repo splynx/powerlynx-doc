@@ -62,3 +62,43 @@ In certain situations, you may need to provide a customer with a special-offer v
 5. Assign it to the customer.
 
 ![Assign voucher](system/images/assign_voucher.gif#mediumsize){data-zoomable}
+
+### How does the referral system work in Powerlynx?
+
+#### Earn Rewards by Inviting Others to Powerlynx
+
+Powerlynx now offers a referral program that allows you to invite other companies to join and earn a bonus! By referring new clients, you can receive a credit towards your Powerlynx account, making it even easier to manage your subscription.
+
+![Referral link](/images/referral_link.png){data-zoomable}
+
+#### How It Works
+
+1. Invite a New Client
+
+	•	Log in to your Powerlynx billing portal.
+
+	•	Click the “Copy Invite Link” button on your dashboard.
+
+	•	Share the referral link with someone who could benefit from Powerlynx.
+
+2. The Referred Client Must Stay Active
+
+	•	Your referral must sign up and remain active for 60 days.
+
+	•	“Active” means paying for two consecutive monthly Powerlynx licenses.
+
+	•	If the referral’s account is disabled within 60 days, no bonus will be awarded.
+
+3. Receive Your Bonus
+
+	•	Once your referral completes two consecutive monthly payments and stays active for 60 days, both of you receive a $100 account credit.
+
+	•	The bonus is automatically added to your Powerlynx account balance.
+
+**Important Terms**
+
+•	The bonus credit can be used for Powerlynx licenses and services or withdrawn by contacting our support team.
+
+Start Referring Today!
+
+Grow the Powerlynx community and earn rewards. Log in to your billing portal and start sharing your invite link now!
