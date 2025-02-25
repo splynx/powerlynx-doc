@@ -32,7 +32,7 @@ Allows you to export customer sessions to see the usage. The exported data inclu
 
 Export vouchers with different statuses, locations, and data plans. This data can be useful to see how many vouchers were generated from a specific data plan, and more.
 
-The exported data includes: voucher ID, customer name, serie, full code, status, price, location, activation time, creation time, valid until, data limit, online time limit, data usage, online time usage and more.
+The exported data includes: voucher ID, customer name, serie, full code, status, price, location, activation time, creation time, valid until, data limit, online time limit, data usage, online time usage, activation hotspot, MAC, IP, NAS Identifier and port.
 
 ## Customers export
 
