@@ -32,7 +32,7 @@ Don't forget to update the RADIUS settings, as using the OpenVPN connection type
 | ------------- | :-----------: |
 | OpenVPN server IP     | 10.112.0.1 |
 | RADIUS IP    |   10.112.0.2    |
-| Public RADIUS host |   openvpn.powerlynx.app:443    |
+| OpenVPN endpoint |   openvpn.powerlynx.app:443    |
 
 ![OpenVPN Teltonika #4](images/openvpn_teltonika_4.png){data-zoomable}
 
