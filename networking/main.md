@@ -6,3 +6,5 @@
 ### [Create Teltonika Hotstpot](teltonika.md)
 ### [Create Cudy Hotstpot](cudy.md)
 ### [Create Ruckus Hotstpot](ruckus.md)
+
+### [OpenVPN](openvpn.md)

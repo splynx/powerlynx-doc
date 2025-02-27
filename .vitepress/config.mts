@@ -16,7 +16,7 @@ export default defineConfig({
       {
         items: [
           { text: 'Get started', link: '/getstarted' },
-          { text: 'Networking', items:[
+          { text: 'Networking', link: '/networking/main.md', items:[
             {text: 'Mikrotik Hotspot', link: '/networking/mikrotik.md'},
             {text: 'Mikrotik Troubleshooting', link: '/networking/mikrotik_troubleshooting.md'},
             {text: 'Cambium Hotspot', link: '/networking/cambium.md'},
