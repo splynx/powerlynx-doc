@@ -23,6 +23,7 @@ export default defineConfig({
             {text: 'Teltonika Hotspot', link: '/networking/teltonika.md'},
             {text: 'Cudy Hotspot', link: '/networking/cudy.md'},
             {text: 'Ruckus Hotspot', link: '/networking/ruckus.md'},
+            {text: 'OpenVPN', link: '/networking/openvpn.md'},
           ] },
           { text: 'System', items: [
             { text: 'Locations', link: '/system/locations.md' },
