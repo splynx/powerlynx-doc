@@ -102,3 +102,9 @@ Powerlynx now offers a referral program that allows you to invite other companie
 Start Referring Today!
 
 Grow the Powerlynx community and earn rewards. Log in to your billing portal and start sharing your invite link now!
+
+### Can I create a read-only administrator in Powerlynx?
+
+Yes, you can assign a read-only role to an administrator either when adding a new one or by updating an existing administrator and changing their role.
+
+![Read only role](/images/read-only-role.png){data-zoomable}
