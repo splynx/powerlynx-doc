@@ -1,10 +1,6 @@
 ---
 outline: deep
 ---
-ℹ️ℹ️ℹ️ 
-Powerlynx supports only Cudy WR1300 devices with [version 2.2.3](https://www.cudy.com/pages/download-center/wr1300-3-0) or newer installed.
-Please reach out to `support@powerlynx.app` for support on any other models.
-
 # Connect Cudy hotspot with Powerlynx
 In this manual, we will guide you on how to add a Cudy router as a hotspot in Powerlynx.
 In our example, we are using a Cudy WR1300 router. Customers will connect to the Wi-Fi provided by the router.
@@ -63,7 +59,7 @@ Next, navigate to the `General Settings / Captive portal` page.
 7. Set the `RADIUS NAS ID` to `cudy`. You can change it to whatever you want, but remember that this value is used to match specific locations and splash pages in Powerlynx.
 8. Set the `Preferred DNS` to `8.8.8.8`.
 9. Set the `CoA Port` to `3799`.
-10. Add `fra1.digitaloceanspaces.com` and `<your_subdomain>.powerlynx.app` to both the `UAM Allowed` and the `UAM Domain` lists.
+10. Add `fra1.digitaloceanspaces.com` and `<your_subdomain>.powerlynx.app` to both the `UAM Allowed` and the `UAM Domain` lists. If you use Netcash as your payment gateway, please refer to this list of [UAM Allowed hosts](https://docs.powerlynx.app/finance/netcash.html#walled-garden-hosts-for-cudy-devices).
 11. Click on the `Save & Apply` button.
 
 ## Link the device by its SSID

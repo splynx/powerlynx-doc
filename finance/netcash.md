@@ -136,6 +136,47 @@ add action=accept disabled=no dst-address=54.0.0.0/8 !dst-address-list \
 ```
 It might be useful to visit our forum, especially [this topic](https://forum.powerlynx.app/t/mikrotik-walled-garden/19), to discuss all questions related to the walled garden.
 
+### Walled Garden hosts for Cudy devices
+
+If you are using Cudy hotspot controllers and want your customers to pay via Netcash, you need to add the following set of hosts to the UAM Allowed section on your Cudy device:
+
+UAM Allowed
+```
+*.digitaloceanspaces.com
+*.powerlynx.app
+cde.netcash.co.za
+js-agent.newrelic.com
+seal.digicert.com
+*.netcash.co.za
+*.digicert.com
+*.newrelic.com
+netdna.bootstrapcdn.com
+netcashcde.azurewebsites.net
+*.ozow.com
+*.azurefd.net
+*.trafficmanager.net
+*.msedge.net
+*.hostserv.co.za
+*.paynow.co.za
+*.microsoft.com
+*.awsglobalaccelerator.com
+*.cloudflare.net
+*.cardinalcommerce.com
+*.paygate.co.za
+*.cloudfront.net
+*.dpopayments.io
+authentication.cardinalcommerce.com/ThreeDSecure/
+3ds.capitecbank.co.za/acs/
+acsabsa.bankserv.co.za
+acsnedcor.bankserv.co.za
+acssb.bankserv.co.za
+*.fnb.*
+*.standardbank.*
+*.capitec.*
+*.absa.*
+*.nedbank.*
+```
+
 ## Buying a voucher with Netcash
 
 Customers can now buy a voucher on a splash page using Netcash.
