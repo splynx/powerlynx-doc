@@ -10,3 +10,4 @@
 ### [Reports](reports.md)
 ### [Notifications](notifications.md)
 ### [Public status page](status-page.md)
+### [Additional fields for the splash page](additional-fields.md)

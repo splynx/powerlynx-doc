@@ -36,6 +36,7 @@ export default defineConfig({
             { text: 'Reports', link: '/system/reports.md' },
             { text: 'Notifications', link: '/system/notifications.md' },
             { text: 'Status page', link: '/system/status-page.md' },
+            { text: 'Additional fields', link: '/system/additional-fields.md' },
           ] },
           { text: 'Finance', link: '/finance/main.md', items: [
             { text: 'Stripe', link: '/finance/stripe.md' },
