@@ -74,6 +74,7 @@ add dst-host=*.standardbank.*
 add dst-host=*.capitec.*
 add dst-host=*absa*
 add dst-host=*.nedbank.*
+add dst-host=*.nedsecure.co.za
 add dst-host=authentication.cardinalcommerce.com/ThreeDSecure/
 add dst-host=3ds.capitecbank.co.za/acs/
 add dst-host=*bankserv*
