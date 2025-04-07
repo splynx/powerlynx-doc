@@ -80,6 +80,13 @@ add dst-host=3ds.capitecbank.co.za/acs/
 add dst-host=*bankserv*
 add dst-host=acsabsa.dnslb.bankserv.co.za
 add dst-host=api.raygun.io
+add dst-host=connect.facebook.net/en_US/fbevents.js
+add dst-host=get.zapper.com
+add dst-host=t.clarity.ms/collect
+add dst-host=*.snapscan.*
+add dst-host=secure1.ecentricpaymentgateway.co.za
+add dst-host=*googletagmanager*
+add dst-host=*google-analytics*
 /ip hotspot walled-garden ip
 add action=accept disabled=no dst-address=151.101.2.137 !dst-address-list \
     !dst-port !protocol !src-address !src-address-list
