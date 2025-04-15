@@ -45,9 +45,9 @@ To check payments after activating voucher you can go to `Finance/Payment record
 
 ## Enable "Access code" method for specific Location
 
-As we generated vouchers for specific location we must to enable **Login using access code** in this location.
+As we generated vouchers for specific location we must to enable **Access code** method in this location.
 
-Navigate to your location settings and open the `Payment gateways` tab and enable **Login using access code**.
+Navigate to your location settings and open the `Payment gateways` tab and enable **Access code**.
 
 ![Enabling](images/enable_access_code_feature.png){data-zoomable}
 
