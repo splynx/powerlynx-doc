@@ -13,7 +13,7 @@ To configure the desired payment gateway, click on the button under the "Actions
 ## [Stripe](stripe.md)
 ## [Paypal](paypal.md)
 ## [Payfast](payfast.md)
-## [Login using voucher code](login_with_voucher_code.md)
+## [Login using access code](login_with_voucher_code.md)
 ## [Netcash](netcash.md)
 ## [Safaricom MPESA](safaricom-mpesa.md)
 ## [Xendit](xendit.md)
