@@ -43,7 +43,7 @@ In this case we want to create payment after entering manual voucher, define the
 
 To check payments after activating voucher you can go to `Finance/Payment records` or `Finance/Payments`.
 
-## Enable "Login using access code" for specific Location
+## Enable "Access code" method for specific Location
 
 As we generated vouchers for specific location we must to enable **Login using access code** in this location.
 
