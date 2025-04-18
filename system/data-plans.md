@@ -12,45 +12,34 @@ You can view the list of all data plans and create a new one on the **Data plans
 
 ![Data plan configs](images/data-plan-configs.png){data-zoomable}
 
-Data plans have a large amount of configuration options. Let's review them one by one.
-
-Main data plan configuration options:
+Data plan configuration options:
 
 * **Title** - the name of the plan. It will be displayed to customers on the splash page.
+
+* **Active** – the checkbox to enable or disable the plan. If it plan is disabled, it will not be displayed on the splash page.
+
+* **Voucher prefix** – the prefix that will be used for generating vouchers series for this plan.
+
+* **Speed** - Download and Upload speed available for this data plan.
+
 * **Price** - the price of the plan. It will be displayed to customers on the splash page and this value will be used for buying plan using a payment gateway.
 
-Speed limitations
+* **Expires in** - Define the validity period for vouchers created from this data plan. The expiration can be set in minutes, hours, or days.
+For example, if you set "Expires in = 7 days", the voucher will automatically deactivate 7 days after it is created.
 
-* **Download speed (kbps)** - the maximum download speed for customers in kbps.
-* **Upload speed (kbps)** - the maximum upload speed for customers in kbps.
-
-Expirations limitations:
-
-* **Expires in** – the number of days/hours/minutes the plan will be valid after buying on the splash page.
-
-Usage limitations:
-
-* **Separate limits** – this checkbox allows you to separate download and upload traffic limits. If the checkbox is checked, limits from fields **Download limit** and **Upload limit** will be applied. If the checkbox is unchecked, the limit from the **Total limit** field will be applied.
+* **Separate limits** – this checkbox allows you to separate download and upload traffic limits. If the checkbox is checked, limits from fields **Download limit** and **Upload limit** will be applied. If the checkbox is unchecked, the limit from the **Total limit** field will be applied for traffic limit.
 
 * **Online time limit** – the maximum time the customer can be online after buying the plan on the splash page.
 
 If one of these limits is reached, the customer will be disconnected, and the voucher will be transferred to the status *Used*
 
-Plan availability:
-
-* **Usage limit** – it is a restriction how often the customer can buy the plan. It can be set to **Unlimited**, **On time**, **Once per day**, **Onse per 24 hours** **Once per week**, **Once per month**, **Once per year**. For example, if you set the limit to **Once 24 hours**, the customer will be able to buy the plan only once per 24 hours.
+* **Usage limit** – it is a restriction how often the customer can buy the plan. It can be set to **Unlimited**, **On time**, **Once per day**, **Onse per 24 hours** **Once per week**, **Once per month**, **Once per year**. For example, if you set the limit to **Once 24 hours**, the customer will be able to buy the plan only once per 24 hours. This is useful when you want to limit free plans to prevent multiple uses per day. For example, if you want users to access the plan only once a day instead of 10 times, you can set this restriction.
 
 * **Available days** – it is the list of days when the plan is available. For example, if you set the list to **Monday**, **Tuesday**, **Wednesday**, the plan will be available only on these days.
 
 * **Available hours** – it is the time range when the plan is available. For example, if you set the range from **08:00** to **18:00**, the plan will be available only from 08:00 to 18:00.
 
-Other plan options:
-
-* **Simultaneous devices** – the maximum number of devices that can be connected to the network using the same voucher at the same time.
-
-* **Voucher prefix** – the prefix that will be used for generating vouchers series for this plan.
-
-* **Active** – the checkbox to enable or disable the plan. If it plan is disabled, it will not be displayed on the splash page.
+* **Simultaneous devices** – The maximum number of devices that can connect to the network simultaneously using the same voucher, sharing its limits concurrently.
 
 * **Mark plan as popular** – the checkbox to mark the plan as popular. It will be displayed on the top of the list of plans on the splash page.
 
@@ -61,22 +50,23 @@ To enable a data plan for a location, go to the ```Locations``` section location
 
 ![Select plans for locations](images/select-plans-for-locations.png){data-zoomable}
 
-## Usage example
+## Usage examples
 
-### Example №1. Plan with traffic limitation and expiration after 1 day
+### Example №1. A free plan for educational use with no data limit, a 1-hour session duration, and restricted to one use per day.
 
-![Example 1](images/exmple-expire-after-1-day.png){data-zoomable}
+![Example 1](images/data-plan-configs.png){data-zoomable}
 
-In this configuration case, the user can use 10 GB download and 10 GB upload traffic one day after buying the plan. After one day, the plan will expire, and the user will be disconnected or can't connect to the network.
+With this setup, students can use the plan only once per day from Monday to Friday. It is available for selection between 06:45 and 16:00.
+There is no data limit, but the online session is limited to 1 hour. Students can connect up to 2 devices simultaneously (e.g., a mobile phone and a laptop).
 
-### Example №2. Plan with usage time limitation
+### Example №2. Paid plan with traffic limit
 
-![Example 2](images/used-after-1h-online.png){data-zoomable}
+![Example 2](images/paid_plan_with_traffic_limit.png){data-zoomable}
 
-In this case, the user can be online for 1 hour. Use can split this 1 hour into several sessions. For example, the user can be online for 30 minutes, then disconnect and connect again for 30 minutes. After 1 hour of online time, the user will be disconnected, and the voucher will be in used status. In this case, the user can't have traffic limitations.
+In this case, the customer can purchase a plan with a 20 GB traffic limit for $20. There is no expiration until the data is fully used, and no session time limits. The user only pays for the data limit, and the plan can be purchased multiple times per day.
 
-### Example №3. Plan with traffic and time limitations
+### Example №3. Free plan that can be used only once
 
-![Example 3](images/traffic-and-time-limitations.png){data-zoomable}
+![Example 3](images/100mbfreeplan.png){data-zoomable}
 
-In this case, the user can use 10 GB to download and upload traffic in total and be online for 1 hour. After reaching one of these limits, the user will be disconnected, and the voucher will be in used status. The user will have only one day to use this voucher because the voucher expires after one day (value in `Validity` field).
+In this case, the customer can use the plan only once (Usage limit = One time). It includes a 100 MB traffic limit and expires 1 day after creation. This setup is ideal for guest access, where you want to offer 100 MB of free data per customer, one time only.

@@ -108,3 +108,19 @@ Grow the Powerlynx community and earn rewards. Log in to your billing portal and
 Yes, you can assign a read-only role to an administrator either when adding a new one or by updating an existing administrator and changing their role.
 
 ![Read only role](/images/read-only-role.png){data-zoomable}
+
+### How do simultaneous devices work?
+
+![Simultaneous devices](/images/faq_simultaneous_devices.png){data-zoomable}
+
+This setting defines how many devices can connect to the network simultaneously using the same voucher or user account.
+
+For example, if it is set to 2, a user can connect two devices (e.g., phone and laptop) with their phone number. These devices will share the voucher’s limits concurrently (e.g., data and time).
+
+If a third device tries to connect, Powerlynx will automatically disconnect one of the existing devices:
+
+If one device is offline, it will be removed.
+
+If both are offline, the device with the oldest session will be disconnected.
+
+This functions as a form of smart device replacement within Powerlynx.
