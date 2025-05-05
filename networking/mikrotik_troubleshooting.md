@@ -73,3 +73,8 @@ Sometimes, it is necessary to set the timeout value to 20000 if the network dela
 RADIUS server "Require Message Auth" option - keep this option with the "no" value as it can brake RADIUS authentication process:
 
 ![radius-server](images/radius-server.png){data-zoomable}
+
+
+### Useful links
+
+* [Mikrotik Firewall tips](https://forum.powerlynx.app/t/recommended-mikrotik-firewall-configuration/123)
