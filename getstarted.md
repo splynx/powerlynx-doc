@@ -2,67 +2,52 @@
 outline: deep
 ---
 
-# Getting Started Guide for Powerlynx Hotspot Software
+# Quick‑Start Guide (~10 minutes)
 
-Upon completing the registration process, initiate your Powerlynx instance by following these steps:
+This guide walks you through the minimum set‑up required to see Powerlynx in action. Follow the six steps below with any supported access point or gateway.
 
-   1. Enable Two-Factor Authentication (2FA).
-   2. Configure Localization for system.
-   3. Configure Splash Page.
-   4. Configure SMS gateway.
-   5. Create Data Plans.
-   6. Set up payment methods.
-   7. Configure Location.
+## Prerequisites
 
-## Enabling Two-Factor Authentication (2FA)
+- A Powerlynx admin account ([sign up for free](https://powerlynx.app/) if you haven’t already).
 
-Account Security Setup: Safeguard your account by implementing Two-Factor Authentication (2FA). To enable 2FA, navigate to your account settings, found in the top right corner under 'Profile.' Configure 2FA in the designated 'Two-Factor Authentication' section.
+- A compatible device that can redirect to an external captive portal and speak RADIUS.
 
-![user_profile](images/profile.png){data-zoomable}
+- Basic network connectivity from the device to the internet.
 
-## Configuring Localization for system
+## 1️⃣ [Create & brand your splash page](https://docs.powerlynx.app/system/splash-pages.html)
 
-Navigate to Config/System/Localization and ensure that all parameters are correct.
+1. In the Powerlynx dashboard, navigate to `Config/System/Splash pages`
 
-![config-system-localization](images/config-system-localization.png){data-zoomable}
+2. Press the "Add" button and configure your splash page.
 
-## Configuring Splash Page
+3. Upload your logo, tweak colours/fonts, and add optional elements (T&C, social login, adverts, etc.).
 
-Go to Config/System/Splash Pages and set up a Splash Page. This is an important step, as each location needs its own configured splash page. More information about Splash Page in Powerlynx can be found [here](https://docs.powerlynx.app/system/splash-pages.html).
+4. Hit Save & Publish.
 
-![config-system-splashpages](images/config-system-splashpages.png){data-zoomable}
+## 2️⃣ [Create a FREE data plan (for quick testing)](https://docs.powerlynx.app/system/data-plans.html)
 
-## Configuring SMS gateway
+Using [this manual](https://docs.powerlynx.app/system/data-plans.html), create a data plan with a price of 0. When the plan price is zero, the customer won't be redirected to the payment gateway. This allows us to test whether the user flow works correctly without triggering a redirect to the payment page. Later, we can update the price to test the flow with the payment gateways.
 
-Configure SMS sending in Config/System/SMS if you intend to verify your customers' phone numbers with OTP codes. Set up your SMS gateway:
+## 3️⃣ [Assign the splash page to a location](https://docs.powerlynx.app/system/data-plans.html)
 
-![config-system-sms](images/config-system-sms.png){data-zoomable}
+Open the `Locations` menu and select a default location (or create a new one). Then, switch to the `Splash Pages` tab and enable the splash page you created in step #1 for this location.
 
-Find more information about SMS gateways [here](https://docs.powerlynx.app/system/sms.html).
+![Enable splash page for location](images/location_enable_splash_page.png){data-zoomable}
 
-## Creating Data Plans
+## 4️⃣ [Enable the data plan for that location](https://docs.powerlynx.app/system/splash-pages.html#how-to-enable-the-splash-page)
 
-Create tariff plans within the Data Plans section. You can find more information about Data plans in Powerlynx following this [link](https://docs.powerlynx.app/system/data-plans.html).
+Switch to the `Plans` tab and enable the data plan you created in step #2 for this location.
 
-![data-plans](images/dataplans.png){data-zoomable}
+![Enable data plan for location](images/enable_plan_for_location.png){data-zoomable}
 
-## Configuring payment methods
+## 5️⃣ [Connect your hotspot](https://docs.powerlynx.app/networking/mikrotik.html)
 
-Set up payment methods in Config/Finance/Payment Gateways. The full list of supported payment gateways can be found [here](https://docs.powerlynx.app/finance/main.html).
+Using one of the [manuals](https://docs.powerlynx.app/networking/main.html), add your hotspot to this location.
 
-![config-finance-paymentgateways](images/config-finance-paymentgateways.png){data-zoomable}
+[MikroTik](https://docs.powerlynx.app/networking/mikrotik.html) is the easiest option and is perfectly suitable for Powerlynx.
 
-## Configuring Location.
+## 6️⃣ Test the flow
 
-Configuring the location is a crucial step in all configurations to get started. Full information about `Locations` can be found [here](https://docs.powerlynx.app/system/locations.html). This guide demonstrates the required configurations you must set up to ensure your hotspot works properly.
+Connect to the WiFi and verify the user flow.
 
-   - Ensure the Details/SSIDs field is populated and contains the identifier of your hotspot.
-    ![location](images/location.png){data-zoomable}
-   - In the Splash Pages section, choose the previously generated splash page
-    ![location-splashpage](images/splashpage-enabled.png){data-zoomable}
-   - Navigate to the Plans tab and choose the applicable tariff plans for this location.
-    ![location-plans](images/location-plans.png){data-zoomable}
-   - In the Payment Gateways tab, choose the available payment methods.
-    ![location-pg](images/location-pg.png){data-zoomable}
-   - In the Hotspots tab, create a router. Follow these links to know more how to create and configure [MikroTik](https://docs.powerlynx.app/networking/mikrotik.html) and [Cambium](https://docs.powerlynx.app/networking/cambium.html) in Powerlynx.
-    ![location-hotspot](images/location-hotspot.png){data-zoomable}
+![User journey](images/userFlow.png){data-zoomable}
