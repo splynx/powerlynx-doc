@@ -46,6 +46,11 @@ Mikrotik routers are relatively inexpensive and make excellent hotspot controlle
 
 3. Set Up Hotspot Server on Each VLAN Interface: Configure a hotspot server on each VLAN interface to efficiently manage and monetize your WiFi network through Powerlynx.
 
+**Useful links:**
+
+* https://forum.powerlynx.app/t/mikrotik-hotspot-controller-with-access-point-device-simple-setup/128
+* https://forum.powerlynx.app/t/mikrotik-controller-with-ap-connected-via-vlan-interface/75
+
 
 ### What happens when the customer reaches the data package limit
 
