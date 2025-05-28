@@ -33,6 +33,7 @@ export default defineConfig({
             { text: 'Vouchers', link: '/system/vouchers.md' },
             { text: 'SMS', link: '/system/sms.md' },
             { text: 'Adverts', link: '/system/adverts.md' },
+            { text: 'Target groups', link: '/system/target-groups.md' },
             { text: 'Reports', link: '/system/reports.md' },
             { text: 'Notifications', link: '/system/notifications.md' },
             { text: 'Status page', link: '/system/status-page.md' },
