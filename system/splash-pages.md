@@ -67,6 +67,34 @@ Once the splash page is created, you can customize it by changing the colors, lo
 
 We recommend exploring each tab - Logo, Container, Body, Button, and Input—and checking the available customization options to create your own design. Make the changes and see how they will appear to the end customer on the same page.
 
+### Customizable status page
+
+The "Status Page" refers to the final page a customer sees before closing the captive portal. It appears at the end of the user journey - after any ads and payment steps have been completed.
+
+To customize it, open your splash page, switch to the `User Journey` tab, and select the "Status Page" option to configure it:
+
+![User journey status page](images/user-journey-status-page.png){data-zoomable}
+
+You can add various elements to your Status Page - such as videos, images, text, or buttons with URLs—under the "Content" tab:
+
+![UJ status page content](images/uj-content.gif#mediumsize){data-zoomable}
+
+Use the "Theme" tab to configure the overall style of the page, including background image or color, button colors, and more:
+
+![UJ status page theme](images/uj-theme.png){data-zoomable}
+
+The "Config" tab allows you to set additional options, such as redirecting the user to a specific website after a delay (in seconds):
+
+![UJ status page config](images/uj-config.png){data-zoomable}
+
+::: info
+The "Use router's status page" toggle determines which status page will be displayed: the one you've configured in Powerlynx or the one hosted on your hotspot controller (some routers have a built-in, self-hosted status page). If this toggle is enabled, the Powerlynx status page will be bypassed, and users will see the router’s default page instead. We recommend keeping this toggle disabled unless you specifically want to use the router-hosted page. This option was added to support clients who prefer to use their router’s native status page.
+:::
+
+That's how it looks at the end of user journey:
+
+![UJ status page example](images/uj-iphone-example.png#mediumsize){data-zoomable}
+
 ### Here are some examples of what you can create:
 
 ![Splash page theme example #1](images/custom_splash_page_1.jpg){data-zoomable}
