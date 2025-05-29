@@ -22,7 +22,7 @@ Mass SMS Sending allows you to broadcast messages to multiple users simultaneous
 5. Feedback requests
 
 ## How It Works
-* Create a Target Group using this [guide]((https://docs.powerlynx.app/system/target-groups.html)).
+* Create a Target Group using this guide.
 
 * Navigate to `Marketing/SMS` menu on the dashboard:
 
