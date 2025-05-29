@@ -32,12 +32,15 @@ export default defineConfig({
             { text: 'Data plans', link: '/system/data-plans.md' },
             { text: 'Vouchers', link: '/system/vouchers.md' },
             { text: 'SMS', link: '/system/sms.md' },
-            { text: 'Adverts', link: '/system/adverts.md' },
-            { text: 'Target groups', link: '/system/target-groups.md' },
             { text: 'Reports', link: '/system/reports.md' },
             { text: 'Notifications', link: '/system/notifications.md' },
             { text: 'Status page', link: '/system/status-page.md' },
             { text: 'Additional fields', link: '/system/additional-fields.md' },
+          ] },
+          { text: 'Marketing', items: [
+            { text: 'Target groups', link: '/system/target-groups.md' },
+            { text: 'Adverts', link: '/system/adverts.md' },
+            { text: 'Marketing SMS', link: '/system/marketing-sms.md' },
           ] },
           { text: 'Finance', link: '/finance/main.md', items: [
             { text: 'Stripe', link: '/finance/stripe.md' },
