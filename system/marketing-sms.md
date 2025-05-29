@@ -4,7 +4,7 @@ outline: deep
 
 # Mass SMS
 
-The Mass SMS Sending feature in Powerlynx enables you to send targeted text messages to groups of users in just a few clicks. By combining this with the Target Groups feature, you can ensure your message reaches exactly the right audience based on demographics, behavior, or any custom data you’ve collected.
+The Mass SMS Sending feature in Powerlynx enables you to send targeted text messages to groups of users in just a few clicks. By combining this with the [Target Groups](https://docs.powerlynx.app/system/target-groups.html) feature, you can ensure your message reaches exactly the right audience based on demographics, behavior, or any custom data you’ve collected.
 
 ## What Is Mass SMS Sending?
 Mass SMS Sending allows you to broadcast messages to multiple users simultaneously. Instead of messaging your entire user base, you can focus on a specific segment—improving engagement and reducing costs.
@@ -22,7 +22,7 @@ Mass SMS Sending allows you to broadcast messages to multiple users simultaneous
 5. Feedback requests
 
 ## How It Works
-* Create a Target Group using this guide.
+* Create a Target Group using this [guide](https://docs.powerlynx.app/system/target-groups.html).
 
 * Navigate to `Marketing/SMS` menu on the dashboard:
 
