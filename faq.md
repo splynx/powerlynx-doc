@@ -129,3 +129,17 @@ If one device is offline, it will be removed.
 If both are offline, the device with the oldest session will be disconnected.
 
 This functions as a form of smart device replacement within Powerlynx.
+
+### How do I handle the randomized MAC address feature on Android and iPhones?
+
+Mobile devices like Android and iPhone often use randomized MAC addresses for privacy reasons, which can make device identification challenging. In Powerlynx, we offer a solution by generating a fingerprint for each device upon its first connection. This fingerprint is a unique identifier based on various device characteristics and is stored alongside the original MAC address.
+
+Even if the MAC address changes later, Powerlynx can still recognize the device using the fingerprint. You can configure this feature under Config → Captive Portal.
+
+There are two available options:
+
+1. Store fingerprints only – to track what types of devices are connecting.
+
+2. Validate fingerprints – to identify and manage devices consistently, even if their MAC addresses change (e.g., to prevent multiple MACs from bypassing connection limits).
+
+This helps ensure more accurate tracking and control of connected devices.
