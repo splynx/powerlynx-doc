@@ -2,6 +2,8 @@
 
 [PayFast](https://payfast.io/about-us/) is an online payment processing service for South African merchants of all sizes.
 
+PayFast supports multiple payment methods, including MTN MoMo, card payments, Instant EFT, Mukuru Pay, and more. You can find the full list on [their website](https://payfast.io/features/payment-methods/).
+
 To set up PayFast integration in Powerlynx, ensure you've selected country `South Africa` under `Config/System/Localization`.
 
 ## Configuration
