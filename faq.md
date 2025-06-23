@@ -29,7 +29,7 @@ Some devices - like the Ubiquiti UniFi Dream Machine Pro and UniFi Cloud Gateway
 
 In this screenshot, you can see six steps from entering your phone number to reaching the ads page. Steps 2, 4, and 5 are optional - if you’re offering free access, the system won’t redirect users to the payment page. Displaying ads and collecting additional personal information are also optional.
 
-![User journey](images/userJourney.png){data-zoomable}
+![User journey](images/New_Flow.png){data-zoomable}
 
 ### Do I need to connect SMS gateways to Powerlynx in order to send SMS?
 
