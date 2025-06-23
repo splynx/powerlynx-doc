@@ -16,16 +16,20 @@ Yes, we offer a 21-day trial so you can evaluate the Powerlynx software and dete
 Our entry-level license is $50 for 200 online customers. This means you can keep a maximum of 210 online customers in Powerlynx with this license. You can upgrade your license if needed. For example, if you plan to host 800 online customers, the cost will be $200, and your system can accommodate up to 810 online customers. Any additional customers beyond that limit will not be able to connect.
 
 ### What payment gateways do you support?
-We are continually adding new integrations with payment gateways worldwide. Currently, we support PayPal, Stripe, Payfast(South Africa), Netcash(South Africa) and Safaricom MPESA (Kenya). More about supported payment gateways you can find [here](https://docs.powerlynx.app/finance/main.html).
+We are continually adding new integrations with payment gateways worldwide. Currently, we support PayPal, Stripe, Payfast(South Africa), Netcash(South Africa) and Safaricom MPESA (Kenya), DPO, MTN MoMo, Xendit. More about supported payment gateways you can find [here](https://docs.powerlynx.app/finance/main.html).
 
 ### What network devices do you support?
-By default, we support Mikrotik, Teltonika and Cambium network devices that can connect to Powerlynx using the RADIUS protocol. While it is possible to connect other devices through the RADIUS protocol, it may require some configuration adjustments.
+Powerlynx supports network equipment that can handle external captive portals, RADIUS authentication, and WireGuard or OpenVPN VPN. The majority of our clients use MikroTik devices due to their flexibility and compatibility. Teltonika, Cudy, and Cambium devices are also popular choices and work well with our platform.
+
+We generally support most OpenWrt-based routers and enterprise-grade hardware that allows external captive portal redirection and RADIUS integration.
+
+Some devices - like the Ubiquiti UniFi Dream Machine Pro and UniFi Cloud Gateway Ultra - are not supported, as they restrict external captive portals and third-party RADIUS authentication.
 
 ### What is the user experience like when the customer connects to the WiFi?
 
-In this video, the customer demonstrates connecting to the WiFi and purchasing internet access using a credit card through the Stripe payment gateway:
+In this screenshot, you can see six steps from entering your phone number to reaching the ads page. Steps 2, 4, and 5 are optional - if you’re offering free access, the system won’t redirect users to the payment page. Displaying ads and collecting additional personal information are also optional.
 
-![User journey](images/user_journey_stripe.gif){data-zoomable}
+![User journey](images/userJourney.png){data-zoomable}
 
 ### Do I need to connect SMS gateways to Powerlynx in order to send SMS?
 
