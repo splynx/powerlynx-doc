@@ -42,61 +42,16 @@ Enable this feature, select the sending frequency: one-time or every time a new 
 
 You can monitor the SMS sent from `Logs/SMS Logs`.
 
-## Mikrotik: Redirect to the status page after logging in
+### 2FA for status page
 
-If you're using the [Mikrotik hotspot](https://docs.powerlynx.app/networking/mikrotik.html) in your Powerlynx, you can redirect your customers to the status page without sending them an SMS. All you need to do is replace the `status.html` file on your Mikrotik router with a custom one containing the following code:
+To enhance security, you can enable SMS-based two-factor authentication (2FA) for the status page. Navigate to `Config/Portal` section in order to enable it. This option is available only if at least one SMS gateway is configured in your system. After entering their phone number, the customer will receive a one-time password (OTP) to access the status page.
 
-```
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="refresh" content="1; url='https://one.powerlynx.app/portal'">
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="expires" content="-1">
-</head>
-
-<body>
-<div style='display: flex; justify-content: center; align-items: center; height: 100vh; width: 100%; flex-direction: column;'>
-    <div style="text-align: center; font-size: 70px;">Click this button to open the status page</div>
-    <div style="text-align: center; padding-top: 20px;">
-        <a href="https://one.powerlynx.app/portal" style="text-decoration: none;">
-            <button style="padding: 20px 40px; font-size: 30px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
-                Click to Connect
-            </button>
-        </a>
-    </div>
-</div>
-</body>
-</html>
-```
-
-You can customize this page as you like, but use your URL for the redirect.
-
-![Status HTML Mikrotik](images/mikrotik_status_html.png){data-zoomable}
-
-## Teltonika: Redirect to the status page after logging in
-
-If you're using the [Teltonika hotspot](https://docs.powerlynx.app/networking/teltonika.html) in your Powerlynx, you can redirect your customers to the status page without sending them an SMS. All you need to do is open your Teltonika router, navigate to `Services/Hotspot/General`, edit your hotspot instance, and change these settings:
-
-![Status HTML Teltonika](images/teltonika_status_page.png){data-zoomable}
-
-## Cambium: Redirect to the status page after logging in
-
-If you're using the [Cambium hotspot](https://docs.powerlynx.app/networking/cambium.html) in your Powerlynx, you can redirect your customers to the status page without sending them an SMS. All you need to do is to open your Cambium router, navigate to `WLAN/Guest access`, and change these settings:
-
-![Status HTML Cambium](images/status_page_cambium.png){data-zoomable}
-
-Use your status page link in the `Redirect URL` field (or any other link).
+![2FA](images/status_page_2fa.png){data-zoomable}
 
 ## Frequently Asked Questions (FAQs)
 
 ### Can I access the status page from any device?
 Yes, the status page can be accessed from any device with internet access, such as a smartphone, tablet, or computer.
-
-### What authorization credentials can the customer use to access the status page
-
-For now, the customer only needs to provide their phone number in the exact format stored in Powerlynx. We do not send OTP codes when someone accesses the status page, as it doesn't contain sensitive data like payment credentials, personal information, etc.
 
 ### Which data can I find on the page?
 
