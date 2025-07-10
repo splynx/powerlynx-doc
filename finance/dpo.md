@@ -41,6 +41,15 @@ add dst-host=*ipify*
 ```
 It might be useful to visit our forum, especially [this topic](https://forum.powerlynx.app/t/mikrotik-walled-garden/19), to discuss all questions related to the walled garden.
 
+## DPO account settings
+
+::: info
+Before you begin using this integration in Powerlynx, please contact your DPO account manager. You’ll need to set up a webhook in DPO that sends responses back to Powerlynx.
+
+The webhook URL is simply your Powerlynx base URL followed by /dpo-pay/result.
+For example, if your Powerlynx URL is `https://my.powerlynx.app`, the webhook URL will be: `https://my.powerlynx.app/dpo-pay/result`. 
+:::
+
 ## Buying a voucher with DPO Pay
 
 Customers can now buy a voucher on a splash page using DPO Pay.
