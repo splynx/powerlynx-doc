@@ -95,6 +95,29 @@ That's how it looks at the end of user journey:
 
 ![UJ status page example](images/uj-iphone-example.png#mediumsize){data-zoomable}
 
+### Customizable data plan select page
+
+You can customize the page customers see when they choose a data plan. To do so, open your splash page, switch to the `User Journey` tab, and select `Select Plan Page` to configure it:
+
+![UJ plan page](images/custom_plan_page.png#mediumsize){data-zoomable}
+
+Here, you can customize the colors, background, and other elements. We recommend experimenting with these settings to find the combination that works best for you:
+
+![UJ plan page1](images/custom_plan_page_2.png#mediumsize){data-zoomable}
+
+You can also switch the card layout to a minimalist design:
+
+![UJ plan page2](images/custom_plan_page_3.png#mediumsize){data-zoomable}
+
+Minimalistic cards show only the plan name, price, the number of simultaneous devices, and the validity period.
+
+Comparison of the minimalist and classic card layouts:
+
+![UJ plan page3](images/plan_card_form_comparison.png#mediumsize){data-zoomable}
+
+The advantage of a minimalist design is that customers can view more data plans without needing to scroll, although it provides less detailed information.
+
+
 ### Here are some examples of what you can create:
 
 ![Splash page theme example #1](images/custom_splash_page_1.jpg){data-zoomable}
@@ -104,6 +127,9 @@ That's how it looks at the end of user journey:
 ![Splash page theme example #3](images/custom_splash_page_3.jpg){data-zoomable}
 
 ![Splash page theme example #4](images/custom_splash_page_4.jpg){data-zoomable}
+
+
+
 
 ## How to enable the Splash page
 

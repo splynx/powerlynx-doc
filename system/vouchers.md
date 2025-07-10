@@ -116,6 +116,27 @@ There are two themes that you can choose from when saving a file in PDF format.
 
 ![Vouchers-light-theme](images/vouchers_light_theme.png){data-zoomable}
 
+### Vouchers PDF customization
+
+By default, we provide two PDF voucher templates — one with a dark theme and one with a light theme. However, you can also create your own custom design for exported PDF vouchers.
+
+To do this, go to `Config → Templates → Voucher PDF`:
+
+![Vouchers-templates](images/config_templates_voucher.png){data-zoomable}
+
+Default templates cannot be removed, only edited. To create a new template, open one of the default ones, copy its code, and then click the **Add Template** button. Paste the copied code into the code area and start editing:
+
+![Vouchers-template-editor](images/template_voucher_editor.png){data-zoomable}
+
+Editing a template's code requires development skills in HTML and CSS, but you can also use AI tools to assist with the process.
+The `Check Code` button validates your syntax and highlights any errors. The `Preview` button generates a PDF preview, allowing you to see the final result.
+
+`Placeholders` let you insert variables to display specific voucher details such as price, speed, and more.
+
+Once a new template is created, you can use it to export a voucher series:
+
+![Vouchers-template-export](images/voucher_pdf_export_new_template.png){data-zoomable}
+
 ## Manually add related MAC addresses to vouchers
 
 Some devices, such as Smart TVs or IP cameras, cannot open a captive portal page because they simply don’t support it — but they still need internet access. To handle this, we’ve introduced a feature that allows your clients to add the MAC addresses of such devices during the sign-up process. Additionally, administrators can manually add a MAC address to the corresponding voucher.
