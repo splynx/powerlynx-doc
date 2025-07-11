@@ -18,3 +18,4 @@ To configure the desired payment gateway, click on the button under the "Actions
 ## [Safaricom MPESA](safaricom-mpesa.md)
 ## [Xendit](xendit.md)
 ## [DPO Pay](dpo.md)
+## [MTN MoMo](mtnmomo.md)

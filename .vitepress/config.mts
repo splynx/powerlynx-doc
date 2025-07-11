@@ -51,6 +51,7 @@ export default defineConfig({
             { text: 'Safaricom MPESA', link: '/finance/safaricom-mpesa.md' },
             { text: 'Xendit', link: '/finance/xendit.md' },
             { text: 'DPO Pay', link: '/finance/dpo.md' },
+            { text: 'MTN MoMo', link: '/finance/mtnmomo.md' },
           ] },
           { text: 'Integrations', link: '/integrations/main.md', items: [
             { text: 'Splynx', link: '/integrations/splynx.md' },
