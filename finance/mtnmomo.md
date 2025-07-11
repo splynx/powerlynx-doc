@@ -45,6 +45,10 @@ add dst-host=*.powerlynx.app
 add dst-host=proxy.momoapi.mtn.com
 add dst-host=*momoapi*
 add dst-host=*mtn*
+add dst-host=*azure-api.net.
+add dst-host=*trafficmanager.net
+add dst-host=*azure-api.net
+add dst-host=*cloudapp.azure.com
 ```
 It might be useful to visit our forum, especially [this topic](https://forum.powerlynx.app/t/mikrotik-walled-garden/19), to discuss all questions related to the walled garden.
 
