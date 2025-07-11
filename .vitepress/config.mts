@@ -55,6 +55,9 @@ export default defineConfig({
           ] },
           { text: 'Integrations', link: '/integrations/main.md', items: [
             { text: 'Splynx', link: '/integrations/splynx.md' },
+          ] },
+          { text: 'Tools', link: '/system/tools.md', items: [
+        
           ] }
         ]
       }
