@@ -24,7 +24,7 @@ Once created, you will see the parameters that can be modified and the uploaded 
 
 Let's see what the user see after the connecting to a WiFi:
 
-![Video ad](images/video_a.gif#mediumsize){data-zoomable}
+![Video ad](../finance/images/video_a.gif#mediumsize){data-zoomable}
 
 As you can see, the video ad was displayed to the customer after selecting a plan, with no option to skip it. The customer must watch the video in its entirety to gain access to the internet.
 
