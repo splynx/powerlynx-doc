@@ -1,7 +1,7 @@
 # Data plans
 
 Data plans are offering subscription templates describing how customers can access the network and what limitations they will have.
-Limitations can be network speed, traffic amount limitations, online time, and plan availability depending on the day of the week or time. 
+Limitations can be network speed, traffic amount limitations, online time, number of devices connected and plan availability depending on the day of the week or time. 
 Tariff plans in Powerlynx are templates for [vouchers](/system/vouchers.md) used for granting users network access.
 
 You can view the list of all data plans and create a new one on the **Data plans** main menu section.
@@ -41,7 +41,13 @@ If one of these limits is reached, the customer will be disconnected, and the vo
 
 * **Simultaneous devices** – The maximum number of devices that can connect to the network simultaneously using the same voucher, sharing its limits concurrently.
 
+* **Prompt additional devices input** - If this option is enabled and **Simultaneous devices** is greater than 1, the customer will be prompted on the splash page to add additional devices. They must enter each device’s MAC address to connect it to the voucher.
+
 * **Mark plan as popular** – the checkbox to mark the plan as popular. It will be displayed on the top of the list of plans on the splash page.
+
+* **Label** - Create labels in `Config → Labels` and assign them to data plans. They’ll appear on the splash page.
+
+![Labels on cards](images/labels_on_cards.jpeg){data-zoomable}
 
 ## Enabled data plans available for location
 
@@ -52,20 +58,13 @@ To enable a data plan for a location, go to the ```Locations``` section location
 
 ## Usage examples
 
-### Example №1. A free plan for educational use with no data limit, a 1-hour session duration, and restricted to one use per day.
-
-![Example 1](images/data-plan-configs.png){data-zoomable}
-
-With this setup, students can use the plan only once per day from Monday to Friday. It is available for selection between 06:45 and 16:00.
-There is no data limit, but the online session is limited to 1 hour. Students can connect up to 2 devices simultaneously (e.g., a mobile phone and a laptop).
-
-### Example №2. Paid plan with traffic limit
+### Example №1. Paid plan with traffic limit
 
 ![Example 2](images/paid_plan_with_traffic_limit.png){data-zoomable}
 
 In this case, the customer can purchase a plan with a 20 GB traffic limit for $20. There is no expiration until the data is fully used, and no session time limits. The user only pays for the data limit, and the plan can be purchased multiple times per day.
 
-### Example №3. Free plan that can be used only once
+### Example №2. Free plan that can be used only once
 
 ![Example 3](images/100mbfreeplan.png){data-zoomable}
 
