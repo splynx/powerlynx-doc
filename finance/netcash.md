@@ -200,7 +200,7 @@ After selecting "Netcash," the customer will be redirected to the Netcash page t
 
 ![Netcash payment](images/netcash-flow.png){data-zoomable}
 
-Control the payment methods available for your customers in your Netcash account under `Account Profile -> NetConnector -> Pay Now`. You can enable or disable various payment methods such as credit card, bank EFT, [1Voucher](https://www.netcash.co.za/pay-now/flash-1voucher/), etc.
+Control the payment methods available for your customers in your Netcash account under `Account Profile -> NetConnector -> Pay Now`. You can enable or disable various payment methods such as credit card, bank EFT, [1Voucher](https://netcash.co.za/services/payment-gateway/payment-methods/flash-1voucher/), etc.
 
 Payment captured by Powerlynx are stored under `Finance/Payments`:
 
