@@ -2,11 +2,51 @@
 outline: deep
 ---
 
-# OTP verification in Powerlynx via SMS
+# SMS Module
 
-It is important to verify the phone number of the person who connects to your Wi-Fi. This is typically done by sending an SMS with an OTP code to ensure the number belongs to a real person. In Powerlynx, you can choose to skip this process, in which case the system will only verify the format of the phone number to ensure it is valid. However, if you decide to send OTP verification codes to your customers, you will need to set up SMS sending from Powerlynx. By default, Powerlynx does not support methods to send SMS directly from the product without integrating with third-party SMS gateways.
+The SMS module in Powerlynx it’s a complete messaging toolkit for businesses to reach customers with mass notifications, 1:1 messages, voucher details, and automated flows - while keeping everything traceable and compliant.
 
-## Twilio SMS gateway
+::: info
+By default, Powerlynx does not support methods to send SMS directly from the product without integrating with third-party SMS gateways.
+:::
+
+## What you can do
+
+1. **OTP for Authentication**
+    
+    Verifying the phone number of anyone connecting to your Wi-Fi helps prevent abuse. Powerlynx can send a one-time password (OTP) via SMS to confirm the number is owned and reachable by the user. If you skip OTP, Powerlynx only validates the phone number’s format (it does not verify ownership). To enable OTP verification, configure SMS sending in Powerlynx.
+
+2. **Mass SMS Campaigns**
+    
+    Send service announcements, maintenance notices, marketing promos, or regulatory updates to a selected audience segment. Schedule in advance and preview before sending. More info [here](https://docs.powerlynx.app/system/marketing-sms.html).
+
+3. **Personal (1:1 SMS)**
+    
+    From a customer profile, send a single tailored message:
+
+    ![Personal SMS](images/send_personal_sms.png){data-zoomable}
+
+4. **Templates & Personalization**
+
+    Build reusable templates with variables (e.g., customer name, account ID, voucher code). Keep your tone consistent and save time for recurring communications.
+
+    ![SMS templates](images/config_templates_sms.png){data-zoomable}
+
+5. **Voucher Delivery over SMS**
+
+    Send the voucher details to the customer via SMS so they can redeem the voucher later when connecting to Wi-Fi.
+
+    ![SMS with voucher details](images/send_voucher_details_via_sms.png){data-zoomable}
+
+6. **Delivery Status & Audit Trail**
+
+    See per-message status, timestamps, message type under `Logs/SMS Logs`. Export logs for reconciliation or compliance.
+
+## Connect SMS gateways
+
+By default, Powerlynx doesn’t send SMS directly. To send SMS messages, integrate a third-party SMS gateway. Powerlynx passes the recipient’s phone number and your message to the gateway and logs the response (for example, delivery status or errors). Below are examples of how to connect popular SMS gateways. You may also find [our forum discussion](https://forum.powerlynx.app/t/custom-sms-gateway-configuration-recommendations/144) on SMS gateways for Powerlynx helpful.
+
+### Twilio SMS gateway
 
 We've built integration with Twilio - https://www.twilio.com. They offer various services, including an SMS gateway.
 
@@ -34,7 +74,7 @@ Once it's done, click the "Add" button at the bottom. Next step is to test if it
 
 For more secure authentication, create an API key with the type set to 'standard', set up permissions, and use it in the "API key" field in Powerlynx. More information can be found here - https://www.twilio.com/docs/usage/api#authenticate-with-http
 
-## SMSPortal gateway
+### SMSPortal gateway
 
 We've also developed an integration with [SMSPortal](https://smsportal.com/). All you need to do is create an account, obtain the API credentials, and use them in Powelrynx.
 
@@ -46,7 +86,7 @@ Copy your Client ID and API key, then use them in Powerlynx when adding a new SM
 
 ![SMSPortal credentials](images/smsportal_credentials.png){data-zoomable}
 
-## Custom SMS gateway
+### Custom SMS gateway
 
 By "Custom SMS Gateway," we refer to any SMS gateway that is not supported by default in Powerlynx. Currently, we only support Twilio and SMSPortal by default, but you can use any other SMS gateway in Powerlynx. However, be aware that configuring a non-default gateway might be less straightforward and could involve more complex setup processes.
 
