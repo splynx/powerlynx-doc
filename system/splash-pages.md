@@ -117,6 +117,11 @@ Comparison of the minimalist and classic card layouts:
 
 The advantage of a minimalist design is that customers can view more data plans without needing to scroll, although it provides less detailed information.
 
+You can also choose which elements are displayed on a card by clicking them:
+
+![Data plan elements](images/data_plan_card_elements.gif#mediumsize){data-zoomable}
+
+
 
 ### Here are some examples of what you can create:
 
