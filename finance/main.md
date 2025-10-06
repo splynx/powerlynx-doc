@@ -19,4 +19,4 @@ To configure the desired payment gateway, click on the button under the "Actions
 ## [Xendit](xendit.md)
 ## [DPO Pay](dpo.md)
 ## [MTN MoMo](mtnmomo.md)
-## [Paystack](Paystack.md)
+## [Paystack](paystack.md)
