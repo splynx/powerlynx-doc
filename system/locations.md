@@ -55,3 +55,21 @@ In the image above, you can see that at this location, customers can pay using S
 * **Splash pages** - On this tab, you need to enable the splash pages that will be used at this location. You can find more about splash pages [here](splash-pages.md).
 
 ![Splash pages on location](images/location_splash_pages.png){data-zoomable}
+
+* **Login options** - A login option is simply the way your customers can sign in. On this tab, you can configure your customers’ login options. This section will be expanded later to include social login options such as Google and Facebook. Currently, customers can log in using their phone number or as a guest (without a phone number). 
+
+![Login options](images/login_options.png){data-zoomable}
+
+**Phone number** - This is the default login option, which requires customers to sign in with their phone number;
+
+**Guest login** - A login method that does not require a phone number. This option is suitable in cases where customers cannot receive an OTP code or when it is unnecessary - for example, accessing public Wi-Fi in a hotel where requesting a phone number is not required:
+
+![Guest login](images/guest_login_settings.png){data-zoomable}
+
+Here you can configure the button title for guest login and manage data plan availability. If the “Show all available data plans” option is enabled, customers will be able to select from the available data plans for this location. If it is disabled, you must select a default data plan, and vouchers will be generated using the selected plan.
+
+This is what customers will see when connecting to Wi-Fi with guest login enabled:
+
+![Splash page Guest login](images/splash_page_guest_login.png){data-zoomable}
+
+Customers can click the “Guest login” button to connect without entering their phone number.
