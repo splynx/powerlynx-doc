@@ -52,6 +52,7 @@ export default defineConfig({
             { text: 'Xendit', link: '/finance/xendit.md' },
             { text: 'DPO Pay', link: '/finance/dpo.md' },
             { text: 'MTN MoMo', link: '/finance/mtnmomo.md' },
+            { text: 'Paystack', link: '/finance/paystack.md' },
           ] },
           { text: 'Integrations', link: '/integrations/main.md', items: [
             { text: 'Splynx', link: '/integrations/splynx.md' },
