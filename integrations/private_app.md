@@ -64,7 +64,7 @@ Or get all customers 50 per page (change the `PerPage` and `page` values as you 
 $curl = curl_init();
 
 curl_setopt_array($curl, [
-  CURLOPT_URL => "https://one.stage.powerlynx.app/api/customers?".http_build_query(
+  CURLOPT_URL => "https://my.powerlynx.app/api/customers?".http_build_query(
   [
     'server_side' => [
         'pagination' => [
