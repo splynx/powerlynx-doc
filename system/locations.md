@@ -72,8 +72,12 @@ A login option is simply the way your customers can sign in. On this tab, you ca
 
 Here you can configure the button title for guest login and manage data plan availability. If the “Show all available data plans” option is enabled, customers will be able to select from the available data plans for this location. If it is disabled, you must select a default data plan, and vouchers will be generated using the selected plan.
 
+You can also protect guest logins with a PIN code. In our case, we enabled PIN code protection, so the customer needs to know the PIN code before logging in. The text prompt is also configurable, ensuring that the customer isn’t confused about where to obtain the PIN code.
+
 This is what customers will see when connecting to Wi-Fi with guest login enabled:
 
 ![Splash page Guest login](images/splash_page_guest_login.png){data-zoomable}
 
-Customers can click the “Guest login” button to connect without entering their phone number.
+Customers can click the “Guest Login” button to connect without entering their phone number. The system will redirect them to the data plan selection page if PIN code protection is not enabled. If PIN code protection is enabled, they will have an additional step where they need to enter the PIN code.
+
+![Splash page Guest login with PIN](images/guest_login_with_pin_code.jpeg#mediumsize){data-zoomable}
