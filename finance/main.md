@@ -10,13 +10,14 @@ There is one payment option that is always available - "Login using voucher code
 
 To configure the desired payment gateway, click on the button under the "Actions" section. You need to "connect" Powerlynx with your payment gateway to accept payments in Powerlynx using your payment gateway's services. Generally, each payment gateway offers integration options with third-party software. For this purpose, they provide you with the credentials required for connecting with third-party software. You'll find the list of available payment gateway integrations in Powerlynx below, along with instructions on how to connect them.
 
+## [Login using access code](login_with_voucher_code.md)
 ## [Stripe](stripe.md)
 ## [Paypal](paypal.md)
-## [Payfast](payfast.md)
-## [Login using access code](login_with_voucher_code.md)
-## [Netcash](netcash.md)
-## [Safaricom MPESA](safaricom-mpesa.md)
-## [Xendit](xendit.md)
+## [Payfast](payfast.md) 🇿🇦
+## [Netcash](netcash.md) 🇿🇦
+## [1Voucher](1voucher.md) 🇿🇦
+## [Safaricom MPESA](safaricom-mpesa.md) 🇰🇪
 ## [DPO Pay](dpo.md)
 ## [MTN MoMo](mtnmomo.md)
 ## [Paystack](paystack.md)
+## [Xendit](xendit.md)

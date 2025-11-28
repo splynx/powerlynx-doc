@@ -22,7 +22,7 @@ features:
   - title: <a href="https://docs.powerlynx.app/finance/main.html">Integrated payment gateways</a> 💰
     details: Explore various payment gateway options to seamlessly accept payments
   - title: <a href="https://docs.powerlynx.app/system/splash-pages.html">Captive portal</a> 🙍‍♂️
-    details: Custom splash pages with your own branding. No-Code caprive portal editor.
+    details: Custom splash pages with your own branding. No-Code captive portal editor.
   - title: <a href="https://docs.powerlynx.app/system/sms.html">SMS failover</a> 🟢
     details: Ensures SMS delivery to end-users even when the primary SMS gateway is unavailable
   - title: <a href="https://docs.powerlynx.app/system/data-plans.html">Flexible data plan configuration</a> 👈
