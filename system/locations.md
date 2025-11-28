@@ -81,3 +81,25 @@ This is what customers will see when connecting to Wi-Fi with guest login enable
 Customers can click the “Guest Login” button to connect without entering their phone number. The system will redirect them to the data plan selection page if PIN code protection is not enabled. If PIN code protection is enabled, they will have an additional step where they need to enter the PIN code.
 
 ![Splash page Guest login with PIN](images/guest_login_with_pin_code.jpeg#mediumsize){data-zoomable}
+
+## Default data plan
+
+In some cases, when you offer only one data plan to your customers, there is no need to show the data plan selection page. To shorten the user journey by skipping this step, we’ve introduced a new feature that allows you to set a default data plan, which will be applied automatically when the customer connects.
+
+You can find this feature under the location’s `Login options` tab:
+
+![Default data plan all](images/default_data_plan_all.png){data-zoomable}
+
+With this option enabled, the system will display the data plan selection page with the plans that are enabled on the `Plans` tab.
+
+If disabled, you will see options to select a default data plan and a default payment gateway to redirect to:
+
+![Default data plan](images/default_data_plan.png){data-zoomable}
+
+In this case, once the customer connects, they will automatically be assigned the “2GB” plan, and if the price is not zero, they will be redirected to the default payment gateway you selected. In our case, that’s 1Voucher.
+
+::: info
+Each individual login option has its own settings for the default data plan and payment gateway. This provides a more flexible approach in cases where you need to assign different default data plans to each login option. The settings of an individual login option have higher priority than the global settings.
+So, if you set a 2GB default data plan under a specific login option and a Free data plan under the Global options, the customer will be assigned the 2GB plan from the individual login option because it overrides the global configuration.
+
+
