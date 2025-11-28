@@ -36,6 +36,7 @@ export default defineConfig({
             { text: 'Notifications', link: '/system/notifications.md' },
             { text: 'Status page', link: '/system/status-page.md' },
             { text: 'Additional fields', link: '/system/additional-fields.md' },
+            { text: 'Labels', link: '/system/labels.md' },
           ] },
           { text: 'Marketing', items: [
             { text: 'Target groups', link: '/system/target-groups.md' },

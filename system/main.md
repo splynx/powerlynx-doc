@@ -9,6 +9,7 @@
 ### [Notifications](notifications.md)
 ### [Public status page](status-page.md)
 ### [Additional fields for the splash page](additional-fields.md)
+### [Labels](labels.md)
 
 # Marketing
 ### [Ad campaigns](adverts.md)
