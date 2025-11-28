@@ -28,6 +28,8 @@ The output file is a CSV containing all the required and filtered data.
 
 Allows you to export customer sessions to see the usage. The exported data includes: MAC, IP, customer ID, phone number, start date and time, end date and time, traffic usage, data plan, NAS identifier, and more.
 
+You can filter this report by location, time period, and customer labels (only sessions from customers with the selected labels will be exported).
+
 ## Vouchers export
 
 Export vouchers with different statuses, locations, and data plans. This data can be useful to see how many vouchers were generated from a specific data plan, and more.
