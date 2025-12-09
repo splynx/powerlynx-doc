@@ -36,7 +36,8 @@ To do this, you should access your router (in my case, Mikrotik), open the Termi
 /ip hotspot walled-garden
 add dst-host=*.digitaloceanspaces.com
 add dst-host=*.powerlynx.app
-add dst-host=checkout.paystack.co
+add dst-host=checkout.paystack.com
+add dst-host=*.amazonaws.com
 add dst-host=www.googletagmanager.com
 add dst-host=fonts.googleapis.com
 add dst-host=s3-eu-west-1.amazonaws.com
