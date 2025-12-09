@@ -188,6 +188,7 @@ acssb.bankserv.co.za
 *.capitec.*
 *.absa.*
 *.nedbank.*
+*.amazonaws.com
 ```
 
 ## Buying a voucher with Netcash

@@ -50,6 +50,7 @@ add dst-host=*paypal*
 add dst-host=*betacdn.net
 add dst-host=*.powerlynx.app
 add dst-host=*.akamaiedge.net
+add dst-host=*.amazonaws.com
 ```
 It might be useful to visit our forum, especially [this topic](https://forum.powerlynx.app/t/mikrotik-walled-garden/19), to discuss all questions related to the walled garden.
 

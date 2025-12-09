@@ -38,6 +38,7 @@ add dst-host=www.gstatic.com
 add dst-host=www.google.com
 add dst-host=*elb.amazonaws.com
 add dst-host=*ipify*
+add dst-host=*.amazonaws.com
 ```
 It might be useful to visit our forum, especially [this topic](https://forum.powerlynx.app/t/mikrotik-walled-garden/19), to discuss all questions related to the walled garden.
 

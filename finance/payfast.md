@@ -78,6 +78,7 @@ add dst-host=ipapi.co
 add dst-host=3dsecureprd.fnb.co.za
 add dst-host=*.cloudfront.net  
 add dst-host=*.kxcdn.com
+add dst-host=*.amazonaws.com
 ```
 It might be useful to visit our forum, especially [this topic](https://forum.powerlynx.app/t/mikrotik-walled-garden/19), to discuss all questions related to the walled garden.
 
