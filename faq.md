@@ -13,7 +13,7 @@ Yes, we offer a 21-day trial so you can evaluate the Powerlynx software and dete
 ### Pricing
 [Link to pricing](https://powerlynx.app/pricing/)
 
-Our entry-level license is $50 for 200 online customers. This means you can keep a maximum of 210 online customers in Powerlynx with this license. You can upgrade your license if needed. For example, if you plan to host 800 online customers, the cost will be $200, and your system can accommodate up to 810 online customers. Any additional customers beyond that limit will not be able to connect.
+Our entry-level license is $100 for 400 online customers. This means you can keep a maximum of 410 online customers in Powerlynx with this license. You can upgrade your license if needed. For example, if you plan to host 800 online customers, the cost will be $200, and your system can accommodate up to 810 online customers. Any additional customers beyond that limit will not be able to connect.
 
 ### What payment gateways do you support?
 We are continually adding new integrations with payment gateways worldwide. Currently, we support PayPal, Stripe, Payfast(South Africa), Netcash(South Africa) and Safaricom MPESA (Kenya), DPO, MTN MoMo, Xendit. More about supported payment gateways you can find [here](https://docs.powerlynx.app/finance/main.html).
