@@ -1,13 +1,9 @@
----
-outline: deep
----
-
 This section describes Powerlynx tools designed to simplify your everyday use of the platform.
 
-# Mass create vouchers tool
+## Mass create vouchers tool
 
 This tool is designed to create vouchers for multiple customers in bulk.
-For example, if you have 200 customers and want to give them each 1-day internet access—without making the data plan publicly available on the splash page—you can use this tool to:
+For example, if you have 200 customers and want to give them each 1-day internet access without making the data plan publicly available on the splash page, you can use this tool to:
 
 1. Select the customers
 2. Choose the data plan
@@ -55,3 +51,22 @@ Please note that these vouchers will be linked to the selected location. If a cu
 When the customer connects, the voucher will be automatically activated.
 
 
+## Smart label assignment
+
+This tool helps you automatically assign labels to newly created customers based on configured filters.
+
+**Example**: Assign label X to all new customers who are older than 25, registered from Location #1, and have a non-empty email address.
+
+Once labels are assigned to customers, you can easily run per-label reports without manually labeling each customer. Simply select a report, choose a customer label, and you’ll receive a report covering all customers with that label.
+
+**How to use:**
+
+1. Make sure you have created at least one [customer label](https://docs.powerlynx.app/system/labels.html#customer-labels)
+
+2. Navigate to `Config/Tools/Smart label assignment` tool
+
+3. Create a new record, give it a name, select the label to assign, and set the filters:
+
+![Config/Tools/Smart label assignment](images/create_smart_label_assignment.png){data-zoomable}
+
+4. Monitor newly created customers. The label you configured will be automatically assigned to all new customers that match the specified parameters.
