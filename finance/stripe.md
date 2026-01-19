@@ -38,20 +38,18 @@ To do this, you should access your router (in my case, Mikrotik), open the Termi
 
 ```
 /ip hotspot walled-garden
+add dst-host=*.digitaloceanspaces.com
+add dst-host=*powerlynx.app
 add dst-host=*.cloudfront.net
 add dst-host=*.fastly.net
 add dst-host=*.fontawesome.com*
 add dst-host=*arcot.com*
-add dst-host=*.digitaloceanspaces.com
 add dst-host=*stripe*
 add dst-host=*.akamaiedge.net
-add dst-host=*gstatic*
 add dst-host=*apple-pay-gateway*
 add dst-host=hcaptcha.com
-add dst-host=*.google.com
 add dst-host=*betacdn.net
 add dst-host=*pay*apple*
-add dst-host=*.powerlynx.app
 add dst-host=*.amazonaws.com
 ```
 
