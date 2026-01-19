@@ -153,43 +153,161 @@ It might be useful to visit our forum, especially [this topic](https://forum.pow
 
 If you are using Cudy hotspot controllers and want your customers to pay via Netcash, you need to add the following set of hosts to the UAM Allowed section on your Cudy device:
 
-UAM Allowed
 ```
-*.digitaloceanspaces.com
-*.powerlynx.app
-cde.netcash.co.za
-js-agent.newrelic.com
-seal.digicert.com
-*.netcash.co.za
-*.digicert.com
-*.newrelic.com
-netdna.bootstrapcdn.com
-netcashcde.azurewebsites.net
-*.ozow.com
-*.azurefd.net
-*.trafficmanager.net
-*.msedge.net
-*.hostserv.co.za
-*.paynow.co.za
-*.microsoft.com
-*.awsglobalaccelerator.com
-*.cloudflare.net
-*.cardinalcommerce.com
-*.paygate.co.za
-*.cloudfront.net
-*.dpopayments.io
-authentication.cardinalcommerce.com/ThreeDSecure/
-3ds.capitecbank.co.za/acs/
-acsabsa.bankserv.co.za
-acsnedcor.bankserv.co.za
-acssb.bankserv.co.za
-*.fnb.*
-*.standardbank.*
-*.capitec.*
+fra1.digitaloceanspaces.com
+3d.dpopayments.io
+3ds2.standardbank.co.za
+3dsecure.starlingbank.com
 *.absa.*
-*.nedbank.*
-*.amazonaws.com
+acs-challenge.apata.io
+acs21.nedsecure.co.za
+africanbank.co.za
+api.ozow.com
+*payflex.co.za
+authentication.cardinalcommerce.com
+bankzero.co.za
+bidvestbank.co.za
+*capitec*
+cardinalcommerce.com
+cde.netcash.co.za
+checkout.payflex.co.za
+cloudflare.net
+digicert.com
+discovery.bank
+*fnb.co.za
+hostserv.co.za
+investec.com
+js-agent.newrelic.com
+masterpass.oltio.co.za
+*microsoft.com
+nedbank.co.za
+netcash.co.za
+netcashcde.azurefd.net
+netcashcde.azurewebsites.net
+netdna.bootstrapcdn.com
+newrelic.com
+*.ozow.com
+paygate.co.za
+paynow.netcash.co.za
+sasfin.com
+seal.digicert.com
+*msedge.net
+*azurefd.net
+*trafficmanager.net
+*.americanexpress.com
+*bankserv.co.za
+*clarity.ms
+api.raygun.io
+13.107.192.0/18
+34.0.0.0/8
+99.83.232.8
+185.221.86.0/23
+52.0.0.0/8
+40.127.3.0/24
+40.127.0.0/24
+13.107.246.0/24
+13.73.248.8/29
+192.178.0.0/15
+74.125.0.0/16
+108.170.192.0/18
+142.250.0.0/15
 ```
+
+UAM Domain
+
+```
+your_subdomain.powerlynx.app
+3ds.capitecbank.co.za
+3d.dpopayments.io
+3ds2.standardbank.co.za
+3dsbrowser.capitecbank.co.za
+3dsecure.starlingbank.com
+absa.co.za
+acs-challenge.apata.io
+acs21.nedsecure.co.za
+acsab.bankserv.co.za
+acsabsa.bankserv.co.za
+acsemid.bankserv.co.za
+acsnedcor.bankserv.co.za
+acssasfin.bankserv.co.za
+acstutuka.bankserv.co.za
+africanbank.co.za
+api.ozow.com
+api.payflex.co.za
+auth.payflex.co.za
+authentication.cardinalcommerce.com
+bankzero.co.za
+bidvestbank.co.za
+capitec.co.za
+capitecbank.co.za
+cardinalcommerce.com
+cde.netcash.co.za
+checkout.payflex.co.za
+cloudflare.net
+digicert.com
+discovery.bank
+fnb.co.za
+hostserv.co.za
+investec.com
+js-agent.newrelic.com
+masterpass.oltio.co.za
+microsoft.com
+msedge.net
+nedbank.co.za
+netcash.co.za
+netcashcde.azurefd.net
+netcashcde.azurewebsites.net
+netdna.bootstrapcdn.com
+newrelic.com
+ozow.com
+pay.ozow.com
+paygate.co.za
+paynow.netcash.co.za
+safekey-1.americanexpress.com
+safekey2uplifthydra.americanexpress.com
+sasfin.com
+seal.digicert.com
+standardbank.co.za
+tymebank.co.za
+ubank.co.za
+www.absa.co.za
+www.capitecbank.co.za
+www.fnb.co.za
+www.investec.com
+www.online.fnb.co.za
+www.tymebank.co.za
+www.ubank.co.za
+```
+
+### The Google Fonts Delay Issue
+
+The Cudy hotspot proxy can introduce a significant delay when blocking requests to disallowed hosts - sometimes lasting more than one or two minutes.
+
+On a Cudy NAS, hotspot users do not have direct access to `fonts.googleapis.com` and `fonts.gstatic.com` by default. As a result, users may experience a delay of up to 2 minutes before the Netcash page loads.
+
+Simply allowing these domains by name is not sufficient because they are hosted on Google Cloud resources. The routes to these domains go through various Google IPs which change dynamically. Therefore, we recommend adding specific Google IP ranges instead of the domains `fonts.googleapis.com` and `fonts.gstatic.com`.
+
+### How to Identify IP Networks
+
+To identify which IP networks should be allowed, you can use tools such as `traceroute` or `mtr` (if available) to trace the route to `fonts.googleapis.com` and `fonts.gstatic.com`.
+
+It is recommended to perform these tests several times to ensure you capture the correct IP networks, as the routes may vary due to dynamic IP allocation.
+
+> **Note:** You should check which Google IP ranges are most commonly used to reach these domains from your specific location, as routing differs depending on the geographic zone.
+
+### Configuration Example
+
+In our example, we determined that the following networks should be allowed:
+
+```
+192.178.0.0/15
+74.125.0.0/16
+142.250.0.0/15
+```
+
+For a comprehensive list of all Google IP ranges, you can refer to the official JSON file: <https://www.gstatic.com/ipranges/goog.json>
+
+If you need assistance with identifying Google IP networks, please email <support@powerlynx.app>.
 
 ## Buying a voucher with Netcash
 
