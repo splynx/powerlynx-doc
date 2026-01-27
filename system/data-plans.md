@@ -8,7 +8,7 @@ You can view the list of all data plans and create a new one on the **Data plans
 
 ![Data plans](images/data-plans-section.png){data-zoomable}
 
-## Data plans configuraitons
+## Data plans configuraiton
 
 ![Data plan configs](images/data-plan-configs.png){data-zoomable}
 
